@@ -1,0 +1,10 @@
+C:\DESKTOP\JobChannel\.vs\JobChannel\v16\lut\0\b\BLL\Debug\net5.0\BLL.deps.json
+C:\DESKTOP\JobChannel\.vs\JobChannel\v16\lut\0\b\BLL\Debug\net5.0\BLL.dll
+C:\DESKTOP\JobChannel\.vs\JobChannel\v16\lut\0\b\BLL\Debug\net5.0\ref\BLL.dll
+C:\DESKTOP\JobChannel\.vs\JobChannel\v16\lut\0\i\BLL\Debug\net5.0\BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\DESKTOP\JobChannel\.vs\JobChannel\v16\lut\0\i\BLL\Debug\net5.0\BLL.AssemblyInfoInputs.cache
+C:\DESKTOP\JobChannel\.vs\JobChannel\v16\lut\0\i\BLL\Debug\net5.0\BLL.AssemblyInfo.cs
+C:\DESKTOP\JobChannel\.vs\JobChannel\v16\lut\0\i\BLL\Debug\net5.0\BLL.csproj.CopyComplete
+C:\DESKTOP\JobChannel\.vs\JobChannel\v16\lut\0\i\BLL\Debug\net5.0\BLL.dll
+C:\DESKTOP\JobChannel\.vs\JobChannel\v16\lut\0\i\BLL\Debug\net5.0\ref\BLL.dll
+C:\DESKTOP\JobChannel\.vs\JobChannel\v16\lut\0\i\BLL\Debug\net5.0\BLL.csproj.AssemblyReference.cache
