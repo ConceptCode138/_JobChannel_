@@ -1,0 +1,3022 @@
+id: DAL
+language: CSharp
+name:
+  Default: DAL
+qualifiedName:
+  Default: DAL
+type: Assembly
+modifiers: {}
+items:
+- id: DAL
+  commentId: N:DAL
+  language: CSharp
+  name:
+    CSharp: DAL
+    VB: DAL
+  nameWithType:
+    CSharp: DAL
+    VB: DAL
+  qualifiedName:
+    CSharp: DAL
+    VB: DAL
+  type: Namespace
+  assemblies:
+  - DAL
+  modifiers: {}
+  items:
+  - id: DAL.DALExtension
+    commentId: T:DAL.DALExtension
+    language: CSharp
+    name:
+      CSharp: DALExtension
+      VB: DALExtension
+    nameWithType:
+      CSharp: DALExtension
+      VB: DALExtension
+    qualifiedName:
+      CSharp: DAL.DALExtension
+      VB: DAL.DALExtension
+    type: Class
+    assemblies:
+    - DAL
+    namespace: DAL
+    source:
+      remote:
+        path: C:/DESKTOP/JobChannel/DAL/DALExtension.cs
+      id: DALExtension
+      path: ../DAL/DALExtension.cs
+      startLine: 12
+    summary: "\nCette classe va permettre d&apos;étendre l&apos;injecteur de dépendence pour pouvoir enrgistrer (les services) l&apos;UOW et les répertoires\n"
+    example: []
+    syntax:
+      content:
+        CSharp: public static class DALExtension
+        VB: Public Module DALExtension
+    inheritance:
+    - System.Object
+    inheritedMembers:
+    - System.Object.Equals(System.Object)
+    - System.Object.Equals(System.Object,System.Object)
+    - System.Object.GetHashCode
+    - System.Object.GetType
+    - System.Object.MemberwiseClone
+    - System.Object.ReferenceEquals(System.Object,System.Object)
+    - System.Object.ToString
+    modifiers:
+      CSharp:
+      - public
+      - static
+      - class
+      VB:
+      - Public
+      - Module
+    items:
+    - isExtensionMethod: true
+      id: DAL.DALExtension.AddDAL(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)
+      commentId: M:DAL.DALExtension.AddDAL(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)
+      language: CSharp
+      name:
+        CSharp: AddDAL(IServiceCollection, IConfiguration)
+        VB: AddDAL(IServiceCollection, IConfiguration)
+      nameWithType:
+        CSharp: DALExtension.AddDAL(IServiceCollection, IConfiguration)
+        VB: DALExtension.AddDAL(IServiceCollection, IConfiguration)
+      qualifiedName:
+        CSharp: DAL.DALExtension.AddDAL(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.Extensions.Configuration.IConfiguration)
+        VB: DAL.DALExtension.AddDAL(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.Extensions.Configuration.IConfiguration)
+      type: Method
+      assemblies:
+      - DAL
+      namespace: DAL
+      source:
+        remote:
+          path: C:/DESKTOP/JobChannel/DAL/DALExtension.cs
+        id: AddDAL
+        path: ../DAL/DALExtension.cs
+        startLine: 18
+      summary: "\n\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public static void AddDAL(this IServiceCollection services, IConfiguration configuration)
+          VB: >-
+            <ExtensionAttribute>
+
+            Public Shared Sub AddDAL(services As IServiceCollection, configuration As IConfiguration)
+        parameters:
+        - id: services
+          type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+        - id: configuration
+          type: Microsoft.Extensions.Configuration.IConfiguration
+      overload: DAL.DALExtension.AddDAL*
+      modifiers:
+        CSharp:
+        - public
+        - static
+        VB:
+        - Public
+        - Shared
+- id: DAL.UOW
+  commentId: N:DAL.UOW
+  language: CSharp
+  name:
+    CSharp: DAL.UOW
+    VB: DAL.UOW
+  nameWithType:
+    CSharp: DAL.UOW
+    VB: DAL.UOW
+  qualifiedName:
+    CSharp: DAL.UOW
+    VB: DAL.UOW
+  type: Namespace
+  assemblies:
+  - DAL
+  modifiers: {}
+  items:
+  - id: DAL.UOW.DbSession
+    commentId: T:DAL.UOW.DbSession
+    language: CSharp
+    name:
+      CSharp: DbSession
+      VB: DbSession
+    nameWithType:
+      CSharp: DbSession
+      VB: DbSession
+    qualifiedName:
+      CSharp: DAL.UOW.DbSession
+      VB: DAL.UOW.DbSession
+    type: Class
+    assemblies:
+    - DAL
+    namespace: DAL.UOW
+    source:
+      remote:
+        path: C:/DESKTOP/JobChannel/DAL/UOW/DbSession.cs
+      id: DbSession
+      path: ../DAL/UOW/DbSession.cs
+      startLine: 11
+    syntax:
+      content:
+        CSharp: 'class DbSession : IDbSession, IDisposable'
+        VB: >-
+          Class DbSession
+
+              Implements IDbSession, IDisposable
+    inheritance:
+    - System.Object
+    implements:
+    - DAL.UOW.IDbSession
+    - System.IDisposable
+    inheritedMembers:
+    - System.Object.Equals(System.Object)
+    - System.Object.Equals(System.Object,System.Object)
+    - System.Object.GetHashCode
+    - System.Object.GetType
+    - System.Object.MemberwiseClone
+    - System.Object.ReferenceEquals(System.Object,System.Object)
+    - System.Object.ToString
+    modifiers:
+      CSharp:
+      - class
+      VB:
+      - Class
+    items:
+    - id: DAL.UOW.DbSession.Connection
+      commentId: P:DAL.UOW.DbSession.Connection
+      language: CSharp
+      name:
+        CSharp: Connection
+        VB: Connection
+      nameWithType:
+        CSharp: DbSession.Connection
+        VB: DbSession.Connection
+      qualifiedName:
+        CSharp: DAL.UOW.DbSession.Connection
+        VB: DAL.UOW.DbSession.Connection
+      type: Property
+      assemblies:
+      - DAL
+      namespace: DAL.UOW
+      source:
+        remote:
+          path: C:/DESKTOP/JobChannel/DAL/UOW/DbSession.cs
+        id: Connection
+        path: ../DAL/UOW/DbSession.cs
+        startLine: 13
+      syntax:
+        content:
+          CSharp: public IDbConnection Connection { get; }
+          VB: Public ReadOnly Property Connection As IDbConnection
+        parameters: []
+        return:
+          type: System.Data.IDbConnection
+      overload: DAL.UOW.DbSession.Connection*
+      implements:
+      - DAL.UOW.IDbSession.Connection
+      modifiers:
+        CSharp:
+        - public
+        - get
+        VB:
+        - Public
+        - ReadOnly
+    - id: DAL.UOW.DbSession.Transaction
+      commentId: P:DAL.UOW.DbSession.Transaction
+      language: CSharp
+      name:
+        CSharp: Transaction
+        VB: Transaction
+      nameWithType:
+        CSharp: DbSession.Transaction
+        VB: DbSession.Transaction
+      qualifiedName:
+        CSharp: DAL.UOW.DbSession.Transaction
+        VB: DAL.UOW.DbSession.Transaction
+      type: Property
+      assemblies:
+      - DAL
+      namespace: DAL.UOW
+      source:
+        remote:
+          path: C:/DESKTOP/JobChannel/DAL/UOW/DbSession.cs
+        id: Transaction
+        path: ../DAL/UOW/DbSession.cs
+        startLine: 15
+      syntax:
+        content:
+          CSharp: public IDbTransaction Transaction { get; set; }
+          VB: Public Property Transaction As IDbTransaction
+        parameters: []
+        return:
+          type: System.Data.IDbTransaction
+      overload: DAL.UOW.DbSession.Transaction*
+      implements:
+      - DAL.UOW.IDbSession.Transaction
+      modifiers:
+        CSharp:
+        - public
+        - get
+        - set
+        VB:
+        - Public
+    - id: DAL.UOW.DbSession.#ctor(Microsoft.Extensions.Configuration.IConfiguration)
+      commentId: M:DAL.UOW.DbSession.#ctor(Microsoft.Extensions.Configuration.IConfiguration)
+      language: CSharp
+      name:
+        CSharp: DbSession(IConfiguration)
+        VB: DbSession(IConfiguration)
+      nameWithType:
+        CSharp: DbSession.DbSession(IConfiguration)
+        VB: DbSession.DbSession(IConfiguration)
+      qualifiedName:
+        CSharp: DAL.UOW.DbSession.DbSession(Microsoft.Extensions.Configuration.IConfiguration)
+        VB: DAL.UOW.DbSession.DbSession(Microsoft.Extensions.Configuration.IConfiguration)
+      type: Constructor
+      assemblies:
+      - DAL
+      namespace: DAL.UOW
+      source:
+        remote:
+          path: C:/DESKTOP/JobChannel/DAL/UOW/DbSession.cs
+        id: .ctor
+        path: ../DAL/UOW/DbSession.cs
+        startLine: 20
+      summary: "\nA la création de la DbSession, récupération de la configuration du serveur se trouvant dans API -> appsettings.json -> connectionString de la base de données\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public DbSession(IConfiguration configuration)
+          VB: Public Sub New(configuration As IConfiguration)
+        parameters:
+        - id: configuration
+          type: Microsoft.Extensions.Configuration.IConfiguration
+      overload: DAL.UOW.DbSession.#ctor*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: DAL.UOW.DbSession.Dispose
+      commentId: M:DAL.UOW.DbSession.Dispose
+      language: CSharp
+      name:
+        CSharp: Dispose()
+        VB: Dispose()
+      nameWithType:
+        CSharp: DbSession.Dispose()
+        VB: DbSession.Dispose()
+      qualifiedName:
+        CSharp: DAL.UOW.DbSession.Dispose()
+        VB: DAL.UOW.DbSession.Dispose()
+      type: Method
+      assemblies:
+      - DAL
+      namespace: DAL.UOW
+      source:
+        remote:
+          path: C:/DESKTOP/JobChannel/DAL/UOW/DbSession.cs
+        id: Dispose
+        path: ../DAL/UOW/DbSession.cs
+        startLine: 31
+      summary: "\nSi plus d&apos;utilité de la connexion, fermeture de celle-ci\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public void Dispose()
+          VB: Public Sub Dispose
+      overload: DAL.UOW.DbSession.Dispose*
+      implements:
+      - System.IDisposable.Dispose
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+  - id: DAL.UOW.IDbSession
+    commentId: T:DAL.UOW.IDbSession
+    language: CSharp
+    name:
+      CSharp: IDbSession
+      VB: IDbSession
+    nameWithType:
+      CSharp: IDbSession
+      VB: IDbSession
+    qualifiedName:
+      CSharp: DAL.UOW.IDbSession
+      VB: DAL.UOW.IDbSession
+    type: Interface
+    assemblies:
+    - DAL
+    namespace: DAL.UOW
+    source:
+      remote:
+        path: C:/DESKTOP/JobChannel/DAL/UOW/IDbSession.cs
+      id: IDbSession
+      path: ../DAL/UOW/IDbSession.cs
+      startLine: 16
+    summary: "\nGère la connexion\n\nCette classe devra avoir une durée de vie de la requête (afin d&apos;éviter que deux clients aient la même transaction)\n\nIDbSession dérive de IDisposable permettant de fermer et libérer connexion. \n"
+    example: []
+    syntax:
+      content:
+        CSharp: 'public interface IDbSession : IDisposable'
+        VB: >-
+          Public Interface IDbSession
+
+              Inherits IDisposable
+    inheritedMembers:
+    - System.IDisposable.Dispose
+    modifiers:
+      CSharp:
+      - public
+      - interface
+      VB:
+      - Public
+      - Interface
+    items:
+    - id: DAL.UOW.IDbSession.Connection
+      commentId: P:DAL.UOW.IDbSession.Connection
+      language: CSharp
+      name:
+        CSharp: Connection
+        VB: Connection
+      nameWithType:
+        CSharp: IDbSession.Connection
+        VB: IDbSession.Connection
+      qualifiedName:
+        CSharp: DAL.UOW.IDbSession.Connection
+        VB: DAL.UOW.IDbSession.Connection
+      type: Property
+      assemblies:
+      - DAL
+      namespace: DAL.UOW
+      source:
+        remote:
+          path: C:/DESKTOP/JobChannel/DAL/UOW/IDbSession.cs
+        id: Connection
+        path: ../DAL/UOW/IDbSession.cs
+        startLine: 21
+      summary: "\nConnexion à la base de données\n"
+      example: []
+      syntax:
+        content:
+          CSharp: IDbConnection Connection { get; }
+          VB: ReadOnly Property Connection As IDbConnection
+        parameters: []
+        return:
+          type: System.Data.IDbConnection
+      overload: DAL.UOW.IDbSession.Connection*
+      modifiers:
+        CSharp:
+        - get
+        VB:
+        - ReadOnly
+    - id: DAL.UOW.IDbSession.Transaction
+      commentId: P:DAL.UOW.IDbSession.Transaction
+      language: CSharp
+      name:
+        CSharp: Transaction
+        VB: Transaction
+      nameWithType:
+        CSharp: IDbSession.Transaction
+        VB: IDbSession.Transaction
+      qualifiedName:
+        CSharp: DAL.UOW.IDbSession.Transaction
+        VB: DAL.UOW.IDbSession.Transaction
+      type: Property
+      assemblies:
+      - DAL
+      namespace: DAL.UOW
+      source:
+        remote:
+          path: C:/DESKTOP/JobChannel/DAL/UOW/IDbSession.cs
+        id: Transaction
+        path: ../DAL/UOW/IDbSession.cs
+        startLine: 26
+      summary: "\nTransaction\n"
+      example: []
+      syntax:
+        content:
+          CSharp: IDbTransaction Transaction { get; set; }
+          VB: Property Transaction As IDbTransaction
+        parameters: []
+        return:
+          type: System.Data.IDbTransaction
+      overload: DAL.UOW.IDbSession.Transaction*
+      modifiers:
+        CSharp:
+        - get
+        - set
+        VB: []
+  - id: DAL.UOW.IUnitOfWork
+    commentId: T:DAL.UOW.IUnitOfWork
+    language: CSharp
+    name:
+      CSharp: IUnitOfWork
+      VB: IUnitOfWork
+    nameWithType:
+      CSharp: IUnitOfWork
+      VB: IUnitOfWork
+    qualifiedName:
+      CSharp: DAL.UOW.IUnitOfWork
+      VB: DAL.UOW.IUnitOfWork
+    type: Interface
+    assemblies:
+    - DAL
+    namespace: DAL.UOW
+    source:
+      remote:
+        path: C:/DESKTOP/JobChannel/DAL/UOW/IUnitOfWork.cs
+      id: IUnitOfWork
+      path: ../DAL/UOW/IUnitOfWork.cs
+      startLine: 11
+    summary: "\nCette interface dérive de l&apos;interface IDisposable qui permet de (&apos;disposer la connexion&apos; et la remettre dans le pool de connexion)\n"
+    example: []
+    syntax:
+      content:
+        CSharp: 'public interface IUnitOfWork : IDisposable'
+        VB: >-
+          Public Interface IUnitOfWork
+
+              Inherits IDisposable
+    inheritedMembers:
+    - System.IDisposable.Dispose
+    modifiers:
+      CSharp:
+      - public
+      - interface
+      VB:
+      - Public
+      - Interface
+    items:
+    - id: DAL.UOW.IUnitOfWork.BeginTransaction
+      commentId: M:DAL.UOW.IUnitOfWork.BeginTransaction
+      language: CSharp
+      name:
+        CSharp: BeginTransaction()
+        VB: BeginTransaction()
+      nameWithType:
+        CSharp: IUnitOfWork.BeginTransaction()
+        VB: IUnitOfWork.BeginTransaction()
+      qualifiedName:
+        CSharp: DAL.UOW.IUnitOfWork.BeginTransaction()
+        VB: DAL.UOW.IUnitOfWork.BeginTransaction()
+      type: Method
+      assemblies:
+      - DAL
+      namespace: DAL.UOW
+      source:
+        remote:
+          path: C:/DESKTOP/JobChannel/DAL/UOW/IUnitOfWork.cs
+        id: BeginTransaction
+        path: ../DAL/UOW/IUnitOfWork.cs
+        startLine: 16
+      summary: "\nPermet de commencer une transaction.\n"
+      example: []
+      syntax:
+        content:
+          CSharp: void BeginTransaction()
+          VB: Sub BeginTransaction
+      overload: DAL.UOW.IUnitOfWork.BeginTransaction*
+      modifiers:
+        CSharp: []
+        VB: []
+    - id: DAL.UOW.IUnitOfWork.Commit
+      commentId: M:DAL.UOW.IUnitOfWork.Commit
+      language: CSharp
+      name:
+        CSharp: Commit()
+        VB: Commit()
+      nameWithType:
+        CSharp: IUnitOfWork.Commit()
+        VB: IUnitOfWork.Commit()
+      qualifiedName:
+        CSharp: DAL.UOW.IUnitOfWork.Commit()
+        VB: DAL.UOW.IUnitOfWork.Commit()
+      type: Method
+      assemblies:
+      - DAL
+      namespace: DAL.UOW
+      source:
+        remote:
+          path: C:/DESKTOP/JobChannel/DAL/UOW/IUnitOfWork.cs
+        id: Commit
+        path: ../DAL/UOW/IUnitOfWork.cs
+        startLine: 21
+      summary: "\nPermet d&apos;envoyer la transaction apres manipulation des répertoires.\n"
+      example: []
+      syntax:
+        content:
+          CSharp: void Commit()
+          VB: Sub Commit
+      overload: DAL.UOW.IUnitOfWork.Commit*
+      modifiers:
+        CSharp: []
+        VB: []
+    - id: DAL.UOW.IUnitOfWork.Rollback
+      commentId: M:DAL.UOW.IUnitOfWork.Rollback
+      language: CSharp
+      name:
+        CSharp: Rollback()
+        VB: Rollback()
+      nameWithType:
+        CSharp: IUnitOfWork.Rollback()
+        VB: IUnitOfWork.Rollback()
+      qualifiedName:
+        CSharp: DAL.UOW.IUnitOfWork.Rollback()
+        VB: DAL.UOW.IUnitOfWork.Rollback()
+      type: Method
+      assemblies:
+      - DAL
+      namespace: DAL.UOW
+      source:
+        remote:
+          path: C:/DESKTOP/JobChannel/DAL/UOW/IUnitOfWork.cs
+        id: Rollback
+        path: ../DAL/UOW/IUnitOfWork.cs
+        startLine: 25
+      summary: "\nPermet d&apos;annuler manuellement la transaction en cours.\n"
+      example: []
+      syntax:
+        content:
+          CSharp: void Rollback()
+          VB: Sub Rollback
+      overload: DAL.UOW.IUnitOfWork.Rollback*
+      modifiers:
+        CSharp: []
+        VB: []
+    - id: DAL.UOW.IUnitOfWork.GetRepository``1
+      commentId: M:DAL.UOW.IUnitOfWork.GetRepository``1
+      language: CSharp
+      name:
+        CSharp: GetRepository<T>()
+        VB: GetRepository(Of T)()
+      nameWithType:
+        CSharp: IUnitOfWork.GetRepository<T>()
+        VB: IUnitOfWork.GetRepository(Of T)()
+      qualifiedName:
+        CSharp: DAL.UOW.IUnitOfWork.GetRepository<T>()
+        VB: DAL.UOW.IUnitOfWork.GetRepository(Of T)()
+      type: Method
+      assemblies:
+      - DAL
+      namespace: DAL.UOW
+      source:
+        remote:
+          path: C:/DESKTOP/JobChannel/DAL/UOW/IUnitOfWork.cs
+        id: GetRepository
+        path: ../DAL/UOW/IUnitOfWork.cs
+        startLine: 32
+      summary: "\nPermet de demander un répertoire T (type inconnu) à l&apos;appel de cette méthode, donner le type de repertoire souhaité.\n"
+      example: []
+      syntax:
+        content:
+          CSharp: T GetRepository<T>()
+          VB: Function GetRepository(Of T) As T
+        typeParameters:
+        - id: T
+          description: Interface du répertoire
+        return:
+          type: '{T}'
+          description: retourne le répertoire demandé
+      overload: DAL.UOW.IUnitOfWork.GetRepository*
+      modifiers:
+        CSharp: []
+        VB: []
+  - id: DAL.UOW.UnitOfWork
+    commentId: T:DAL.UOW.UnitOfWork
+    language: CSharp
+    name:
+      CSharp: UnitOfWork
+      VB: UnitOfWork
+    nameWithType:
+      CSharp: UnitOfWork
+      VB: UnitOfWork
+    qualifiedName:
+      CSharp: DAL.UOW.UnitOfWork
+      VB: DAL.UOW.UnitOfWork
+    type: Class
+    assemblies:
+    - DAL
+    namespace: DAL.UOW
+    source:
+      remote:
+        path: C:/DESKTOP/JobChannel/DAL/UOW/UnitOfWork.cs
+      id: UnitOfWork
+      path: ../DAL/UOW/UnitOfWork.cs
+      startLine: 12
+    summary: "\nPattern Unit of Work\n"
+    example: []
+    syntax:
+      content:
+        CSharp: 'class UnitOfWork : IUnitOfWork, IDisposable'
+        VB: >-
+          Class UnitOfWork
+
+              Implements IUnitOfWork, IDisposable
+    inheritance:
+    - System.Object
+    implements:
+    - DAL.UOW.IUnitOfWork
+    - System.IDisposable
+    inheritedMembers:
+    - System.Object.Equals(System.Object)
+    - System.Object.Equals(System.Object,System.Object)
+    - System.Object.GetHashCode
+    - System.Object.GetType
+    - System.Object.MemberwiseClone
+    - System.Object.ReferenceEquals(System.Object,System.Object)
+    - System.Object.ToString
+    modifiers:
+      CSharp:
+      - class
+      VB:
+      - Class
+    items:
+    - id: DAL.UOW.UnitOfWork._session
+      commentId: F:DAL.UOW.UnitOfWork._session
+      language: CSharp
+      name:
+        CSharp: _session
+        VB: _session
+      nameWithType:
+        CSharp: UnitOfWork._session
+        VB: UnitOfWork._session
+      qualifiedName:
+        CSharp: DAL.UOW.UnitOfWork._session
+        VB: DAL.UOW.UnitOfWork._session
+      type: Field
+      assemblies:
+      - DAL
+      namespace: DAL.UOW
+      source:
+        remote:
+          path: C:/DESKTOP/JobChannel/DAL/UOW/UnitOfWork.cs
+        id: _session
+        path: ../DAL/UOW/UnitOfWork.cs
+        startLine: 14
+      syntax:
+        content:
+          CSharp: readonly IDbSession _session
+          VB: ReadOnly _session As IDbSession
+        return:
+          type: DAL.UOW.IDbSession
+      modifiers:
+        CSharp:
+        - readonly
+        VB:
+        - ReadOnly
+    - id: DAL.UOW.UnitOfWork._serviceProvider
+      commentId: F:DAL.UOW.UnitOfWork._serviceProvider
+      language: CSharp
+      name:
+        CSharp: _serviceProvider
+        VB: _serviceProvider
+      nameWithType:
+        CSharp: UnitOfWork._serviceProvider
+        VB: UnitOfWork._serviceProvider
+      qualifiedName:
+        CSharp: DAL.UOW.UnitOfWork._serviceProvider
+        VB: DAL.UOW.UnitOfWork._serviceProvider
+      type: Field
+      assemblies:
+      - DAL
+      namespace: DAL.UOW
+      source:
+        remote:
+          path: C:/DESKTOP/JobChannel/DAL/UOW/UnitOfWork.cs
+        id: _serviceProvider
+        path: ../DAL/UOW/UnitOfWork.cs
+        startLine: 15
+      syntax:
+        content:
+          CSharp: readonly IServiceProvider _serviceProvider
+          VB: ReadOnly _serviceProvider As IServiceProvider
+        return:
+          type: System.IServiceProvider
+      modifiers:
+        CSharp:
+        - readonly
+        VB:
+        - ReadOnly
+    - id: DAL.UOW.UnitOfWork.#ctor(DAL.UOW.IDbSession,System.IServiceProvider)
+      commentId: M:DAL.UOW.UnitOfWork.#ctor(DAL.UOW.IDbSession,System.IServiceProvider)
+      language: CSharp
+      name:
+        CSharp: UnitOfWork(IDbSession, IServiceProvider)
+        VB: UnitOfWork(IDbSession, IServiceProvider)
+      nameWithType:
+        CSharp: UnitOfWork.UnitOfWork(IDbSession, IServiceProvider)
+        VB: UnitOfWork.UnitOfWork(IDbSession, IServiceProvider)
+      qualifiedName:
+        CSharp: DAL.UOW.UnitOfWork.UnitOfWork(DAL.UOW.IDbSession, System.IServiceProvider)
+        VB: DAL.UOW.UnitOfWork.UnitOfWork(DAL.UOW.IDbSession, System.IServiceProvider)
+      type: Constructor
+      assemblies:
+      - DAL
+      namespace: DAL.UOW
+      source:
+        remote:
+          path: C:/DESKTOP/JobChannel/DAL/UOW/UnitOfWork.cs
+        id: .ctor
+        path: ../DAL/UOW/UnitOfWork.cs
+        startLine: 22
+      summary: "\n\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public UnitOfWork(IDbSession dbSession, IServiceProvider serviceProvider)
+          VB: Public Sub New(dbSession As IDbSession, serviceProvider As IServiceProvider)
+        parameters:
+        - id: dbSession
+          type: DAL.UOW.IDbSession
+          description: ''
+        - id: serviceProvider
+          type: System.IServiceProvider
+          description: accès à l&apos;injecteur de dépendance permettant de récupérer un service à l&apos;intérieur de Injecteur de dépendance
+      overload: DAL.UOW.UnitOfWork.#ctor*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: DAL.UOW.UnitOfWork.BeginTransaction
+      commentId: M:DAL.UOW.UnitOfWork.BeginTransaction
+      language: CSharp
+      name:
+        CSharp: BeginTransaction()
+        VB: BeginTransaction()
+      nameWithType:
+        CSharp: UnitOfWork.BeginTransaction()
+        VB: UnitOfWork.BeginTransaction()
+      qualifiedName:
+        CSharp: DAL.UOW.UnitOfWork.BeginTransaction()
+        VB: DAL.UOW.UnitOfWork.BeginTransaction()
+      type: Method
+      assemblies:
+      - DAL
+      namespace: DAL.UOW
+      source:
+        remote:
+          path: C:/DESKTOP/JobChannel/DAL/UOW/UnitOfWork.cs
+        id: BeginTransaction
+        path: ../DAL/UOW/UnitOfWork.cs
+        startLine: 29
+      syntax:
+        content:
+          CSharp: public void BeginTransaction()
+          VB: Public Sub BeginTransaction
+      overload: DAL.UOW.UnitOfWork.BeginTransaction*
+      implements:
+      - DAL.UOW.IUnitOfWork.BeginTransaction
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: DAL.UOW.UnitOfWork.Commit
+      commentId: M:DAL.UOW.UnitOfWork.Commit
+      language: CSharp
+      name:
+        CSharp: Commit()
+        VB: Commit()
+      nameWithType:
+        CSharp: UnitOfWork.Commit()
+        VB: UnitOfWork.Commit()
+      qualifiedName:
+        CSharp: DAL.UOW.UnitOfWork.Commit()
+        VB: DAL.UOW.UnitOfWork.Commit()
+      type: Method
+      assemblies:
+      - DAL
+      namespace: DAL.UOW
+      source:
+        remote:
+          path: C:/DESKTOP/JobChannel/DAL/UOW/UnitOfWork.cs
+        id: Commit
+        path: ../DAL/UOW/UnitOfWork.cs
+        startLine: 34
+      syntax:
+        content:
+          CSharp: public void Commit()
+          VB: Public Sub Commit
+      overload: DAL.UOW.UnitOfWork.Commit*
+      implements:
+      - DAL.UOW.IUnitOfWork.Commit
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: DAL.UOW.UnitOfWork.Dispose
+      commentId: M:DAL.UOW.UnitOfWork.Dispose
+      language: CSharp
+      name:
+        CSharp: Dispose()
+        VB: Dispose()
+      nameWithType:
+        CSharp: UnitOfWork.Dispose()
+        VB: UnitOfWork.Dispose()
+      qualifiedName:
+        CSharp: DAL.UOW.UnitOfWork.Dispose()
+        VB: DAL.UOW.UnitOfWork.Dispose()
+      type: Method
+      assemblies:
+      - DAL
+      namespace: DAL.UOW
+      source:
+        remote:
+          path: C:/DESKTOP/JobChannel/DAL/UOW/UnitOfWork.cs
+        id: Dispose
+        path: ../DAL/UOW/UnitOfWork.cs
+        startLine: 39
+      syntax:
+        content:
+          CSharp: public void Dispose()
+          VB: Public Sub Dispose
+      overload: DAL.UOW.UnitOfWork.Dispose*
+      implements:
+      - System.IDisposable.Dispose
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: DAL.UOW.UnitOfWork.Rollback
+      commentId: M:DAL.UOW.UnitOfWork.Rollback
+      language: CSharp
+      name:
+        CSharp: Rollback()
+        VB: Rollback()
+      nameWithType:
+        CSharp: UnitOfWork.Rollback()
+        VB: UnitOfWork.Rollback()
+      qualifiedName:
+        CSharp: DAL.UOW.UnitOfWork.Rollback()
+        VB: DAL.UOW.UnitOfWork.Rollback()
+      type: Method
+      assemblies:
+      - DAL
+      namespace: DAL.UOW
+      source:
+        remote:
+          path: C:/DESKTOP/JobChannel/DAL/UOW/UnitOfWork.cs
+        id: Rollback
+        path: ../DAL/UOW/UnitOfWork.cs
+        startLine: 45
+      syntax:
+        content:
+          CSharp: public void Rollback()
+          VB: Public Sub Rollback
+      overload: DAL.UOW.UnitOfWork.Rollback*
+      implements:
+      - DAL.UOW.IUnitOfWork.Rollback
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: DAL.UOW.UnitOfWork.GetRepository``1
+      commentId: M:DAL.UOW.UnitOfWork.GetRepository``1
+      language: CSharp
+      name:
+        CSharp: GetRepository<T>()
+        VB: GetRepository(Of T)()
+      nameWithType:
+        CSharp: UnitOfWork.GetRepository<T>()
+        VB: UnitOfWork.GetRepository(Of T)()
+      qualifiedName:
+        CSharp: DAL.UOW.UnitOfWork.GetRepository<T>()
+        VB: DAL.UOW.UnitOfWork.GetRepository(Of T)()
+      type: Method
+      assemblies:
+      - DAL
+      namespace: DAL.UOW
+      source:
+        remote:
+          path: C:/DESKTOP/JobChannel/DAL/UOW/UnitOfWork.cs
+        id: GetRepository
+        path: ../DAL/UOW/UnitOfWork.cs
+        startLine: 57
+      syntax:
+        content:
+          CSharp: public T GetRepository<T>()
+          VB: Public Function GetRepository(Of T) As T
+        typeParameters:
+        - id: T
+        return:
+          type: '{T}'
+      overload: DAL.UOW.UnitOfWork.GetRepository*
+      implements:
+      - DAL.UOW.IUnitOfWork.GetRepository``1
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+- id: DAL.UOW.Repositories
+  commentId: N:DAL.UOW.Repositories
+  language: CSharp
+  name:
+    CSharp: DAL.UOW.Repositories
+    VB: DAL.UOW.Repositories
+  nameWithType:
+    CSharp: DAL.UOW.Repositories
+    VB: DAL.UOW.Repositories
+  qualifiedName:
+    CSharp: DAL.UOW.Repositories
+    VB: DAL.UOW.Repositories
+  type: Namespace
+  assemblies:
+  - DAL
+  modifiers: {}
+  items:
+  - id: DAL.UOW.Repositories.IGenericRepository`1
+    commentId: T:DAL.UOW.Repositories.IGenericRepository`1
+    language: CSharp
+    name:
+      CSharp: IGenericRepository<T>
+      VB: IGenericRepository(Of T)
+    nameWithType:
+      CSharp: IGenericRepository<T>
+      VB: IGenericRepository(Of T)
+    qualifiedName:
+      CSharp: DAL.UOW.Repositories.IGenericRepository<T>
+      VB: DAL.UOW.Repositories.IGenericRepository(Of T)
+    type: Interface
+    assemblies:
+    - DAL
+    namespace: DAL.UOW.Repositories
+    source:
+      remote:
+        path: C:/DESKTOP/JobChannel/DAL/UOW/Repositories/IGenericRepository.cs
+      id: IGenericRepository
+      path: ../DAL/UOW/Repositories/IGenericRepository.cs
+      startLine: 17
+    syntax:
+      content:
+        CSharp: >-
+          public interface IGenericRepository<T>
+
+              where T : Entity
+        VB: Public Interface IGenericRepository(Of T As Entity)
+      typeParameters:
+      - id: T
+    modifiers:
+      CSharp:
+      - public
+      - interface
+      VB:
+      - Public
+      - Interface
+    items:
+    - id: DAL.UOW.Repositories.IGenericRepository`1.GetByIdAsync(System.Int32)
+      commentId: M:DAL.UOW.Repositories.IGenericRepository`1.GetByIdAsync(System.Int32)
+      language: CSharp
+      name:
+        CSharp: GetByIdAsync(Int32)
+        VB: GetByIdAsync(Int32)
+      nameWithType:
+        CSharp: IGenericRepository<T>.GetByIdAsync(Int32)
+        VB: IGenericRepository(Of T).GetByIdAsync(Int32)
+      qualifiedName:
+        CSharp: DAL.UOW.Repositories.IGenericRepository<T>.GetByIdAsync(System.Int32)
+        VB: DAL.UOW.Repositories.IGenericRepository(Of T).GetByIdAsync(System.Int32)
+      type: Method
+      assemblies:
+      - DAL
+      namespace: DAL.UOW.Repositories
+      source:
+        remote:
+          path: C:/DESKTOP/JobChannel/DAL/UOW/Repositories/IGenericRepository.cs
+        id: GetByIdAsync
+        path: ../DAL/UOW/Repositories/IGenericRepository.cs
+        startLine: 24
+      summary: "\nRecherche d&apos;une entité par son identifiant\n"
+      example: []
+      syntax:
+        content:
+          CSharp: Task<T> GetByIdAsync(int id)
+          VB: Function GetByIdAsync(id As Integer) As Task(Of T)
+        parameters:
+        - id: id
+          type: System.Int32
+          description: id de l&apos;entité à rechercher
+        return:
+          type: System.Threading.Tasks.Task{{T}}
+          description: retourne le type de l&apos;entité
+      overload: DAL.UOW.Repositories.IGenericRepository`1.GetByIdAsync*
+      modifiers:
+        CSharp: []
+        VB: []
+    - id: DAL.UOW.Repositories.IGenericRepository`1.FindAllAsync
+      commentId: M:DAL.UOW.Repositories.IGenericRepository`1.FindAllAsync
+      language: CSharp
+      name:
+        CSharp: FindAllAsync()
+        VB: FindAllAsync()
+      nameWithType:
+        CSharp: IGenericRepository<T>.FindAllAsync()
+        VB: IGenericRepository(Of T).FindAllAsync()
+      qualifiedName:
+        CSharp: DAL.UOW.Repositories.IGenericRepository<T>.FindAllAsync()
+        VB: DAL.UOW.Repositories.IGenericRepository(Of T).FindAllAsync()
+      type: Method
+      assemblies:
+      - DAL
+      namespace: DAL.UOW.Repositories
+      source:
+        remote:
+          path: C:/DESKTOP/JobChannel/DAL/UOW/Repositories/IGenericRepository.cs
+        id: FindAllAsync
+        path: ../DAL/UOW/Repositories/IGenericRepository.cs
+        startLine: 30
+      summary: "\n[ Permet de récupérer toutes les entités présentes dans le répertoire. ]\n"
+      example: []
+      syntax:
+        content:
+          CSharp: Task<IEnumerable<T>> FindAllAsync()
+          VB: Function FindAllAsync As Task(Of IEnumerable(Of T))
+        return:
+          type: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{{T}}}
+          description: ''
+      overload: DAL.UOW.Repositories.IGenericRepository`1.FindAllAsync*
+      modifiers:
+        CSharp: []
+        VB: []
+  - id: DAL.UOW.Repositories.IOffreRepository
+    commentId: T:DAL.UOW.Repositories.IOffreRepository
+    language: CSharp
+    name:
+      CSharp: IOffreRepository
+      VB: IOffreRepository
+    nameWithType:
+      CSharp: IOffreRepository
+      VB: IOffreRepository
+    qualifiedName:
+      CSharp: DAL.UOW.Repositories.IOffreRepository
+      VB: DAL.UOW.Repositories.IOffreRepository
+    type: Interface
+    assemblies:
+    - DAL
+    namespace: DAL.UOW.Repositories
+    source:
+      remote:
+        path: C:/DESKTOP/JobChannel/DAL/UOW/Repositories/IOffreRepository.cs
+      id: IOffreRepository
+      path: ../DAL/UOW/Repositories/IOffreRepository.cs
+      startLine: 13
+    summary: "\nCette interface permet de créer des méthodes spécifique à l&apos;offre en plus.\nPlus il y a de fonctionnalités dans le répertoire, plus il y aura qu&apos;un seul appel à faire de la BLLServer à la BDD.\n"
+    example: []
+    syntax:
+      content:
+        CSharp: 'public interface IOffreRepository : IGenericRepository<Offre>'
+        VB: >-
+          Public Interface IOffreRepository
+
+              Inherits IGenericRepository(Of Offre)
+    inheritedMembers:
+    - DAL.UOW.Repositories.IGenericRepository{BO.Entities.Offre}.GetByIdAsync(System.Int32)
+    - DAL.UOW.Repositories.IGenericRepository{BO.Entities.Offre}.FindAllAsync
+    modifiers:
+      CSharp:
+      - public
+      - interface
+      VB:
+      - Public
+      - Interface
+    items:
+    - id: DAL.UOW.Repositories.IOffreRepository.GetByTypeContratIdAsync(System.Int32)
+      commentId: M:DAL.UOW.Repositories.IOffreRepository.GetByTypeContratIdAsync(System.Int32)
+      language: CSharp
+      name:
+        CSharp: GetByTypeContratIdAsync(Int32)
+        VB: GetByTypeContratIdAsync(Int32)
+      nameWithType:
+        CSharp: IOffreRepository.GetByTypeContratIdAsync(Int32)
+        VB: IOffreRepository.GetByTypeContratIdAsync(Int32)
+      qualifiedName:
+        CSharp: DAL.UOW.Repositories.IOffreRepository.GetByTypeContratIdAsync(System.Int32)
+        VB: DAL.UOW.Repositories.IOffreRepository.GetByTypeContratIdAsync(System.Int32)
+      type: Method
+      assemblies:
+      - DAL
+      namespace: DAL.UOW.Repositories
+      source:
+        remote:
+          path: C:/DESKTOP/JobChannel/DAL/UOW/Repositories/IOffreRepository.cs
+        id: GetByTypeContratIdAsync
+        path: ../DAL/UOW/Repositories/IOffreRepository.cs
+        startLine: 20
+      summary: "\nRécupération de l&apos;offre par son type de contrat\n"
+      example: []
+      syntax:
+        content:
+          CSharp: Task<Offre> GetByTypeContratIdAsync(int idTypeContrat)
+          VB: Function GetByTypeContratIdAsync(idTypeContrat As Integer) As Task(Of Offre)
+        parameters:
+        - id: idTypeContrat
+          type: System.Int32
+          description: identifiant du type de contrat
+        return:
+          type: System.Threading.Tasks.Task{BO.Entities.Offre}
+          description: ''
+      overload: DAL.UOW.Repositories.IOffreRepository.GetByTypeContratIdAsync*
+      modifiers:
+        CSharp: []
+        VB: []
+- id: DAL.UOW.Repositories.SQLServer
+  commentId: N:DAL.UOW.Repositories.SQLServer
+  language: CSharp
+  name:
+    CSharp: DAL.UOW.Repositories.SQLServer
+    VB: DAL.UOW.Repositories.SQLServer
+  nameWithType:
+    CSharp: DAL.UOW.Repositories.SQLServer
+    VB: DAL.UOW.Repositories.SQLServer
+  qualifiedName:
+    CSharp: DAL.UOW.Repositories.SQLServer
+    VB: DAL.UOW.Repositories.SQLServer
+  type: Namespace
+  assemblies:
+  - DAL
+  modifiers: {}
+  items:
+  - id: DAL.UOW.Repositories.SQLServer.OffreRepositorySQLServer
+    commentId: T:DAL.UOW.Repositories.SQLServer.OffreRepositorySQLServer
+    language: CSharp
+    name:
+      CSharp: OffreRepositorySQLServer
+      VB: OffreRepositorySQLServer
+    nameWithType:
+      CSharp: OffreRepositorySQLServer
+      VB: OffreRepositorySQLServer
+    qualifiedName:
+      CSharp: DAL.UOW.Repositories.SQLServer.OffreRepositorySQLServer
+      VB: DAL.UOW.Repositories.SQLServer.OffreRepositorySQLServer
+    type: Class
+    assemblies:
+    - DAL
+    namespace: DAL.UOW.Repositories.SQLServer
+    source:
+      remote:
+        path: C:/DESKTOP/JobChannel/DAL/UOW/Repositories/SQLServer/OffreRepositorySQLServer.cs
+      id: OffreRepositorySQLServer
+      path: ../DAL/UOW/Repositories/SQLServer/OffreRepositorySQLServer.cs
+      startLine: 14
+    summary: "\nImplémentation pour SQL SERVER\n"
+    example: []
+    syntax:
+      content:
+        CSharp: 'class OffreRepositorySQLServer : IOffreRepository, IGenericRepository<Offre>'
+        VB: >-
+          Class OffreRepositorySQLServer
+
+              Implements IOffreRepository, IGenericRepository(Of Offre)
+    inheritance:
+    - System.Object
+    implements:
+    - DAL.UOW.Repositories.IOffreRepository
+    - DAL.UOW.Repositories.IGenericRepository{BO.Entities.Offre}
+    inheritedMembers:
+    - System.Object.Equals(System.Object)
+    - System.Object.Equals(System.Object,System.Object)
+    - System.Object.GetHashCode
+    - System.Object.GetType
+    - System.Object.MemberwiseClone
+    - System.Object.ReferenceEquals(System.Object,System.Object)
+    - System.Object.ToString
+    modifiers:
+      CSharp:
+      - class
+      VB:
+      - Class
+    items:
+    - id: DAL.UOW.Repositories.SQLServer.OffreRepositorySQLServer._session
+      commentId: F:DAL.UOW.Repositories.SQLServer.OffreRepositorySQLServer._session
+      language: CSharp
+      name:
+        CSharp: _session
+        VB: _session
+      nameWithType:
+        CSharp: OffreRepositorySQLServer._session
+        VB: OffreRepositorySQLServer._session
+      qualifiedName:
+        CSharp: DAL.UOW.Repositories.SQLServer.OffreRepositorySQLServer._session
+        VB: DAL.UOW.Repositories.SQLServer.OffreRepositorySQLServer._session
+      type: Field
+      assemblies:
+      - DAL
+      namespace: DAL.UOW.Repositories.SQLServer
+      source:
+        remote:
+          path: C:/DESKTOP/JobChannel/DAL/UOW/Repositories/SQLServer/OffreRepositorySQLServer.cs
+        id: _session
+        path: ../DAL/UOW/Repositories/SQLServer/OffreRepositorySQLServer.cs
+        startLine: 17
+      syntax:
+        content:
+          CSharp: readonly IDbSession _session
+          VB: ReadOnly _session As IDbSession
+        return:
+          type: DAL.UOW.IDbSession
+      modifiers:
+        CSharp:
+        - readonly
+        VB:
+        - ReadOnly
+    - id: DAL.UOW.Repositories.SQLServer.OffreRepositorySQLServer.#ctor(DAL.UOW.IDbSession)
+      commentId: M:DAL.UOW.Repositories.SQLServer.OffreRepositorySQLServer.#ctor(DAL.UOW.IDbSession)
+      language: CSharp
+      name:
+        CSharp: OffreRepositorySQLServer(IDbSession)
+        VB: OffreRepositorySQLServer(IDbSession)
+      nameWithType:
+        CSharp: OffreRepositorySQLServer.OffreRepositorySQLServer(IDbSession)
+        VB: OffreRepositorySQLServer.OffreRepositorySQLServer(IDbSession)
+      qualifiedName:
+        CSharp: DAL.UOW.Repositories.SQLServer.OffreRepositorySQLServer.OffreRepositorySQLServer(DAL.UOW.IDbSession)
+        VB: DAL.UOW.Repositories.SQLServer.OffreRepositorySQLServer.OffreRepositorySQLServer(DAL.UOW.IDbSession)
+      type: Constructor
+      assemblies:
+      - DAL
+      namespace: DAL.UOW.Repositories.SQLServer
+      source:
+        remote:
+          path: C:/DESKTOP/JobChannel/DAL/UOW/Repositories/SQLServer/OffreRepositorySQLServer.cs
+        id: .ctor
+        path: ../DAL/UOW/Repositories/SQLServer/OffreRepositorySQLServer.cs
+        startLine: 23
+      summary: "\nCe constructeur a besoin de cet DbSession afin d&apos;executer les requêtes.\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public OffreRepositorySQLServer(IDbSession dbSession)
+          VB: Public Sub New(dbSession As IDbSession)
+        parameters:
+        - id: dbSession
+          type: DAL.UOW.IDbSession
+          description: ''
+      overload: DAL.UOW.Repositories.SQLServer.OffreRepositorySQLServer.#ctor*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: DAL.UOW.Repositories.SQLServer.OffreRepositorySQLServer.FindAllAsync
+      commentId: M:DAL.UOW.Repositories.SQLServer.OffreRepositorySQLServer.FindAllAsync
+      language: CSharp
+      name:
+        CSharp: FindAllAsync()
+        VB: FindAllAsync()
+      nameWithType:
+        CSharp: OffreRepositorySQLServer.FindAllAsync()
+        VB: OffreRepositorySQLServer.FindAllAsync()
+      qualifiedName:
+        CSharp: DAL.UOW.Repositories.SQLServer.OffreRepositorySQLServer.FindAllAsync()
+        VB: DAL.UOW.Repositories.SQLServer.OffreRepositorySQLServer.FindAllAsync()
+      type: Method
+      assemblies:
+      - DAL
+      namespace: DAL.UOW.Repositories.SQLServer
+      source:
+        remote:
+          path: C:/DESKTOP/JobChannel/DAL/UOW/Repositories/SQLServer/OffreRepositorySQLServer.cs
+        id: FindAllAsync
+        path: ../DAL/UOW/Repositories/SQLServer/OffreRepositorySQLServer.cs
+        startLine: 30
+      syntax:
+        content:
+          CSharp: public async Task<IEnumerable<Offre>> FindAllAsync()
+          VB: Public Function FindAllAsync As Task(Of IEnumerable(Of Offre))
+        return:
+          type: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{BO.Entities.Offre}}
+      overload: DAL.UOW.Repositories.SQLServer.OffreRepositorySQLServer.FindAllAsync*
+      implements:
+      - DAL.UOW.Repositories.IGenericRepository{BO.Entities.Offre}.FindAllAsync
+      modifiers:
+        CSharp:
+        - public
+        - async
+        VB:
+        - Public
+    - id: DAL.UOW.Repositories.SQLServer.OffreRepositorySQLServer.GetByIdAsync(System.Int32)
+      commentId: M:DAL.UOW.Repositories.SQLServer.OffreRepositorySQLServer.GetByIdAsync(System.Int32)
+      language: CSharp
+      name:
+        CSharp: GetByIdAsync(Int32)
+        VB: GetByIdAsync(Int32)
+      nameWithType:
+        CSharp: OffreRepositorySQLServer.GetByIdAsync(Int32)
+        VB: OffreRepositorySQLServer.GetByIdAsync(Int32)
+      qualifiedName:
+        CSharp: DAL.UOW.Repositories.SQLServer.OffreRepositorySQLServer.GetByIdAsync(System.Int32)
+        VB: DAL.UOW.Repositories.SQLServer.OffreRepositorySQLServer.GetByIdAsync(System.Int32)
+      type: Method
+      assemblies:
+      - DAL
+      namespace: DAL.UOW.Repositories.SQLServer
+      source:
+        remote:
+          path: C:/DESKTOP/JobChannel/DAL/UOW/Repositories/SQLServer/OffreRepositorySQLServer.cs
+        id: GetByIdAsync
+        path: ../DAL/UOW/Repositories/SQLServer/OffreRepositorySQLServer.cs
+        startLine: 86
+      syntax:
+        content:
+          CSharp: public async Task<Offre> GetByIdAsync(int id)
+          VB: Public Function GetByIdAsync(id As Integer) As Task(Of Offre)
+        parameters:
+        - id: id
+          type: System.Int32
+        return:
+          type: System.Threading.Tasks.Task{BO.Entities.Offre}
+      overload: DAL.UOW.Repositories.SQLServer.OffreRepositorySQLServer.GetByIdAsync*
+      implements:
+      - DAL.UOW.Repositories.IGenericRepository{BO.Entities.Offre}.GetByIdAsync(System.Int32)
+      modifiers:
+        CSharp:
+        - public
+        - async
+        VB:
+        - Public
+    - id: DAL.UOW.Repositories.SQLServer.OffreRepositorySQLServer.GetByTypeContratIdAsync(System.Int32)
+      commentId: M:DAL.UOW.Repositories.SQLServer.OffreRepositorySQLServer.GetByTypeContratIdAsync(System.Int32)
+      language: CSharp
+      name:
+        CSharp: GetByTypeContratIdAsync(Int32)
+        VB: GetByTypeContratIdAsync(Int32)
+      nameWithType:
+        CSharp: OffreRepositorySQLServer.GetByTypeContratIdAsync(Int32)
+        VB: OffreRepositorySQLServer.GetByTypeContratIdAsync(Int32)
+      qualifiedName:
+        CSharp: DAL.UOW.Repositories.SQLServer.OffreRepositorySQLServer.GetByTypeContratIdAsync(System.Int32)
+        VB: DAL.UOW.Repositories.SQLServer.OffreRepositorySQLServer.GetByTypeContratIdAsync(System.Int32)
+      type: Method
+      assemblies:
+      - DAL
+      namespace: DAL.UOW.Repositories.SQLServer
+      source:
+        remote:
+          path: C:/DESKTOP/JobChannel/DAL/UOW/Repositories/SQLServer/OffreRepositorySQLServer.cs
+        id: GetByTypeContratIdAsync
+        path: ../DAL/UOW/Repositories/SQLServer/OffreRepositorySQLServer.cs
+        startLine: 91
+      syntax:
+        content:
+          CSharp: public Task<Offre> GetByTypeContratIdAsync(int idTypeContrat)
+          VB: Public Function GetByTypeContratIdAsync(idTypeContrat As Integer) As Task(Of Offre)
+        parameters:
+        - id: idTypeContrat
+          type: System.Int32
+        return:
+          type: System.Threading.Tasks.Task{BO.Entities.Offre}
+      overload: DAL.UOW.Repositories.SQLServer.OffreRepositorySQLServer.GetByTypeContratIdAsync*
+      implements:
+      - DAL.UOW.Repositories.IOffreRepository.GetByTypeContratIdAsync(System.Int32)
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+references:
+  System:
+    name:
+      CSharp:
+      - name: System
+        nameWithType: System
+        qualifiedName: System
+        isExternal: true
+      VB:
+      - name: System
+        nameWithType: System
+        qualifiedName: System
+    isDefinition: true
+    commentId: N:System
+  System.Object:
+    name:
+      CSharp:
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      VB:
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+    isDefinition: true
+    parent: System
+    commentId: T:System.Object
+  System.Object.Equals(System.Object):
+    name:
+      CSharp:
+      - id: System.Object.Equals(System.Object)
+        name: Equals
+        nameWithType: Object.Equals
+        qualifiedName: System.Object.Equals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.Equals(System.Object)
+        name: Equals
+        nameWithType: Object.Equals
+        qualifiedName: System.Object.Equals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.Equals(System.Object)
+  System.Object.Equals(System.Object,System.Object):
+    name:
+      CSharp:
+      - id: System.Object.Equals(System.Object,System.Object)
+        name: Equals
+        nameWithType: Object.Equals
+        qualifiedName: System.Object.Equals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.Equals(System.Object,System.Object)
+        name: Equals
+        nameWithType: Object.Equals
+        qualifiedName: System.Object.Equals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.Equals(System.Object,System.Object)
+  System.Object.GetHashCode:
+    name:
+      CSharp:
+      - id: System.Object.GetHashCode
+        name: GetHashCode
+        nameWithType: Object.GetHashCode
+        qualifiedName: System.Object.GetHashCode
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.GetHashCode
+        name: GetHashCode
+        nameWithType: Object.GetHashCode
+        qualifiedName: System.Object.GetHashCode
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.GetHashCode
+  System.Object.GetType:
+    name:
+      CSharp:
+      - id: System.Object.GetType
+        name: GetType
+        nameWithType: Object.GetType
+        qualifiedName: System.Object.GetType
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.GetType
+        name: GetType
+        nameWithType: Object.GetType
+        qualifiedName: System.Object.GetType
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.GetType
+  System.Object.MemberwiseClone:
+    name:
+      CSharp:
+      - id: System.Object.MemberwiseClone
+        name: MemberwiseClone
+        nameWithType: Object.MemberwiseClone
+        qualifiedName: System.Object.MemberwiseClone
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.MemberwiseClone
+        name: MemberwiseClone
+        nameWithType: Object.MemberwiseClone
+        qualifiedName: System.Object.MemberwiseClone
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.MemberwiseClone
+  System.Object.ReferenceEquals(System.Object,System.Object):
+    name:
+      CSharp:
+      - id: System.Object.ReferenceEquals(System.Object,System.Object)
+        name: ReferenceEquals
+        nameWithType: Object.ReferenceEquals
+        qualifiedName: System.Object.ReferenceEquals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.ReferenceEquals(System.Object,System.Object)
+        name: ReferenceEquals
+        nameWithType: Object.ReferenceEquals
+        qualifiedName: System.Object.ReferenceEquals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  System.Object.ToString:
+    name:
+      CSharp:
+      - id: System.Object.ToString
+        name: ToString
+        nameWithType: Object.ToString
+        qualifiedName: System.Object.ToString
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.ToString
+        name: ToString
+        nameWithType: Object.ToString
+        qualifiedName: System.Object.ToString
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.ToString
+  Microsoft.Extensions.DependencyInjection:
+    name:
+      CSharp:
+      - name: Microsoft.Extensions.DependencyInjection
+        nameWithType: Microsoft.Extensions.DependencyInjection
+        qualifiedName: Microsoft.Extensions.DependencyInjection
+        isExternal: true
+      VB:
+      - name: Microsoft.Extensions.DependencyInjection
+        nameWithType: Microsoft.Extensions.DependencyInjection
+        qualifiedName: Microsoft.Extensions.DependencyInjection
+    isDefinition: true
+    commentId: N:Microsoft.Extensions.DependencyInjection
+  Microsoft.Extensions.DependencyInjection.IServiceCollection:
+    name:
+      CSharp:
+      - id: Microsoft.Extensions.DependencyInjection.IServiceCollection
+        name: IServiceCollection
+        nameWithType: IServiceCollection
+        qualifiedName: Microsoft.Extensions.DependencyInjection.IServiceCollection
+        isExternal: true
+      VB:
+      - id: Microsoft.Extensions.DependencyInjection.IServiceCollection
+        name: IServiceCollection
+        nameWithType: IServiceCollection
+        qualifiedName: Microsoft.Extensions.DependencyInjection.IServiceCollection
+        isExternal: true
+    isDefinition: true
+    parent: Microsoft.Extensions.DependencyInjection
+    commentId: T:Microsoft.Extensions.DependencyInjection.IServiceCollection
+  Microsoft.Extensions.Configuration:
+    name:
+      CSharp:
+      - name: Microsoft.Extensions.Configuration
+        nameWithType: Microsoft.Extensions.Configuration
+        qualifiedName: Microsoft.Extensions.Configuration
+        isExternal: true
+      VB:
+      - name: Microsoft.Extensions.Configuration
+        nameWithType: Microsoft.Extensions.Configuration
+        qualifiedName: Microsoft.Extensions.Configuration
+    isDefinition: true
+    commentId: N:Microsoft.Extensions.Configuration
+  Microsoft.Extensions.Configuration.IConfiguration:
+    name:
+      CSharp:
+      - id: Microsoft.Extensions.Configuration.IConfiguration
+        name: IConfiguration
+        nameWithType: IConfiguration
+        qualifiedName: Microsoft.Extensions.Configuration.IConfiguration
+        isExternal: true
+      VB:
+      - id: Microsoft.Extensions.Configuration.IConfiguration
+        name: IConfiguration
+        nameWithType: IConfiguration
+        qualifiedName: Microsoft.Extensions.Configuration.IConfiguration
+        isExternal: true
+    isDefinition: true
+    parent: Microsoft.Extensions.Configuration
+    commentId: T:Microsoft.Extensions.Configuration.IConfiguration
+  DAL.DALExtension.AddDAL*:
+    name:
+      CSharp:
+      - id: DAL.DALExtension.AddDAL*
+        name: AddDAL
+        nameWithType: DALExtension.AddDAL
+        qualifiedName: DAL.DALExtension.AddDAL
+      VB:
+      - id: DAL.DALExtension.AddDAL*
+        name: AddDAL
+        nameWithType: DALExtension.AddDAL
+        qualifiedName: DAL.DALExtension.AddDAL
+    isDefinition: true
+    commentId: Overload:DAL.DALExtension.AddDAL
+  DAL.DALExtension:
+    name:
+      CSharp:
+      - id: DAL.DALExtension
+        name: DALExtension
+        nameWithType: DALExtension
+        qualifiedName: DAL.DALExtension
+      VB:
+      - id: DAL.DALExtension
+        name: DALExtension
+        nameWithType: DALExtension
+        qualifiedName: DAL.DALExtension
+    isDefinition: true
+    commentId: T:DAL.DALExtension
+  DAL:
+    name:
+      CSharp:
+      - name: DAL
+        nameWithType: DAL
+        qualifiedName: DAL
+      VB:
+      - name: DAL
+        nameWithType: DAL
+        qualifiedName: DAL
+    isDefinition: true
+    commentId: N:DAL
+  DAL.UOW:
+    name:
+      CSharp:
+      - name: DAL.UOW
+        nameWithType: DAL.UOW
+        qualifiedName: DAL.UOW
+      VB:
+      - name: DAL.UOW
+        nameWithType: DAL.UOW
+        qualifiedName: DAL.UOW
+    isDefinition: true
+    commentId: N:DAL.UOW
+  DAL.UOW.IDbSession:
+    name:
+      CSharp:
+      - id: DAL.UOW.IDbSession
+        name: IDbSession
+        nameWithType: IDbSession
+        qualifiedName: DAL.UOW.IDbSession
+      VB:
+      - id: DAL.UOW.IDbSession
+        name: IDbSession
+        nameWithType: IDbSession
+        qualifiedName: DAL.UOW.IDbSession
+    isDefinition: true
+    parent: DAL.UOW
+    commentId: T:DAL.UOW.IDbSession
+  System.IDisposable:
+    name:
+      CSharp:
+      - id: System.IDisposable
+        name: IDisposable
+        nameWithType: IDisposable
+        qualifiedName: System.IDisposable
+        isExternal: true
+      VB:
+      - id: System.IDisposable
+        name: IDisposable
+        nameWithType: IDisposable
+        qualifiedName: System.IDisposable
+        isExternal: true
+    isDefinition: true
+    parent: System
+    commentId: T:System.IDisposable
+  System.Data:
+    name:
+      CSharp:
+      - name: System.Data
+        nameWithType: System.Data
+        qualifiedName: System.Data
+        isExternal: true
+      VB:
+      - name: System.Data
+        nameWithType: System.Data
+        qualifiedName: System.Data
+    isDefinition: true
+    commentId: N:System.Data
+  System.Data.IDbConnection:
+    name:
+      CSharp:
+      - id: System.Data.IDbConnection
+        name: IDbConnection
+        nameWithType: IDbConnection
+        qualifiedName: System.Data.IDbConnection
+        isExternal: true
+      VB:
+      - id: System.Data.IDbConnection
+        name: IDbConnection
+        nameWithType: IDbConnection
+        qualifiedName: System.Data.IDbConnection
+        isExternal: true
+    isDefinition: true
+    parent: System.Data
+    commentId: T:System.Data.IDbConnection
+  DAL.UOW.DbSession.Connection*:
+    name:
+      CSharp:
+      - id: DAL.UOW.DbSession.Connection*
+        name: Connection
+        nameWithType: DbSession.Connection
+        qualifiedName: DAL.UOW.DbSession.Connection
+      VB:
+      - id: DAL.UOW.DbSession.Connection*
+        name: Connection
+        nameWithType: DbSession.Connection
+        qualifiedName: DAL.UOW.DbSession.Connection
+    isDefinition: true
+    commentId: Overload:DAL.UOW.DbSession.Connection
+  DAL.UOW.IDbSession.Connection:
+    name:
+      CSharp:
+      - id: DAL.UOW.IDbSession.Connection
+        name: Connection
+        nameWithType: IDbSession.Connection
+        qualifiedName: DAL.UOW.IDbSession.Connection
+      VB:
+      - id: DAL.UOW.IDbSession.Connection
+        name: Connection
+        nameWithType: IDbSession.Connection
+        qualifiedName: DAL.UOW.IDbSession.Connection
+    isDefinition: true
+    parent: DAL.UOW.IDbSession
+    commentId: P:DAL.UOW.IDbSession.Connection
+  System.Data.IDbTransaction:
+    name:
+      CSharp:
+      - id: System.Data.IDbTransaction
+        name: IDbTransaction
+        nameWithType: IDbTransaction
+        qualifiedName: System.Data.IDbTransaction
+        isExternal: true
+      VB:
+      - id: System.Data.IDbTransaction
+        name: IDbTransaction
+        nameWithType: IDbTransaction
+        qualifiedName: System.Data.IDbTransaction
+        isExternal: true
+    isDefinition: true
+    parent: System.Data
+    commentId: T:System.Data.IDbTransaction
+  DAL.UOW.DbSession.Transaction*:
+    name:
+      CSharp:
+      - id: DAL.UOW.DbSession.Transaction*
+        name: Transaction
+        nameWithType: DbSession.Transaction
+        qualifiedName: DAL.UOW.DbSession.Transaction
+      VB:
+      - id: DAL.UOW.DbSession.Transaction*
+        name: Transaction
+        nameWithType: DbSession.Transaction
+        qualifiedName: DAL.UOW.DbSession.Transaction
+    isDefinition: true
+    commentId: Overload:DAL.UOW.DbSession.Transaction
+  DAL.UOW.IDbSession.Transaction:
+    name:
+      CSharp:
+      - id: DAL.UOW.IDbSession.Transaction
+        name: Transaction
+        nameWithType: IDbSession.Transaction
+        qualifiedName: DAL.UOW.IDbSession.Transaction
+      VB:
+      - id: DAL.UOW.IDbSession.Transaction
+        name: Transaction
+        nameWithType: IDbSession.Transaction
+        qualifiedName: DAL.UOW.IDbSession.Transaction
+    isDefinition: true
+    parent: DAL.UOW.IDbSession
+    commentId: P:DAL.UOW.IDbSession.Transaction
+  DAL.UOW.DbSession.#ctor*:
+    name:
+      CSharp:
+      - id: DAL.UOW.DbSession.#ctor*
+        name: DbSession
+        nameWithType: DbSession.DbSession
+        qualifiedName: DAL.UOW.DbSession.DbSession
+      VB:
+      - id: DAL.UOW.DbSession.#ctor*
+        name: DbSession
+        nameWithType: DbSession.DbSession
+        qualifiedName: DAL.UOW.DbSession.DbSession
+    isDefinition: true
+    commentId: Overload:DAL.UOW.DbSession.#ctor
+  DAL.UOW.DbSession.Dispose*:
+    name:
+      CSharp:
+      - id: DAL.UOW.DbSession.Dispose*
+        name: Dispose
+        nameWithType: DbSession.Dispose
+        qualifiedName: DAL.UOW.DbSession.Dispose
+      VB:
+      - id: DAL.UOW.DbSession.Dispose*
+        name: Dispose
+        nameWithType: DbSession.Dispose
+        qualifiedName: DAL.UOW.DbSession.Dispose
+    isDefinition: true
+    commentId: Overload:DAL.UOW.DbSession.Dispose
+  System.IDisposable.Dispose:
+    name:
+      CSharp:
+      - id: System.IDisposable.Dispose
+        name: Dispose
+        nameWithType: IDisposable.Dispose
+        qualifiedName: System.IDisposable.Dispose
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.IDisposable.Dispose
+        name: Dispose
+        nameWithType: IDisposable.Dispose
+        qualifiedName: System.IDisposable.Dispose
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.IDisposable
+    commentId: M:System.IDisposable.Dispose
+  DAL.UOW.DbSession:
+    name:
+      CSharp:
+      - id: DAL.UOW.DbSession
+        name: DbSession
+        nameWithType: DbSession
+        qualifiedName: DAL.UOW.DbSession
+      VB:
+      - id: DAL.UOW.DbSession
+        name: DbSession
+        nameWithType: DbSession
+        qualifiedName: DAL.UOW.DbSession
+    isDefinition: true
+    commentId: T:DAL.UOW.DbSession
+  DAL.UOW.IDbSession.Connection*:
+    name:
+      CSharp:
+      - id: DAL.UOW.IDbSession.Connection*
+        name: Connection
+        nameWithType: IDbSession.Connection
+        qualifiedName: DAL.UOW.IDbSession.Connection
+      VB:
+      - id: DAL.UOW.IDbSession.Connection*
+        name: Connection
+        nameWithType: IDbSession.Connection
+        qualifiedName: DAL.UOW.IDbSession.Connection
+    isDefinition: true
+    commentId: Overload:DAL.UOW.IDbSession.Connection
+  DAL.UOW.IDbSession.Transaction*:
+    name:
+      CSharp:
+      - id: DAL.UOW.IDbSession.Transaction*
+        name: Transaction
+        nameWithType: IDbSession.Transaction
+        qualifiedName: DAL.UOW.IDbSession.Transaction
+      VB:
+      - id: DAL.UOW.IDbSession.Transaction*
+        name: Transaction
+        nameWithType: IDbSession.Transaction
+        qualifiedName: DAL.UOW.IDbSession.Transaction
+    isDefinition: true
+    commentId: Overload:DAL.UOW.IDbSession.Transaction
+  DAL.UOW.IUnitOfWork.BeginTransaction*:
+    name:
+      CSharp:
+      - id: DAL.UOW.IUnitOfWork.BeginTransaction*
+        name: BeginTransaction
+        nameWithType: IUnitOfWork.BeginTransaction
+        qualifiedName: DAL.UOW.IUnitOfWork.BeginTransaction
+      VB:
+      - id: DAL.UOW.IUnitOfWork.BeginTransaction*
+        name: BeginTransaction
+        nameWithType: IUnitOfWork.BeginTransaction
+        qualifiedName: DAL.UOW.IUnitOfWork.BeginTransaction
+    isDefinition: true
+    commentId: Overload:DAL.UOW.IUnitOfWork.BeginTransaction
+  DAL.UOW.IUnitOfWork.Commit*:
+    name:
+      CSharp:
+      - id: DAL.UOW.IUnitOfWork.Commit*
+        name: Commit
+        nameWithType: IUnitOfWork.Commit
+        qualifiedName: DAL.UOW.IUnitOfWork.Commit
+      VB:
+      - id: DAL.UOW.IUnitOfWork.Commit*
+        name: Commit
+        nameWithType: IUnitOfWork.Commit
+        qualifiedName: DAL.UOW.IUnitOfWork.Commit
+    isDefinition: true
+    commentId: Overload:DAL.UOW.IUnitOfWork.Commit
+  DAL.UOW.IUnitOfWork.Rollback*:
+    name:
+      CSharp:
+      - id: DAL.UOW.IUnitOfWork.Rollback*
+        name: Rollback
+        nameWithType: IUnitOfWork.Rollback
+        qualifiedName: DAL.UOW.IUnitOfWork.Rollback
+      VB:
+      - id: DAL.UOW.IUnitOfWork.Rollback*
+        name: Rollback
+        nameWithType: IUnitOfWork.Rollback
+        qualifiedName: DAL.UOW.IUnitOfWork.Rollback
+    isDefinition: true
+    commentId: Overload:DAL.UOW.IUnitOfWork.Rollback
+  T:
+    name:
+      CSharp:
+      - name: T
+        nameWithType: T
+        qualifiedName: T
+      VB:
+      - name: T
+        nameWithType: T
+        qualifiedName: T
+    isDefinition: true
+  '{T}':
+    name:
+      CSharp:
+      - name: T
+        nameWithType: T
+        qualifiedName: T
+      VB:
+      - name: T
+        nameWithType: T
+        qualifiedName: T
+    isDefinition: false
+    definition: T
+    commentId: '!:T'
+  DAL.UOW.IUnitOfWork.GetRepository*:
+    name:
+      CSharp:
+      - id: DAL.UOW.IUnitOfWork.GetRepository*
+        name: GetRepository
+        nameWithType: IUnitOfWork.GetRepository
+        qualifiedName: DAL.UOW.IUnitOfWork.GetRepository
+      VB:
+      - id: DAL.UOW.IUnitOfWork.GetRepository*
+        name: GetRepository
+        nameWithType: IUnitOfWork.GetRepository
+        qualifiedName: DAL.UOW.IUnitOfWork.GetRepository
+    isDefinition: true
+    commentId: Overload:DAL.UOW.IUnitOfWork.GetRepository
+  DAL.UOW.IUnitOfWork:
+    name:
+      CSharp:
+      - id: DAL.UOW.IUnitOfWork
+        name: IUnitOfWork
+        nameWithType: IUnitOfWork
+        qualifiedName: DAL.UOW.IUnitOfWork
+      VB:
+      - id: DAL.UOW.IUnitOfWork
+        name: IUnitOfWork
+        nameWithType: IUnitOfWork
+        qualifiedName: DAL.UOW.IUnitOfWork
+    isDefinition: true
+    parent: DAL.UOW
+    commentId: T:DAL.UOW.IUnitOfWork
+  System.IServiceProvider:
+    name:
+      CSharp:
+      - id: System.IServiceProvider
+        name: IServiceProvider
+        nameWithType: IServiceProvider
+        qualifiedName: System.IServiceProvider
+        isExternal: true
+      VB:
+      - id: System.IServiceProvider
+        name: IServiceProvider
+        nameWithType: IServiceProvider
+        qualifiedName: System.IServiceProvider
+        isExternal: true
+    isDefinition: true
+    parent: System
+    commentId: T:System.IServiceProvider
+  DAL.UOW.UnitOfWork.#ctor*:
+    name:
+      CSharp:
+      - id: DAL.UOW.UnitOfWork.#ctor*
+        name: UnitOfWork
+        nameWithType: UnitOfWork.UnitOfWork
+        qualifiedName: DAL.UOW.UnitOfWork.UnitOfWork
+      VB:
+      - id: DAL.UOW.UnitOfWork.#ctor*
+        name: UnitOfWork
+        nameWithType: UnitOfWork.UnitOfWork
+        qualifiedName: DAL.UOW.UnitOfWork.UnitOfWork
+    isDefinition: true
+    commentId: Overload:DAL.UOW.UnitOfWork.#ctor
+  DAL.UOW.UnitOfWork.BeginTransaction*:
+    name:
+      CSharp:
+      - id: DAL.UOW.UnitOfWork.BeginTransaction*
+        name: BeginTransaction
+        nameWithType: UnitOfWork.BeginTransaction
+        qualifiedName: DAL.UOW.UnitOfWork.BeginTransaction
+      VB:
+      - id: DAL.UOW.UnitOfWork.BeginTransaction*
+        name: BeginTransaction
+        nameWithType: UnitOfWork.BeginTransaction
+        qualifiedName: DAL.UOW.UnitOfWork.BeginTransaction
+    isDefinition: true
+    commentId: Overload:DAL.UOW.UnitOfWork.BeginTransaction
+  DAL.UOW.IUnitOfWork.BeginTransaction:
+    name:
+      CSharp:
+      - id: DAL.UOW.IUnitOfWork.BeginTransaction
+        name: BeginTransaction
+        nameWithType: IUnitOfWork.BeginTransaction
+        qualifiedName: DAL.UOW.IUnitOfWork.BeginTransaction
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: DAL.UOW.IUnitOfWork.BeginTransaction
+        name: BeginTransaction
+        nameWithType: IUnitOfWork.BeginTransaction
+        qualifiedName: DAL.UOW.IUnitOfWork.BeginTransaction
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: DAL.UOW.IUnitOfWork
+    commentId: M:DAL.UOW.IUnitOfWork.BeginTransaction
+  DAL.UOW.UnitOfWork.Commit*:
+    name:
+      CSharp:
+      - id: DAL.UOW.UnitOfWork.Commit*
+        name: Commit
+        nameWithType: UnitOfWork.Commit
+        qualifiedName: DAL.UOW.UnitOfWork.Commit
+      VB:
+      - id: DAL.UOW.UnitOfWork.Commit*
+        name: Commit
+        nameWithType: UnitOfWork.Commit
+        qualifiedName: DAL.UOW.UnitOfWork.Commit
+    isDefinition: true
+    commentId: Overload:DAL.UOW.UnitOfWork.Commit
+  DAL.UOW.IUnitOfWork.Commit:
+    name:
+      CSharp:
+      - id: DAL.UOW.IUnitOfWork.Commit
+        name: Commit
+        nameWithType: IUnitOfWork.Commit
+        qualifiedName: DAL.UOW.IUnitOfWork.Commit
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: DAL.UOW.IUnitOfWork.Commit
+        name: Commit
+        nameWithType: IUnitOfWork.Commit
+        qualifiedName: DAL.UOW.IUnitOfWork.Commit
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: DAL.UOW.IUnitOfWork
+    commentId: M:DAL.UOW.IUnitOfWork.Commit
+  DAL.UOW.UnitOfWork.Dispose*:
+    name:
+      CSharp:
+      - id: DAL.UOW.UnitOfWork.Dispose*
+        name: Dispose
+        nameWithType: UnitOfWork.Dispose
+        qualifiedName: DAL.UOW.UnitOfWork.Dispose
+      VB:
+      - id: DAL.UOW.UnitOfWork.Dispose*
+        name: Dispose
+        nameWithType: UnitOfWork.Dispose
+        qualifiedName: DAL.UOW.UnitOfWork.Dispose
+    isDefinition: true
+    commentId: Overload:DAL.UOW.UnitOfWork.Dispose
+  DAL.UOW.UnitOfWork.Rollback*:
+    name:
+      CSharp:
+      - id: DAL.UOW.UnitOfWork.Rollback*
+        name: Rollback
+        nameWithType: UnitOfWork.Rollback
+        qualifiedName: DAL.UOW.UnitOfWork.Rollback
+      VB:
+      - id: DAL.UOW.UnitOfWork.Rollback*
+        name: Rollback
+        nameWithType: UnitOfWork.Rollback
+        qualifiedName: DAL.UOW.UnitOfWork.Rollback
+    isDefinition: true
+    commentId: Overload:DAL.UOW.UnitOfWork.Rollback
+  DAL.UOW.IUnitOfWork.Rollback:
+    name:
+      CSharp:
+      - id: DAL.UOW.IUnitOfWork.Rollback
+        name: Rollback
+        nameWithType: IUnitOfWork.Rollback
+        qualifiedName: DAL.UOW.IUnitOfWork.Rollback
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: DAL.UOW.IUnitOfWork.Rollback
+        name: Rollback
+        nameWithType: IUnitOfWork.Rollback
+        qualifiedName: DAL.UOW.IUnitOfWork.Rollback
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: DAL.UOW.IUnitOfWork
+    commentId: M:DAL.UOW.IUnitOfWork.Rollback
+  DAL.UOW.UnitOfWork.GetRepository*:
+    name:
+      CSharp:
+      - id: DAL.UOW.UnitOfWork.GetRepository*
+        name: GetRepository
+        nameWithType: UnitOfWork.GetRepository
+        qualifiedName: DAL.UOW.UnitOfWork.GetRepository
+      VB:
+      - id: DAL.UOW.UnitOfWork.GetRepository*
+        name: GetRepository
+        nameWithType: UnitOfWork.GetRepository
+        qualifiedName: DAL.UOW.UnitOfWork.GetRepository
+    isDefinition: true
+    commentId: Overload:DAL.UOW.UnitOfWork.GetRepository
+  DAL.UOW.IUnitOfWork.GetRepository``1:
+    name:
+      CSharp:
+      - id: DAL.UOW.IUnitOfWork.GetRepository``1
+        name: GetRepository<T>
+        nameWithType: IUnitOfWork.GetRepository<T>
+        qualifiedName: DAL.UOW.IUnitOfWork.GetRepository<T>
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: DAL.UOW.IUnitOfWork.GetRepository``1
+        name: GetRepository(Of T)
+        nameWithType: IUnitOfWork.GetRepository(Of T)
+        qualifiedName: DAL.UOW.IUnitOfWork.GetRepository(Of T)
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: DAL.UOW.IUnitOfWork
+    commentId: M:DAL.UOW.IUnitOfWork.GetRepository``1
+  DAL.UOW.UnitOfWork:
+    name:
+      CSharp:
+      - id: DAL.UOW.UnitOfWork
+        name: UnitOfWork
+        nameWithType: UnitOfWork
+        qualifiedName: DAL.UOW.UnitOfWork
+      VB:
+      - id: DAL.UOW.UnitOfWork
+        name: UnitOfWork
+        nameWithType: UnitOfWork
+        qualifiedName: DAL.UOW.UnitOfWork
+    isDefinition: true
+    commentId: T:DAL.UOW.UnitOfWork
+  System.Threading.Tasks.Task`1:
+    name:
+      CSharp:
+      - id: System.Threading.Tasks.Task`1
+        name: Task
+        nameWithType: Task
+        qualifiedName: System.Threading.Tasks.Task
+        isExternal: true
+      - name: <
+        nameWithType: <
+        qualifiedName: <
+      - name: TResult
+        nameWithType: TResult
+        qualifiedName: TResult
+      - name: '>'
+        nameWithType: '>'
+        qualifiedName: '>'
+      VB:
+      - id: System.Threading.Tasks.Task`1
+        name: Task
+        nameWithType: Task
+        qualifiedName: System.Threading.Tasks.Task
+        isExternal: true
+      - name: '(Of '
+        nameWithType: '(Of '
+        qualifiedName: '(Of '
+      - name: TResult
+        nameWithType: TResult
+        qualifiedName: TResult
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    commentId: T:System.Threading.Tasks.Task`1
+  System.Threading.Tasks:
+    name:
+      CSharp:
+      - name: System.Threading.Tasks
+        nameWithType: System.Threading.Tasks
+        qualifiedName: System.Threading.Tasks
+        isExternal: true
+      VB:
+      - name: System.Threading.Tasks
+        nameWithType: System.Threading.Tasks
+        qualifiedName: System.Threading.Tasks
+    isDefinition: true
+    commentId: N:System.Threading.Tasks
+  System.Threading.Tasks.Task{{T}}:
+    name:
+      CSharp:
+      - id: System.Threading.Tasks.Task`1
+        name: Task
+        nameWithType: Task
+        qualifiedName: System.Threading.Tasks.Task
+        isExternal: true
+      - name: <
+        nameWithType: <
+        qualifiedName: <
+      - name: T
+        nameWithType: T
+        qualifiedName: T
+      - name: '>'
+        nameWithType: '>'
+        qualifiedName: '>'
+      VB:
+      - id: System.Threading.Tasks.Task`1
+        name: Task
+        nameWithType: Task
+        qualifiedName: System.Threading.Tasks.Task
+        isExternal: true
+      - name: '(Of '
+        nameWithType: '(Of '
+        qualifiedName: '(Of '
+      - name: T
+        nameWithType: T
+        qualifiedName: T
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: false
+    definition: System.Threading.Tasks.Task`1
+    parent: System.Threading.Tasks
+    commentId: T:System.Threading.Tasks.Task{`0}
+  System.Int32:
+    name:
+      CSharp:
+      - id: System.Int32
+        name: Int32
+        nameWithType: Int32
+        qualifiedName: System.Int32
+        isExternal: true
+      VB:
+      - id: System.Int32
+        name: Int32
+        nameWithType: Int32
+        qualifiedName: System.Int32
+        isExternal: true
+    isDefinition: true
+    parent: System
+    commentId: T:System.Int32
+  DAL.UOW.Repositories.IGenericRepository`1.GetByIdAsync*:
+    name:
+      CSharp:
+      - id: DAL.UOW.Repositories.IGenericRepository`1.GetByIdAsync*
+        name: GetByIdAsync
+        nameWithType: IGenericRepository<T>.GetByIdAsync
+        qualifiedName: DAL.UOW.Repositories.IGenericRepository<T>.GetByIdAsync
+      VB:
+      - id: DAL.UOW.Repositories.IGenericRepository`1.GetByIdAsync*
+        name: GetByIdAsync
+        nameWithType: IGenericRepository(Of T).GetByIdAsync
+        qualifiedName: DAL.UOW.Repositories.IGenericRepository(Of T).GetByIdAsync
+    isDefinition: true
+    commentId: Overload:DAL.UOW.Repositories.IGenericRepository`1.GetByIdAsync
+  System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{{T}}}:
+    name:
+      CSharp:
+      - id: System.Threading.Tasks.Task`1
+        name: Task
+        nameWithType: Task
+        qualifiedName: System.Threading.Tasks.Task
+        isExternal: true
+      - name: <
+        nameWithType: <
+        qualifiedName: <
+      - id: System.Collections.Generic.IEnumerable`1
+        name: IEnumerable
+        nameWithType: IEnumerable
+        qualifiedName: System.Collections.Generic.IEnumerable
+        isExternal: true
+      - name: <
+        nameWithType: <
+        qualifiedName: <
+      - name: T
+        nameWithType: T
+        qualifiedName: T
+      - name: '>'
+        nameWithType: '>'
+        qualifiedName: '>'
+      - name: '>'
+        nameWithType: '>'
+        qualifiedName: '>'
+      VB:
+      - id: System.Threading.Tasks.Task`1
+        name: Task
+        nameWithType: Task
+        qualifiedName: System.Threading.Tasks.Task
+        isExternal: true
+      - name: '(Of '
+        nameWithType: '(Of '
+        qualifiedName: '(Of '
+      - id: System.Collections.Generic.IEnumerable`1
+        name: IEnumerable
+        nameWithType: IEnumerable
+        qualifiedName: System.Collections.Generic.IEnumerable
+        isExternal: true
+      - name: '(Of '
+        nameWithType: '(Of '
+        qualifiedName: '(Of '
+      - name: T
+        nameWithType: T
+        qualifiedName: T
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: false
+    definition: System.Threading.Tasks.Task`1
+    parent: System.Threading.Tasks
+    commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{`0}}
+  DAL.UOW.Repositories.IGenericRepository`1.FindAllAsync*:
+    name:
+      CSharp:
+      - id: DAL.UOW.Repositories.IGenericRepository`1.FindAllAsync*
+        name: FindAllAsync
+        nameWithType: IGenericRepository<T>.FindAllAsync
+        qualifiedName: DAL.UOW.Repositories.IGenericRepository<T>.FindAllAsync
+      VB:
+      - id: DAL.UOW.Repositories.IGenericRepository`1.FindAllAsync*
+        name: FindAllAsync
+        nameWithType: IGenericRepository(Of T).FindAllAsync
+        qualifiedName: DAL.UOW.Repositories.IGenericRepository(Of T).FindAllAsync
+    isDefinition: true
+    commentId: Overload:DAL.UOW.Repositories.IGenericRepository`1.FindAllAsync
+  DAL.UOW.Repositories.IGenericRepository`1:
+    name:
+      CSharp:
+      - id: DAL.UOW.Repositories.IGenericRepository`1
+        name: IGenericRepository
+        nameWithType: IGenericRepository
+        qualifiedName: DAL.UOW.Repositories.IGenericRepository
+      - name: <
+        nameWithType: <
+        qualifiedName: <
+      - name: T
+        nameWithType: T
+        qualifiedName: T
+      - name: '>'
+        nameWithType: '>'
+        qualifiedName: '>'
+      VB:
+      - id: DAL.UOW.Repositories.IGenericRepository`1
+        name: IGenericRepository
+        nameWithType: IGenericRepository
+        qualifiedName: DAL.UOW.Repositories.IGenericRepository
+      - name: '(Of '
+        nameWithType: '(Of '
+        qualifiedName: '(Of '
+      - name: T
+        nameWithType: T
+        qualifiedName: T
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    commentId: T:DAL.UOW.Repositories.IGenericRepository`1
+  DAL.UOW.Repositories.IGenericRepository`1.GetByIdAsync(System.Int32):
+    name:
+      CSharp:
+      - id: DAL.UOW.Repositories.IGenericRepository`1.GetByIdAsync(System.Int32)
+        name: GetByIdAsync
+        nameWithType: IGenericRepository<T>.GetByIdAsync
+        qualifiedName: DAL.UOW.Repositories.IGenericRepository<T>.GetByIdAsync
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Int32
+        name: Int32
+        nameWithType: Int32
+        qualifiedName: System.Int32
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: DAL.UOW.Repositories.IGenericRepository`1.GetByIdAsync(System.Int32)
+        name: GetByIdAsync
+        nameWithType: IGenericRepository(Of T).GetByIdAsync
+        qualifiedName: DAL.UOW.Repositories.IGenericRepository(Of T).GetByIdAsync
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Int32
+        name: Int32
+        nameWithType: Int32
+        qualifiedName: System.Int32
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    commentId: M:DAL.UOW.Repositories.IGenericRepository`1.GetByIdAsync(System.Int32)
+  DAL.UOW.Repositories:
+    name:
+      CSharp:
+      - name: DAL.UOW.Repositories
+        nameWithType: DAL.UOW.Repositories
+        qualifiedName: DAL.UOW.Repositories
+      VB:
+      - name: DAL.UOW.Repositories
+        nameWithType: DAL.UOW.Repositories
+        qualifiedName: DAL.UOW.Repositories
+    isDefinition: true
+    commentId: N:DAL.UOW.Repositories
+  DAL.UOW.Repositories.IGenericRepository{BO.Entities.Offre}:
+    name:
+      CSharp:
+      - id: DAL.UOW.Repositories.IGenericRepository`1
+        name: IGenericRepository
+        nameWithType: IGenericRepository
+        qualifiedName: DAL.UOW.Repositories.IGenericRepository
+      - name: <
+        nameWithType: <
+        qualifiedName: <
+      - id: BO.Entities.Offre
+        name: Offre
+        nameWithType: Offre
+        qualifiedName: BO.Entities.Offre
+      - name: '>'
+        nameWithType: '>'
+        qualifiedName: '>'
+      VB:
+      - id: DAL.UOW.Repositories.IGenericRepository`1
+        name: IGenericRepository
+        nameWithType: IGenericRepository
+        qualifiedName: DAL.UOW.Repositories.IGenericRepository
+      - name: '(Of '
+        nameWithType: '(Of '
+        qualifiedName: '(Of '
+      - id: BO.Entities.Offre
+        name: Offre
+        nameWithType: Offre
+        qualifiedName: BO.Entities.Offre
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: false
+    definition: DAL.UOW.Repositories.IGenericRepository`1
+    parent: DAL.UOW.Repositories
+    commentId: T:DAL.UOW.Repositories.IGenericRepository{BO.Entities.Offre}
+  DAL.UOW.Repositories.IGenericRepository{BO.Entities.Offre}.GetByIdAsync(System.Int32):
+    name:
+      CSharp:
+      - id: DAL.UOW.Repositories.IGenericRepository`1.GetByIdAsync(System.Int32)
+        name: GetByIdAsync
+        nameWithType: IGenericRepository<Offre>.GetByIdAsync
+        qualifiedName: DAL.UOW.Repositories.IGenericRepository<BO.Entities.Offre>.GetByIdAsync
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Int32
+        name: Int32
+        nameWithType: Int32
+        qualifiedName: System.Int32
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: DAL.UOW.Repositories.IGenericRepository`1.GetByIdAsync(System.Int32)
+        name: GetByIdAsync
+        nameWithType: IGenericRepository(Of Offre).GetByIdAsync
+        qualifiedName: DAL.UOW.Repositories.IGenericRepository(Of BO.Entities.Offre).GetByIdAsync
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Int32
+        name: Int32
+        nameWithType: Int32
+        qualifiedName: System.Int32
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: false
+    definition: DAL.UOW.Repositories.IGenericRepository`1.GetByIdAsync(System.Int32)
+    parent: DAL.UOW.Repositories.IGenericRepository{BO.Entities.Offre}
+    commentId: M:DAL.UOW.Repositories.IGenericRepository{BO.Entities.Offre}.GetByIdAsync(System.Int32)
+  DAL.UOW.Repositories.IGenericRepository`1.FindAllAsync:
+    name:
+      CSharp:
+      - id: DAL.UOW.Repositories.IGenericRepository`1.FindAllAsync
+        name: FindAllAsync
+        nameWithType: IGenericRepository<T>.FindAllAsync
+        qualifiedName: DAL.UOW.Repositories.IGenericRepository<T>.FindAllAsync
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: DAL.UOW.Repositories.IGenericRepository`1.FindAllAsync
+        name: FindAllAsync
+        nameWithType: IGenericRepository(Of T).FindAllAsync
+        qualifiedName: DAL.UOW.Repositories.IGenericRepository(Of T).FindAllAsync
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    commentId: M:DAL.UOW.Repositories.IGenericRepository`1.FindAllAsync
+  DAL.UOW.Repositories.IGenericRepository{BO.Entities.Offre}.FindAllAsync:
+    name:
+      CSharp:
+      - id: DAL.UOW.Repositories.IGenericRepository`1.FindAllAsync
+        name: FindAllAsync
+        nameWithType: IGenericRepository<Offre>.FindAllAsync
+        qualifiedName: DAL.UOW.Repositories.IGenericRepository<BO.Entities.Offre>.FindAllAsync
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: DAL.UOW.Repositories.IGenericRepository`1.FindAllAsync
+        name: FindAllAsync
+        nameWithType: IGenericRepository(Of Offre).FindAllAsync
+        qualifiedName: DAL.UOW.Repositories.IGenericRepository(Of BO.Entities.Offre).FindAllAsync
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: false
+    definition: DAL.UOW.Repositories.IGenericRepository`1.FindAllAsync
+    parent: DAL.UOW.Repositories.IGenericRepository{BO.Entities.Offre}
+    commentId: M:DAL.UOW.Repositories.IGenericRepository{BO.Entities.Offre}.FindAllAsync
+  System.Threading.Tasks.Task{BO.Entities.Offre}:
+    name:
+      CSharp:
+      - id: System.Threading.Tasks.Task`1
+        name: Task
+        nameWithType: Task
+        qualifiedName: System.Threading.Tasks.Task
+        isExternal: true
+      - name: <
+        nameWithType: <
+        qualifiedName: <
+      - id: BO.Entities.Offre
+        name: Offre
+        nameWithType: Offre
+        qualifiedName: BO.Entities.Offre
+      - name: '>'
+        nameWithType: '>'
+        qualifiedName: '>'
+      VB:
+      - id: System.Threading.Tasks.Task`1
+        name: Task
+        nameWithType: Task
+        qualifiedName: System.Threading.Tasks.Task
+        isExternal: true
+      - name: '(Of '
+        nameWithType: '(Of '
+        qualifiedName: '(Of '
+      - id: BO.Entities.Offre
+        name: Offre
+        nameWithType: Offre
+        qualifiedName: BO.Entities.Offre
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: false
+    definition: System.Threading.Tasks.Task`1
+    parent: System.Threading.Tasks
+    commentId: T:System.Threading.Tasks.Task{BO.Entities.Offre}
+  DAL.UOW.Repositories.IOffreRepository.GetByTypeContratIdAsync*:
+    name:
+      CSharp:
+      - id: DAL.UOW.Repositories.IOffreRepository.GetByTypeContratIdAsync*
+        name: GetByTypeContratIdAsync
+        nameWithType: IOffreRepository.GetByTypeContratIdAsync
+        qualifiedName: DAL.UOW.Repositories.IOffreRepository.GetByTypeContratIdAsync
+      VB:
+      - id: DAL.UOW.Repositories.IOffreRepository.GetByTypeContratIdAsync*
+        name: GetByTypeContratIdAsync
+        nameWithType: IOffreRepository.GetByTypeContratIdAsync
+        qualifiedName: DAL.UOW.Repositories.IOffreRepository.GetByTypeContratIdAsync
+    isDefinition: true
+    commentId: Overload:DAL.UOW.Repositories.IOffreRepository.GetByTypeContratIdAsync
+  DAL.UOW.Repositories.IOffreRepository:
+    name:
+      CSharp:
+      - id: DAL.UOW.Repositories.IOffreRepository
+        name: IOffreRepository
+        nameWithType: IOffreRepository
+        qualifiedName: DAL.UOW.Repositories.IOffreRepository
+      VB:
+      - id: DAL.UOW.Repositories.IOffreRepository
+        name: IOffreRepository
+        nameWithType: IOffreRepository
+        qualifiedName: DAL.UOW.Repositories.IOffreRepository
+    isDefinition: true
+    parent: DAL.UOW.Repositories
+    commentId: T:DAL.UOW.Repositories.IOffreRepository
+  DAL.UOW.Repositories.SQLServer.OffreRepositorySQLServer.#ctor*:
+    name:
+      CSharp:
+      - id: DAL.UOW.Repositories.SQLServer.OffreRepositorySQLServer.#ctor*
+        name: OffreRepositorySQLServer
+        nameWithType: OffreRepositorySQLServer.OffreRepositorySQLServer
+        qualifiedName: DAL.UOW.Repositories.SQLServer.OffreRepositorySQLServer.OffreRepositorySQLServer
+      VB:
+      - id: DAL.UOW.Repositories.SQLServer.OffreRepositorySQLServer.#ctor*
+        name: OffreRepositorySQLServer
+        nameWithType: OffreRepositorySQLServer.OffreRepositorySQLServer
+        qualifiedName: DAL.UOW.Repositories.SQLServer.OffreRepositorySQLServer.OffreRepositorySQLServer
+    isDefinition: true
+    commentId: Overload:DAL.UOW.Repositories.SQLServer.OffreRepositorySQLServer.#ctor
+  System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{BO.Entities.Offre}}:
+    name:
+      CSharp:
+      - id: System.Threading.Tasks.Task`1
+        name: Task
+        nameWithType: Task
+        qualifiedName: System.Threading.Tasks.Task
+        isExternal: true
+      - name: <
+        nameWithType: <
+        qualifiedName: <
+      - id: System.Collections.Generic.IEnumerable`1
+        name: IEnumerable
+        nameWithType: IEnumerable
+        qualifiedName: System.Collections.Generic.IEnumerable
+        isExternal: true
+      - name: <
+        nameWithType: <
+        qualifiedName: <
+      - id: BO.Entities.Offre
+        name: Offre
+        nameWithType: Offre
+        qualifiedName: BO.Entities.Offre
+      - name: '>'
+        nameWithType: '>'
+        qualifiedName: '>'
+      - name: '>'
+        nameWithType: '>'
+        qualifiedName: '>'
+      VB:
+      - id: System.Threading.Tasks.Task`1
+        name: Task
+        nameWithType: Task
+        qualifiedName: System.Threading.Tasks.Task
+        isExternal: true
+      - name: '(Of '
+        nameWithType: '(Of '
+        qualifiedName: '(Of '
+      - id: System.Collections.Generic.IEnumerable`1
+        name: IEnumerable
+        nameWithType: IEnumerable
+        qualifiedName: System.Collections.Generic.IEnumerable
+        isExternal: true
+      - name: '(Of '
+        nameWithType: '(Of '
+        qualifiedName: '(Of '
+      - id: BO.Entities.Offre
+        name: Offre
+        nameWithType: Offre
+        qualifiedName: BO.Entities.Offre
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: false
+    definition: System.Threading.Tasks.Task`1
+    parent: System.Threading.Tasks
+    commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{BO.Entities.Offre}}
+  DAL.UOW.Repositories.SQLServer.OffreRepositorySQLServer.FindAllAsync*:
+    name:
+      CSharp:
+      - id: DAL.UOW.Repositories.SQLServer.OffreRepositorySQLServer.FindAllAsync*
+        name: FindAllAsync
+        nameWithType: OffreRepositorySQLServer.FindAllAsync
+        qualifiedName: DAL.UOW.Repositories.SQLServer.OffreRepositorySQLServer.FindAllAsync
+      VB:
+      - id: DAL.UOW.Repositories.SQLServer.OffreRepositorySQLServer.FindAllAsync*
+        name: FindAllAsync
+        nameWithType: OffreRepositorySQLServer.FindAllAsync
+        qualifiedName: DAL.UOW.Repositories.SQLServer.OffreRepositorySQLServer.FindAllAsync
+    isDefinition: true
+    commentId: Overload:DAL.UOW.Repositories.SQLServer.OffreRepositorySQLServer.FindAllAsync
+  DAL.UOW.Repositories.SQLServer.OffreRepositorySQLServer.GetByIdAsync*:
+    name:
+      CSharp:
+      - id: DAL.UOW.Repositories.SQLServer.OffreRepositorySQLServer.GetByIdAsync*
+        name: GetByIdAsync
+        nameWithType: OffreRepositorySQLServer.GetByIdAsync
+        qualifiedName: DAL.UOW.Repositories.SQLServer.OffreRepositorySQLServer.GetByIdAsync
+      VB:
+      - id: DAL.UOW.Repositories.SQLServer.OffreRepositorySQLServer.GetByIdAsync*
+        name: GetByIdAsync
+        nameWithType: OffreRepositorySQLServer.GetByIdAsync
+        qualifiedName: DAL.UOW.Repositories.SQLServer.OffreRepositorySQLServer.GetByIdAsync
+    isDefinition: true
+    commentId: Overload:DAL.UOW.Repositories.SQLServer.OffreRepositorySQLServer.GetByIdAsync
+  DAL.UOW.Repositories.SQLServer.OffreRepositorySQLServer.GetByTypeContratIdAsync*:
+    name:
+      CSharp:
+      - id: DAL.UOW.Repositories.SQLServer.OffreRepositorySQLServer.GetByTypeContratIdAsync*
+        name: GetByTypeContratIdAsync
+        nameWithType: OffreRepositorySQLServer.GetByTypeContratIdAsync
+        qualifiedName: DAL.UOW.Repositories.SQLServer.OffreRepositorySQLServer.GetByTypeContratIdAsync
+      VB:
+      - id: DAL.UOW.Repositories.SQLServer.OffreRepositorySQLServer.GetByTypeContratIdAsync*
+        name: GetByTypeContratIdAsync
+        nameWithType: OffreRepositorySQLServer.GetByTypeContratIdAsync
+        qualifiedName: DAL.UOW.Repositories.SQLServer.OffreRepositorySQLServer.GetByTypeContratIdAsync
+    isDefinition: true
+    commentId: Overload:DAL.UOW.Repositories.SQLServer.OffreRepositorySQLServer.GetByTypeContratIdAsync
+  DAL.UOW.Repositories.IOffreRepository.GetByTypeContratIdAsync(System.Int32):
+    name:
+      CSharp:
+      - id: DAL.UOW.Repositories.IOffreRepository.GetByTypeContratIdAsync(System.Int32)
+        name: GetByTypeContratIdAsync
+        nameWithType: IOffreRepository.GetByTypeContratIdAsync
+        qualifiedName: DAL.UOW.Repositories.IOffreRepository.GetByTypeContratIdAsync
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Int32
+        name: Int32
+        nameWithType: Int32
+        qualifiedName: System.Int32
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: DAL.UOW.Repositories.IOffreRepository.GetByTypeContratIdAsync(System.Int32)
+        name: GetByTypeContratIdAsync
+        nameWithType: IOffreRepository.GetByTypeContratIdAsync
+        qualifiedName: DAL.UOW.Repositories.IOffreRepository.GetByTypeContratIdAsync
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Int32
+        name: Int32
+        nameWithType: Int32
+        qualifiedName: System.Int32
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: DAL.UOW.Repositories.IOffreRepository
+    commentId: M:DAL.UOW.Repositories.IOffreRepository.GetByTypeContratIdAsync(System.Int32)
+  DAL.UOW.Repositories.SQLServer.OffreRepositorySQLServer:
+    name:
+      CSharp:
+      - id: DAL.UOW.Repositories.SQLServer.OffreRepositorySQLServer
+        name: OffreRepositorySQLServer
+        nameWithType: OffreRepositorySQLServer
+        qualifiedName: DAL.UOW.Repositories.SQLServer.OffreRepositorySQLServer
+      VB:
+      - id: DAL.UOW.Repositories.SQLServer.OffreRepositorySQLServer
+        name: OffreRepositorySQLServer
+        nameWithType: OffreRepositorySQLServer
+        qualifiedName: DAL.UOW.Repositories.SQLServer.OffreRepositorySQLServer
+    isDefinition: true
+    commentId: T:DAL.UOW.Repositories.SQLServer.OffreRepositorySQLServer
+  DAL.UOW.Repositories.SQLServer:
+    name:
+      CSharp:
+      - name: DAL.UOW.Repositories.SQLServer
+        nameWithType: DAL.UOW.Repositories.SQLServer
+        qualifiedName: DAL.UOW.Repositories.SQLServer
+      VB:
+      - name: DAL.UOW.Repositories.SQLServer
+        nameWithType: DAL.UOW.Repositories.SQLServer
+        qualifiedName: DAL.UOW.Repositories.SQLServer
+    isDefinition: true
+    commentId: N:DAL.UOW.Repositories.SQLServer

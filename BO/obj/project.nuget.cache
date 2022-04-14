@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "HjmNNXpBwr2h7OP6/9JHM00QL8427VU7++dv8lB+GpSberVGR4TwX/XPk+jkfv04qyQncgezGKiPKtz8Q7kvew==",
+  "success": true,
+  "projectFilePath": "C:\\DESKTOP\\JobChannel\\BO\\BO.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\cda4rive\\.nuget\\packages\\fluentvalidation\\10.4.0\\fluentvalidation.10.4.0.nupkg.sha512",
+    "C:\\Users\\cda4rive\\.nuget\\packages\\fluentvalidation.aspnetcore\\10.4.0\\fluentvalidation.aspnetcore.10.4.0.nupkg.sha512",
+    "C:\\Users\\cda4rive\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\10.4.0\\fluentvalidation.dependencyinjectionextensions.10.4.0.nupkg.sha512",
+    "C:\\Users\\cda4rive\\.nuget\\packages\\jetbrains.resharper.commandlinetools\\2021.3.3\\jetbrains.resharper.commandlinetools.2021.3.3.nupkg.sha512",
+    "C:\\Users\\cda4rive\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

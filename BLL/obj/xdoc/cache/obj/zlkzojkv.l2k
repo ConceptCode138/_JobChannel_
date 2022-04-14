@@ -1,0 +1,2488 @@
+id: BLL
+language: CSharp
+name:
+  Default: BLL
+qualifiedName:
+  Default: BLL
+type: Assembly
+modifiers: {}
+items:
+- id: BLL
+  commentId: N:BLL
+  language: CSharp
+  name:
+    CSharp: BLL
+    VB: BLL
+  nameWithType:
+    CSharp: BLL
+    VB: BLL
+  qualifiedName:
+    CSharp: BLL
+    VB: BLL
+  type: Namespace
+  assemblies:
+  - BLL
+  modifiers: {}
+  items:
+  - id: BLL.ExtensionInjectionD
+    commentId: T:BLL.ExtensionInjectionD
+    language: CSharp
+    name:
+      CSharp: ExtensionInjectionD
+      VB: ExtensionInjectionD
+    nameWithType:
+      CSharp: ExtensionInjectionD
+      VB: ExtensionInjectionD
+    qualifiedName:
+      CSharp: BLL.ExtensionInjectionD
+      VB: BLL.ExtensionInjectionD
+    type: Class
+    assemblies:
+    - BLL
+    namespace: BLL
+    source:
+      remote:
+        path: C:/DESKTOP/JobChannel/BLL/ExtensionInjectionD.cs
+      id: ExtensionInjectionD
+      path: ../BLL/ExtensionInjectionD.cs
+      startLine: 12
+    syntax:
+      content:
+        CSharp: public static class ExtensionInjectionD
+        VB: Public Module ExtensionInjectionD
+    inheritance:
+    - System.Object
+    inheritedMembers:
+    - System.Object.Equals(System.Object)
+    - System.Object.Equals(System.Object,System.Object)
+    - System.Object.GetHashCode
+    - System.Object.GetType
+    - System.Object.MemberwiseClone
+    - System.Object.ReferenceEquals(System.Object,System.Object)
+    - System.Object.ToString
+    modifiers:
+      CSharp:
+      - public
+      - static
+      - class
+      VB:
+      - Public
+      - Module
+    items:
+    - isExtensionMethod: true
+      id: BLL.ExtensionInjectionD.AddBLL(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+      commentId: M:BLL.ExtensionInjectionD.AddBLL(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+      language: CSharp
+      name:
+        CSharp: AddBLL(IServiceCollection)
+        VB: AddBLL(IServiceCollection)
+      nameWithType:
+        CSharp: ExtensionInjectionD.AddBLL(IServiceCollection)
+        VB: ExtensionInjectionD.AddBLL(IServiceCollection)
+      qualifiedName:
+        CSharp: BLL.ExtensionInjectionD.AddBLL(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+        VB: BLL.ExtensionInjectionD.AddBLL(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+      type: Method
+      assemblies:
+      - BLL
+      namespace: BLL
+      source:
+        remote:
+          path: C:/DESKTOP/JobChannel/BLL/ExtensionInjectionD.cs
+        id: AddBLL
+        path: ../BLL/ExtensionInjectionD.cs
+        startLine: 14
+      syntax:
+        content:
+          CSharp: public static void AddBLL(this IServiceCollection services)
+          VB: >-
+            <ExtensionAttribute>
+
+            Public Shared Sub AddBLL(services As IServiceCollection)
+        parameters:
+        - id: services
+          type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+      overload: BLL.ExtensionInjectionD.AddBLL*
+      modifiers:
+        CSharp:
+        - public
+        - static
+        VB:
+        - Public
+        - Shared
+- id: BLL.Interfaces
+  commentId: N:BLL.Interfaces
+  language: CSharp
+  name:
+    CSharp: BLL.Interfaces
+    VB: BLL.Interfaces
+  nameWithType:
+    CSharp: BLL.Interfaces
+    VB: BLL.Interfaces
+  qualifiedName:
+    CSharp: BLL.Interfaces
+    VB: BLL.Interfaces
+  type: Namespace
+  assemblies:
+  - BLL
+  modifiers: {}
+  items:
+  - id: BLL.Interfaces.IOffreService
+    commentId: T:BLL.Interfaces.IOffreService
+    language: CSharp
+    name:
+      CSharp: IOffreService
+      VB: IOffreService
+    nameWithType:
+      CSharp: IOffreService
+      VB: IOffreService
+    qualifiedName:
+      CSharp: BLL.Interfaces.IOffreService
+      VB: BLL.Interfaces.IOffreService
+    type: Interface
+    assemblies:
+    - BLL
+    namespace: BLL.Interfaces
+    source:
+      remote:
+        path: C:/DESKTOP/JobChannel/BLL/Interfaces/IOffreService.cs
+      id: IOffreService
+      path: ../BLL/Interfaces/IOffreService.cs
+      startLine: 10
+    syntax:
+      content:
+        CSharp: public interface IOffreService
+        VB: Public Interface IOffreService
+    modifiers:
+      CSharp:
+      - public
+      - interface
+      VB:
+      - Public
+      - Interface
+    items:
+    - id: BLL.Interfaces.IOffreService.GetAllOffresInCatalogAsync
+      commentId: M:BLL.Interfaces.IOffreService.GetAllOffresInCatalogAsync
+      language: CSharp
+      name:
+        CSharp: GetAllOffresInCatalogAsync()
+        VB: GetAllOffresInCatalogAsync()
+      nameWithType:
+        CSharp: IOffreService.GetAllOffresInCatalogAsync()
+        VB: IOffreService.GetAllOffresInCatalogAsync()
+      qualifiedName:
+        CSharp: BLL.Interfaces.IOffreService.GetAllOffresInCatalogAsync()
+        VB: BLL.Interfaces.IOffreService.GetAllOffresInCatalogAsync()
+      type: Method
+      assemblies:
+      - BLL
+      namespace: BLL.Interfaces
+      source:
+        remote:
+          path: C:/DESKTOP/JobChannel/BLL/Interfaces/IOffreService.cs
+        id: GetAllOffresInCatalogAsync
+        path: ../BLL/Interfaces/IOffreService.cs
+        startLine: 19
+      summary: "\nAllow to retrieve the list of offers\n"
+      example: []
+      syntax:
+        content:
+          CSharp: Task<IEnumerable<Offre>> GetAllOffresInCatalogAsync()
+          VB: Function GetAllOffresInCatalogAsync As Task(Of IEnumerable(Of Offre))
+        return:
+          type: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{BO.Entities.Offre}}
+          description: reurn a collection
+      overload: BLL.Interfaces.IOffreService.GetAllOffresInCatalogAsync*
+      modifiers:
+        CSharp: []
+        VB: []
+    - id: BLL.Interfaces.IOffreService.GetOffreByIDAsync(System.Int32)
+      commentId: M:BLL.Interfaces.IOffreService.GetOffreByIDAsync(System.Int32)
+      language: CSharp
+      name:
+        CSharp: GetOffreByIDAsync(Int32)
+        VB: GetOffreByIDAsync(Int32)
+      nameWithType:
+        CSharp: IOffreService.GetOffreByIDAsync(Int32)
+        VB: IOffreService.GetOffreByIDAsync(Int32)
+      qualifiedName:
+        CSharp: BLL.Interfaces.IOffreService.GetOffreByIDAsync(System.Int32)
+        VB: BLL.Interfaces.IOffreService.GetOffreByIDAsync(System.Int32)
+      type: Method
+      assemblies:
+      - BLL
+      namespace: BLL.Interfaces
+      source:
+        remote:
+          path: C:/DESKTOP/JobChannel/BLL/Interfaces/IOffreService.cs
+        id: GetOffreByIDAsync
+        path: ../BLL/Interfaces/IOffreService.cs
+        startLine: 27
+      summary: "\nAllow to retrieve an offer by him ID\n"
+      example: []
+      syntax:
+        content:
+          CSharp: Task<Offre> GetOffreByIDAsync(int idOffre)
+          VB: Function GetOffreByIDAsync(idOffre As Integer) As Task(Of Offre)
+        parameters:
+        - id: idOffre
+          type: System.Int32
+          description: ''
+        return:
+          type: System.Threading.Tasks.Task{BO.Entities.Offre}
+          description: return an offer
+      overload: BLL.Interfaces.IOffreService.GetOffreByIDAsync*
+      modifiers:
+        CSharp: []
+        VB: []
+    - id: BLL.Interfaces.IOffreService.CreateOffreAsync(BO.Entities.Offre)
+      commentId: M:BLL.Interfaces.IOffreService.CreateOffreAsync(BO.Entities.Offre)
+      language: CSharp
+      name:
+        CSharp: CreateOffreAsync(Offre)
+        VB: CreateOffreAsync(Offre)
+      nameWithType:
+        CSharp: IOffreService.CreateOffreAsync(Offre)
+        VB: IOffreService.CreateOffreAsync(Offre)
+      qualifiedName:
+        CSharp: BLL.Interfaces.IOffreService.CreateOffreAsync(BO.Entities.Offre)
+        VB: BLL.Interfaces.IOffreService.CreateOffreAsync(BO.Entities.Offre)
+      type: Method
+      assemblies:
+      - BLL
+      namespace: BLL.Interfaces
+      source:
+        remote:
+          path: C:/DESKTOP/JobChannel/BLL/Interfaces/IOffreService.cs
+        id: CreateOffreAsync
+        path: ../BLL/Interfaces/IOffreService.cs
+        startLine: 34
+      summary: "\nAllow to create a new offer in database\n"
+      example: []
+      syntax:
+        content:
+          CSharp: Task<Offre> CreateOffreAsync(Offre offre)
+          VB: Function CreateOffreAsync(offre As Offre) As Task(Of Offre)
+        parameters:
+        - id: offre
+          type: BO.Entities.Offre
+          description: ''
+        return:
+          type: System.Threading.Tasks.Task{BO.Entities.Offre}
+          description: return the offer created
+      overload: BLL.Interfaces.IOffreService.CreateOffreAsync*
+      modifiers:
+        CSharp: []
+        VB: []
+    - id: BLL.Interfaces.IOffreService.UpdateOffreAsync(BO.Entities.Offre)
+      commentId: M:BLL.Interfaces.IOffreService.UpdateOffreAsync(BO.Entities.Offre)
+      language: CSharp
+      name:
+        CSharp: UpdateOffreAsync(Offre)
+        VB: UpdateOffreAsync(Offre)
+      nameWithType:
+        CSharp: IOffreService.UpdateOffreAsync(Offre)
+        VB: IOffreService.UpdateOffreAsync(Offre)
+      qualifiedName:
+        CSharp: BLL.Interfaces.IOffreService.UpdateOffreAsync(BO.Entities.Offre)
+        VB: BLL.Interfaces.IOffreService.UpdateOffreAsync(BO.Entities.Offre)
+      type: Method
+      assemblies:
+      - BLL
+      namespace: BLL.Interfaces
+      source:
+        remote:
+          path: C:/DESKTOP/JobChannel/BLL/Interfaces/IOffreService.cs
+        id: UpdateOffreAsync
+        path: ../BLL/Interfaces/IOffreService.cs
+        startLine: 41
+      summary: "\nAllow to modify an offer selected by him ID\n"
+      example: []
+      syntax:
+        content:
+          CSharp: Task<Offre> UpdateOffreAsync(Offre offre)
+          VB: Function UpdateOffreAsync(offre As Offre) As Task(Of Offre)
+        parameters:
+        - id: offre
+          type: BO.Entities.Offre
+          description: ''
+        return:
+          type: System.Threading.Tasks.Task{BO.Entities.Offre}
+          description: return the offer updated
+      overload: BLL.Interfaces.IOffreService.UpdateOffreAsync*
+      modifiers:
+        CSharp: []
+        VB: []
+    - id: BLL.Interfaces.IOffreService.DeleteOffreAsync(System.Int32)
+      commentId: M:BLL.Interfaces.IOffreService.DeleteOffreAsync(System.Int32)
+      language: CSharp
+      name:
+        CSharp: DeleteOffreAsync(Int32)
+        VB: DeleteOffreAsync(Int32)
+      nameWithType:
+        CSharp: IOffreService.DeleteOffreAsync(Int32)
+        VB: IOffreService.DeleteOffreAsync(Int32)
+      qualifiedName:
+        CSharp: BLL.Interfaces.IOffreService.DeleteOffreAsync(System.Int32)
+        VB: BLL.Interfaces.IOffreService.DeleteOffreAsync(System.Int32)
+      type: Method
+      assemblies:
+      - BLL
+      namespace: BLL.Interfaces
+      source:
+        remote:
+          path: C:/DESKTOP/JobChannel/BLL/Interfaces/IOffreService.cs
+        id: DeleteOffreAsync
+        path: ../BLL/Interfaces/IOffreService.cs
+        startLine: 48
+      summary: "\nAllow to delete an offer selected by him ID\n"
+      example: []
+      syntax:
+        content:
+          CSharp: Task DeleteOffreAsync(int idOffre)
+          VB: Function DeleteOffreAsync(idOffre As Integer) As Task
+        parameters:
+        - id: idOffre
+          type: System.Int32
+          description: ''
+        return:
+          type: System.Threading.Tasks.Task
+          description: return void
+      overload: BLL.Interfaces.IOffreService.DeleteOffreAsync*
+      modifiers:
+        CSharp: []
+        VB: []
+  - id: BLL.Interfaces.ITraceService
+    commentId: T:BLL.Interfaces.ITraceService
+    language: CSharp
+    name:
+      CSharp: ITraceService
+      VB: ITraceService
+    nameWithType:
+      CSharp: ITraceService
+      VB: ITraceService
+    qualifiedName:
+      CSharp: BLL.Interfaces.ITraceService
+      VB: BLL.Interfaces.ITraceService
+    type: Interface
+    assemblies:
+    - BLL
+    namespace: BLL.Interfaces
+    source:
+      remote:
+        path: C:/DESKTOP/JobChannel/BLL/Interfaces/ITraceService.cs
+      id: ITraceService
+      path: ../BLL/Interfaces/ITraceService.cs
+      startLine: 8
+    syntax:
+      content:
+        CSharp: public interface ITraceService
+        VB: Public Interface ITraceService
+    modifiers:
+      CSharp:
+      - public
+      - interface
+      VB:
+      - Public
+      - Interface
+    items:
+    - id: BLL.Interfaces.ITraceService.TraceOnServer(System.String)
+      commentId: M:BLL.Interfaces.ITraceService.TraceOnServer(System.String)
+      language: CSharp
+      name:
+        CSharp: TraceOnServer(String)
+        VB: TraceOnServer(String)
+      nameWithType:
+        CSharp: ITraceService.TraceOnServer(String)
+        VB: ITraceService.TraceOnServer(String)
+      qualifiedName:
+        CSharp: BLL.Interfaces.ITraceService.TraceOnServer(System.String)
+        VB: BLL.Interfaces.ITraceService.TraceOnServer(System.String)
+      type: Method
+      assemblies:
+      - BLL
+      namespace: BLL.Interfaces
+      source:
+        remote:
+          path: C:/DESKTOP/JobChannel/BLL/Interfaces/ITraceService.cs
+        id: TraceOnServer
+        path: ../BLL/Interfaces/ITraceService.cs
+        startLine: 14
+      summary: "\nPermet de laisser des traces sur le serveur pour toute manipulation\n"
+      example: []
+      syntax:
+        content:
+          CSharp: void TraceOnServer(string message)
+          VB: Sub TraceOnServer(message As String)
+        parameters:
+        - id: message
+          type: System.String
+          description: ''
+      overload: BLL.Interfaces.ITraceService.TraceOnServer*
+      modifiers:
+        CSharp: []
+        VB: []
+    - id: BLL.Interfaces.ITraceService.TraceOnFileTXT(System.String)
+      commentId: M:BLL.Interfaces.ITraceService.TraceOnFileTXT(System.String)
+      language: CSharp
+      name:
+        CSharp: TraceOnFileTXT(String)
+        VB: TraceOnFileTXT(String)
+      nameWithType:
+        CSharp: ITraceService.TraceOnFileTXT(String)
+        VB: ITraceService.TraceOnFileTXT(String)
+      qualifiedName:
+        CSharp: BLL.Interfaces.ITraceService.TraceOnFileTXT(System.String)
+        VB: BLL.Interfaces.ITraceService.TraceOnFileTXT(System.String)
+      type: Method
+      assemblies:
+      - BLL
+      namespace: BLL.Interfaces
+      source:
+        remote:
+          path: C:/DESKTOP/JobChannel/BLL/Interfaces/ITraceService.cs
+        id: TraceOnFileTXT
+        path: ../BLL/Interfaces/ITraceService.cs
+        startLine: 21
+      summary: "\nPermet de laisser une trace écrite dans un fichier texte permettant ainsi de suivre toutes les manipulations.\n"
+      example: []
+      syntax:
+        content:
+          CSharp: string TraceOnFileTXT(string message)
+          VB: Function TraceOnFileTXT(message As String) As String
+        parameters:
+        - id: message
+          type: System.String
+          description: ''
+        return:
+          type: System.String
+          description: du texte dans un fichier
+      overload: BLL.Interfaces.ITraceService.TraceOnFileTXT*
+      modifiers:
+        CSharp: []
+        VB: []
+- id: BLL.Services
+  commentId: N:BLL.Services
+  language: CSharp
+  name:
+    CSharp: BLL.Services
+    VB: BLL.Services
+  nameWithType:
+    CSharp: BLL.Services
+    VB: BLL.Services
+  qualifiedName:
+    CSharp: BLL.Services
+    VB: BLL.Services
+  type: Namespace
+  assemblies:
+  - BLL
+  modifiers: {}
+  items:
+  - id: BLL.Services.OffreService
+    commentId: T:BLL.Services.OffreService
+    language: CSharp
+    name:
+      CSharp: OffreService
+      VB: OffreService
+    nameWithType:
+      CSharp: OffreService
+      VB: OffreService
+    qualifiedName:
+      CSharp: BLL.Services.OffreService
+      VB: BLL.Services.OffreService
+    type: Class
+    assemblies:
+    - BLL
+    namespace: BLL.Services
+    source:
+      remote:
+        path: C:/DESKTOP/JobChannel/BLL/Services/OffreService.cs
+      id: OffreService
+      path: ../BLL/Services/OffreService.cs
+      startLine: 12
+    syntax:
+      content:
+        CSharp: 'class OffreService : IOffreService'
+        VB: >-
+          Class OffreService
+
+              Implements IOffreService
+    inheritance:
+    - System.Object
+    implements:
+    - BLL.Interfaces.IOffreService
+    inheritedMembers:
+    - System.Object.Equals(System.Object)
+    - System.Object.Equals(System.Object,System.Object)
+    - System.Object.GetHashCode
+    - System.Object.GetType
+    - System.Object.MemberwiseClone
+    - System.Object.ReferenceEquals(System.Object,System.Object)
+    - System.Object.ToString
+    modifiers:
+      CSharp:
+      - class
+      VB:
+      - Class
+    items:
+    - id: BLL.Services.OffreService.PATH
+      commentId: F:BLL.Services.OffreService.PATH
+      language: CSharp
+      name:
+        CSharp: PATH
+        VB: PATH
+      nameWithType:
+        CSharp: OffreService.PATH
+        VB: OffreService.PATH
+      qualifiedName:
+        CSharp: BLL.Services.OffreService.PATH
+        VB: BLL.Services.OffreService.PATH
+      type: Field
+      assemblies:
+      - BLL
+      namespace: BLL.Services
+      source:
+        remote:
+          path: C:/DESKTOP/JobChannel/BLL/Services/OffreService.cs
+        id: PATH
+        path: ../BLL/Services/OffreService.cs
+        startLine: 15
+      syntax:
+        content:
+          CSharp: string PATH
+          VB: PATH As String
+        return:
+          type: System.String
+      modifiers:
+        CSharp: []
+        VB: []
+    - id: BLL.Services.OffreService._traceService
+      commentId: F:BLL.Services.OffreService._traceService
+      language: CSharp
+      name:
+        CSharp: _traceService
+        VB: _traceService
+      nameWithType:
+        CSharp: OffreService._traceService
+        VB: OffreService._traceService
+      qualifiedName:
+        CSharp: BLL.Services.OffreService._traceService
+        VB: BLL.Services.OffreService._traceService
+      type: Field
+      assemblies:
+      - BLL
+      namespace: BLL.Services
+      source:
+        remote:
+          path: C:/DESKTOP/JobChannel/BLL/Services/OffreService.cs
+        id: _traceService
+        path: ../BLL/Services/OffreService.cs
+        startLine: 18
+      syntax:
+        content:
+          CSharp: readonly ITraceService _traceService
+          VB: ReadOnly _traceService As ITraceService
+        return:
+          type: BLL.Interfaces.ITraceService
+      modifiers:
+        CSharp:
+        - readonly
+        VB:
+        - ReadOnly
+    - id: BLL.Services.OffreService.#ctor(BLL.Interfaces.ITraceService)
+      commentId: M:BLL.Services.OffreService.#ctor(BLL.Interfaces.ITraceService)
+      language: CSharp
+      name:
+        CSharp: OffreService(ITraceService)
+        VB: OffreService(ITraceService)
+      nameWithType:
+        CSharp: OffreService.OffreService(ITraceService)
+        VB: OffreService.OffreService(ITraceService)
+      qualifiedName:
+        CSharp: BLL.Services.OffreService.OffreService(BLL.Interfaces.ITraceService)
+        VB: BLL.Services.OffreService.OffreService(BLL.Interfaces.ITraceService)
+      type: Constructor
+      assemblies:
+      - BLL
+      namespace: BLL.Services
+      source:
+        remote:
+          path: C:/DESKTOP/JobChannel/BLL/Services/OffreService.cs
+        id: .ctor
+        path: ../BLL/Services/OffreService.cs
+        startLine: 22
+      syntax:
+        content:
+          CSharp: public OffreService(ITraceService traceService)
+          VB: Public Sub New(traceService As ITraceService)
+        parameters:
+        - id: traceService
+          type: BLL.Interfaces.ITraceService
+      overload: BLL.Services.OffreService.#ctor*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: BLL.Services.OffreService.GetAllOffresInCatalogAsync
+      commentId: M:BLL.Services.OffreService.GetAllOffresInCatalogAsync
+      language: CSharp
+      name:
+        CSharp: GetAllOffresInCatalogAsync()
+        VB: GetAllOffresInCatalogAsync()
+      nameWithType:
+        CSharp: OffreService.GetAllOffresInCatalogAsync()
+        VB: OffreService.GetAllOffresInCatalogAsync()
+      qualifiedName:
+        CSharp: BLL.Services.OffreService.GetAllOffresInCatalogAsync()
+        VB: BLL.Services.OffreService.GetAllOffresInCatalogAsync()
+      type: Method
+      assemblies:
+      - BLL
+      namespace: BLL.Services
+      source:
+        remote:
+          path: C:/DESKTOP/JobChannel/BLL/Services/OffreService.cs
+        id: GetAllOffresInCatalogAsync
+        path: ../BLL/Services/OffreService.cs
+        startLine: 35
+      summary: "\nRetrieve the list offers\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public async Task<IEnumerable<Offre>> GetAllOffresInCatalogAsync()
+          VB: Public Function GetAllOffresInCatalogAsync As Task(Of IEnumerable(Of Offre))
+        return:
+          type: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{BO.Entities.Offre}}
+          description: return an offer collection
+      overload: BLL.Services.OffreService.GetAllOffresInCatalogAsync*
+      implements:
+      - BLL.Interfaces.IOffreService.GetAllOffresInCatalogAsync
+      modifiers:
+        CSharp:
+        - public
+        - async
+        VB:
+        - Public
+    - id: BLL.Services.OffreService.CreateOffreAsync(BO.Entities.Offre)
+      commentId: M:BLL.Services.OffreService.CreateOffreAsync(BO.Entities.Offre)
+      language: CSharp
+      name:
+        CSharp: CreateOffreAsync(Offre)
+        VB: CreateOffreAsync(Offre)
+      nameWithType:
+        CSharp: OffreService.CreateOffreAsync(Offre)
+        VB: OffreService.CreateOffreAsync(Offre)
+      qualifiedName:
+        CSharp: BLL.Services.OffreService.CreateOffreAsync(BO.Entities.Offre)
+        VB: BLL.Services.OffreService.CreateOffreAsync(BO.Entities.Offre)
+      type: Method
+      assemblies:
+      - BLL
+      namespace: BLL.Services
+      source:
+        remote:
+          path: C:/DESKTOP/JobChannel/BLL/Services/OffreService.cs
+        id: CreateOffreAsync
+        path: ../BLL/Services/OffreService.cs
+        startLine: 60
+      syntax:
+        content:
+          CSharp: public async Task<Offre> CreateOffreAsync(Offre offre)
+          VB: Public Function CreateOffreAsync(offre As Offre) As Task(Of Offre)
+        parameters:
+        - id: offre
+          type: BO.Entities.Offre
+        return:
+          type: System.Threading.Tasks.Task{BO.Entities.Offre}
+      overload: BLL.Services.OffreService.CreateOffreAsync*
+      implements:
+      - BLL.Interfaces.IOffreService.CreateOffreAsync(BO.Entities.Offre)
+      modifiers:
+        CSharp:
+        - public
+        - async
+        VB:
+        - Public
+    - id: BLL.Services.OffreService.DeleteOffreAsync(System.Int32)
+      commentId: M:BLL.Services.OffreService.DeleteOffreAsync(System.Int32)
+      language: CSharp
+      name:
+        CSharp: DeleteOffreAsync(Int32)
+        VB: DeleteOffreAsync(Int32)
+      nameWithType:
+        CSharp: OffreService.DeleteOffreAsync(Int32)
+        VB: OffreService.DeleteOffreAsync(Int32)
+      qualifiedName:
+        CSharp: BLL.Services.OffreService.DeleteOffreAsync(System.Int32)
+        VB: BLL.Services.OffreService.DeleteOffreAsync(System.Int32)
+      type: Method
+      assemblies:
+      - BLL
+      namespace: BLL.Services
+      source:
+        remote:
+          path: C:/DESKTOP/JobChannel/BLL/Services/OffreService.cs
+        id: DeleteOffreAsync
+        path: ../BLL/Services/OffreService.cs
+        startLine: 84
+      syntax:
+        content:
+          CSharp: public async Task DeleteOffreAsync(int idOffre)
+          VB: Public Function DeleteOffreAsync(idOffre As Integer) As Task
+        parameters:
+        - id: idOffre
+          type: System.Int32
+        return:
+          type: System.Threading.Tasks.Task
+      overload: BLL.Services.OffreService.DeleteOffreAsync*
+      implements:
+      - BLL.Interfaces.IOffreService.DeleteOffreAsync(System.Int32)
+      modifiers:
+        CSharp:
+        - public
+        - async
+        VB:
+        - Public
+    - id: BLL.Services.OffreService.GetOffreByIDAsync(System.Int32)
+      commentId: M:BLL.Services.OffreService.GetOffreByIDAsync(System.Int32)
+      language: CSharp
+      name:
+        CSharp: GetOffreByIDAsync(Int32)
+        VB: GetOffreByIDAsync(Int32)
+      nameWithType:
+        CSharp: OffreService.GetOffreByIDAsync(Int32)
+        VB: OffreService.GetOffreByIDAsync(Int32)
+      qualifiedName:
+        CSharp: BLL.Services.OffreService.GetOffreByIDAsync(System.Int32)
+        VB: BLL.Services.OffreService.GetOffreByIDAsync(System.Int32)
+      type: Method
+      assemblies:
+      - BLL
+      namespace: BLL.Services
+      source:
+        remote:
+          path: C:/DESKTOP/JobChannel/BLL/Services/OffreService.cs
+        id: GetOffreByIDAsync
+        path: ../BLL/Services/OffreService.cs
+        startLine: 107
+      summary: "\nRetrieve the offer by the Id.\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public async Task<Offre> GetOffreByIDAsync(int idOffre)
+          VB: Public Function GetOffreByIDAsync(idOffre As Integer) As Task(Of Offre)
+        parameters:
+        - id: idOffre
+          type: System.Int32
+          description: id of offer to retrieve
+        return:
+          type: System.Threading.Tasks.Task{BO.Entities.Offre}
+          description: return an offer
+      overload: BLL.Services.OffreService.GetOffreByIDAsync*
+      implements:
+      - BLL.Interfaces.IOffreService.GetOffreByIDAsync(System.Int32)
+      modifiers:
+        CSharp:
+        - public
+        - async
+        VB:
+        - Public
+    - id: BLL.Services.OffreService.UpdateOffreAsync(BO.Entities.Offre)
+      commentId: M:BLL.Services.OffreService.UpdateOffreAsync(BO.Entities.Offre)
+      language: CSharp
+      name:
+        CSharp: UpdateOffreAsync(Offre)
+        VB: UpdateOffreAsync(Offre)
+      nameWithType:
+        CSharp: OffreService.UpdateOffreAsync(Offre)
+        VB: OffreService.UpdateOffreAsync(Offre)
+      qualifiedName:
+        CSharp: BLL.Services.OffreService.UpdateOffreAsync(BO.Entities.Offre)
+        VB: BLL.Services.OffreService.UpdateOffreAsync(BO.Entities.Offre)
+      type: Method
+      assemblies:
+      - BLL
+      namespace: BLL.Services
+      source:
+        remote:
+          path: C:/DESKTOP/JobChannel/BLL/Services/OffreService.cs
+        id: UpdateOffreAsync
+        path: ../BLL/Services/OffreService.cs
+        startLine: 133
+      syntax:
+        content:
+          CSharp: public async Task<Offre> UpdateOffreAsync(Offre offre)
+          VB: Public Function UpdateOffreAsync(offre As Offre) As Task(Of Offre)
+        parameters:
+        - id: offre
+          type: BO.Entities.Offre
+        return:
+          type: System.Threading.Tasks.Task{BO.Entities.Offre}
+      overload: BLL.Services.OffreService.UpdateOffreAsync*
+      implements:
+      - BLL.Interfaces.IOffreService.UpdateOffreAsync(BO.Entities.Offre)
+      modifiers:
+        CSharp:
+        - public
+        - async
+        VB:
+        - Public
+    - id: BLL.Services.OffreService.TypeContratsDB
+      commentId: P:BLL.Services.OffreService.TypeContratsDB
+      language: CSharp
+      name:
+        CSharp: TypeContratsDB
+        VB: TypeContratsDB
+      nameWithType:
+        CSharp: OffreService.TypeContratsDB
+        VB: OffreService.TypeContratsDB
+      qualifiedName:
+        CSharp: BLL.Services.OffreService.TypeContratsDB
+        VB: BLL.Services.OffreService.TypeContratsDB
+      type: Property
+      assemblies:
+      - BLL
+      namespace: BLL.Services
+      source:
+        remote:
+          path: C:/DESKTOP/JobChannel/BLL/Services/OffreService.cs
+        id: TypeContratsDB
+        path: ../BLL/Services/OffreService.cs
+        startLine: 170
+      syntax:
+        content:
+          CSharp: public static List<TypeContrat> TypeContratsDB { get; set; }
+          VB: Public Shared Property TypeContratsDB As List(Of TypeContrat)
+        parameters: []
+        return:
+          type: System.Collections.Generic.List{BO.Entities.TypeContrat}
+      overload: BLL.Services.OffreService.TypeContratsDB*
+      modifiers:
+        CSharp:
+        - public
+        - static
+        - get
+        - set
+        VB:
+        - Public
+        - Shared
+    - id: BLL.Services.OffreService.TypePostesDB
+      commentId: P:BLL.Services.OffreService.TypePostesDB
+      language: CSharp
+      name:
+        CSharp: TypePostesDB
+        VB: TypePostesDB
+      nameWithType:
+        CSharp: OffreService.TypePostesDB
+        VB: OffreService.TypePostesDB
+      qualifiedName:
+        CSharp: BLL.Services.OffreService.TypePostesDB
+        VB: BLL.Services.OffreService.TypePostesDB
+      type: Property
+      assemblies:
+      - BLL
+      namespace: BLL.Services
+      source:
+        remote:
+          path: C:/DESKTOP/JobChannel/BLL/Services/OffreService.cs
+        id: TypePostesDB
+        path: ../BLL/Services/OffreService.cs
+        startLine: 179
+      syntax:
+        content:
+          CSharp: public static List<TypePoste> TypePostesDB { get; set; }
+          VB: Public Shared Property TypePostesDB As List(Of TypePoste)
+        parameters: []
+        return:
+          type: System.Collections.Generic.List{BO.Entities.TypePoste}
+      overload: BLL.Services.OffreService.TypePostesDB*
+      modifiers:
+        CSharp:
+        - public
+        - static
+        - get
+        - set
+        VB:
+        - Public
+        - Shared
+    - id: BLL.Services.OffreService.RegionsDB
+      commentId: P:BLL.Services.OffreService.RegionsDB
+      language: CSharp
+      name:
+        CSharp: RegionsDB
+        VB: RegionsDB
+      nameWithType:
+        CSharp: OffreService.RegionsDB
+        VB: OffreService.RegionsDB
+      qualifiedName:
+        CSharp: BLL.Services.OffreService.RegionsDB
+        VB: BLL.Services.OffreService.RegionsDB
+      type: Property
+      assemblies:
+      - BLL
+      namespace: BLL.Services
+      source:
+        remote:
+          path: C:/DESKTOP/JobChannel/BLL/Services/OffreService.cs
+        id: RegionsDB
+        path: ../BLL/Services/OffreService.cs
+        startLine: 189
+      syntax:
+        content:
+          CSharp: public static List<Region> RegionsDB { get; set; }
+          VB: Public Shared Property RegionsDB As List(Of Region)
+        parameters: []
+        return:
+          type: System.Collections.Generic.List{BO.Entities.Region}
+      overload: BLL.Services.OffreService.RegionsDB*
+      modifiers:
+        CSharp:
+        - public
+        - static
+        - get
+        - set
+        VB:
+        - Public
+        - Shared
+    - id: BLL.Services.OffreService.offresDB
+      commentId: P:BLL.Services.OffreService.offresDB
+      language: CSharp
+      name:
+        CSharp: offresDB
+        VB: offresDB
+      nameWithType:
+        CSharp: OffreService.offresDB
+        VB: OffreService.offresDB
+      qualifiedName:
+        CSharp: BLL.Services.OffreService.offresDB
+        VB: BLL.Services.OffreService.offresDB
+      type: Property
+      assemblies:
+      - BLL
+      namespace: BLL.Services
+      source:
+        remote:
+          path: C:/DESKTOP/JobChannel/BLL/Services/OffreService.cs
+        id: offresDB
+        path: ../BLL/Services/OffreService.cs
+        startLine: 214
+      syntax:
+        content:
+          CSharp: public static List<Offre> offresDB { get; set; }
+          VB: Public Shared Property offresDB As List(Of Offre)
+        parameters: []
+        return:
+          type: System.Collections.Generic.List{BO.Entities.Offre}
+      overload: BLL.Services.OffreService.offresDB*
+      modifiers:
+        CSharp:
+        - public
+        - static
+        - get
+        - set
+        VB:
+        - Public
+        - Shared
+  - id: BLL.Services.TraceService
+    commentId: T:BLL.Services.TraceService
+    language: CSharp
+    name:
+      CSharp: TraceService
+      VB: TraceService
+    nameWithType:
+      CSharp: TraceService
+      VB: TraceService
+    qualifiedName:
+      CSharp: BLL.Services.TraceService
+      VB: BLL.Services.TraceService
+    type: Class
+    assemblies:
+    - BLL
+    namespace: BLL.Services
+    source:
+      remote:
+        path: C:/DESKTOP/JobChannel/BLL/Services/TraceService.cs
+      id: TraceService
+      path: ../BLL/Services/TraceService.cs
+      startLine: 11
+    syntax:
+      content:
+        CSharp: 'class TraceService : ITraceService'
+        VB: >-
+          Class TraceService
+
+              Implements ITraceService
+    inheritance:
+    - System.Object
+    implements:
+    - BLL.Interfaces.ITraceService
+    inheritedMembers:
+    - System.Object.Equals(System.Object)
+    - System.Object.Equals(System.Object,System.Object)
+    - System.Object.GetHashCode
+    - System.Object.GetType
+    - System.Object.MemberwiseClone
+    - System.Object.ReferenceEquals(System.Object,System.Object)
+    - System.Object.ToString
+    modifiers:
+      CSharp:
+      - class
+      VB:
+      - Class
+    items:
+    - isEii: true
+      id: BLL.Services.TraceService.BLL#Interfaces#ITraceService#TraceOnFileTXT(System.String)
+      commentId: M:BLL.Services.TraceService.BLL#Interfaces#ITraceService#TraceOnFileTXT(System.String)
+      language: CSharp
+      name:
+        CSharp: ITraceService.TraceOnFileTXT(String)
+        VB: BLL.Interfaces.ITraceService.TraceOnFileTXT(String)
+      nameWithType:
+        CSharp: TraceService.ITraceService.TraceOnFileTXT(String)
+        VB: TraceService.BLL.Interfaces.ITraceService.TraceOnFileTXT(String)
+      qualifiedName:
+        CSharp: BLL.Services.TraceService.BLL.Interfaces.ITraceService.TraceOnFileTXT(System.String)
+        VB: BLL.Services.TraceService.BLL.Interfaces.ITraceService.TraceOnFileTXT(System.String)
+      type: Method
+      assemblies:
+      - BLL
+      namespace: BLL.Services
+      source:
+        remote:
+          path: C:/DESKTOP/JobChannel/BLL/Services/TraceService.cs
+        id: BLL.Interfaces.ITraceService.TraceOnFileTXT
+        path: ../BLL/Services/TraceService.cs
+        startLine: 13
+      syntax:
+        content:
+          CSharp: string ITraceService.TraceOnFileTXT(string message)
+          VB: Function BLL.Interfaces.ITraceService.TraceOnFileTXT(message As String) As String Implements ITraceService.TraceOnFileTXT
+        parameters:
+        - id: message
+          type: System.String
+        return:
+          type: System.String
+      overload: BLL.Services.TraceService.BLL#Interfaces#ITraceService#TraceOnFileTXT*
+      implements:
+      - BLL.Interfaces.ITraceService.TraceOnFileTXT(System.String)
+      modifiers:
+        CSharp: []
+        VB: []
+    - isEii: true
+      id: BLL.Services.TraceService.BLL#Interfaces#ITraceService#TraceOnServer(System.String)
+      commentId: M:BLL.Services.TraceService.BLL#Interfaces#ITraceService#TraceOnServer(System.String)
+      language: CSharp
+      name:
+        CSharp: ITraceService.TraceOnServer(String)
+        VB: BLL.Interfaces.ITraceService.TraceOnServer(String)
+      nameWithType:
+        CSharp: TraceService.ITraceService.TraceOnServer(String)
+        VB: TraceService.BLL.Interfaces.ITraceService.TraceOnServer(String)
+      qualifiedName:
+        CSharp: BLL.Services.TraceService.BLL.Interfaces.ITraceService.TraceOnServer(System.String)
+        VB: BLL.Services.TraceService.BLL.Interfaces.ITraceService.TraceOnServer(System.String)
+      type: Method
+      assemblies:
+      - BLL
+      namespace: BLL.Services
+      source:
+        remote:
+          path: C:/DESKTOP/JobChannel/BLL/Services/TraceService.cs
+        id: BLL.Interfaces.ITraceService.TraceOnServer
+        path: ../BLL/Services/TraceService.cs
+        startLine: 21
+      syntax:
+        content:
+          CSharp: void ITraceService.TraceOnServer(string message)
+          VB: Sub BLL.Interfaces.ITraceService.TraceOnServer(message As String) Implements ITraceService.TraceOnServer
+        parameters:
+        - id: message
+          type: System.String
+      overload: BLL.Services.TraceService.BLL#Interfaces#ITraceService#TraceOnServer*
+      implements:
+      - BLL.Interfaces.ITraceService.TraceOnServer(System.String)
+      modifiers:
+        CSharp: []
+        VB: []
+references:
+  System:
+    name:
+      CSharp:
+      - name: System
+        nameWithType: System
+        qualifiedName: System
+        isExternal: true
+      VB:
+      - name: System
+        nameWithType: System
+        qualifiedName: System
+    isDefinition: true
+    commentId: N:System
+  System.Object:
+    name:
+      CSharp:
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      VB:
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+    isDefinition: true
+    parent: System
+    commentId: T:System.Object
+  System.Object.Equals(System.Object):
+    name:
+      CSharp:
+      - id: System.Object.Equals(System.Object)
+        name: Equals
+        nameWithType: Object.Equals
+        qualifiedName: System.Object.Equals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.Equals(System.Object)
+        name: Equals
+        nameWithType: Object.Equals
+        qualifiedName: System.Object.Equals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.Equals(System.Object)
+  System.Object.Equals(System.Object,System.Object):
+    name:
+      CSharp:
+      - id: System.Object.Equals(System.Object,System.Object)
+        name: Equals
+        nameWithType: Object.Equals
+        qualifiedName: System.Object.Equals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.Equals(System.Object,System.Object)
+        name: Equals
+        nameWithType: Object.Equals
+        qualifiedName: System.Object.Equals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.Equals(System.Object,System.Object)
+  System.Object.GetHashCode:
+    name:
+      CSharp:
+      - id: System.Object.GetHashCode
+        name: GetHashCode
+        nameWithType: Object.GetHashCode
+        qualifiedName: System.Object.GetHashCode
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.GetHashCode
+        name: GetHashCode
+        nameWithType: Object.GetHashCode
+        qualifiedName: System.Object.GetHashCode
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.GetHashCode
+  System.Object.GetType:
+    name:
+      CSharp:
+      - id: System.Object.GetType
+        name: GetType
+        nameWithType: Object.GetType
+        qualifiedName: System.Object.GetType
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.GetType
+        name: GetType
+        nameWithType: Object.GetType
+        qualifiedName: System.Object.GetType
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.GetType
+  System.Object.MemberwiseClone:
+    name:
+      CSharp:
+      - id: System.Object.MemberwiseClone
+        name: MemberwiseClone
+        nameWithType: Object.MemberwiseClone
+        qualifiedName: System.Object.MemberwiseClone
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.MemberwiseClone
+        name: MemberwiseClone
+        nameWithType: Object.MemberwiseClone
+        qualifiedName: System.Object.MemberwiseClone
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.MemberwiseClone
+  System.Object.ReferenceEquals(System.Object,System.Object):
+    name:
+      CSharp:
+      - id: System.Object.ReferenceEquals(System.Object,System.Object)
+        name: ReferenceEquals
+        nameWithType: Object.ReferenceEquals
+        qualifiedName: System.Object.ReferenceEquals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.ReferenceEquals(System.Object,System.Object)
+        name: ReferenceEquals
+        nameWithType: Object.ReferenceEquals
+        qualifiedName: System.Object.ReferenceEquals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  System.Object.ToString:
+    name:
+      CSharp:
+      - id: System.Object.ToString
+        name: ToString
+        nameWithType: Object.ToString
+        qualifiedName: System.Object.ToString
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.ToString
+        name: ToString
+        nameWithType: Object.ToString
+        qualifiedName: System.Object.ToString
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.ToString
+  Microsoft.Extensions.DependencyInjection:
+    name:
+      CSharp:
+      - name: Microsoft.Extensions.DependencyInjection
+        nameWithType: Microsoft.Extensions.DependencyInjection
+        qualifiedName: Microsoft.Extensions.DependencyInjection
+        isExternal: true
+      VB:
+      - name: Microsoft.Extensions.DependencyInjection
+        nameWithType: Microsoft.Extensions.DependencyInjection
+        qualifiedName: Microsoft.Extensions.DependencyInjection
+    isDefinition: true
+    commentId: N:Microsoft.Extensions.DependencyInjection
+  Microsoft.Extensions.DependencyInjection.IServiceCollection:
+    name:
+      CSharp:
+      - id: Microsoft.Extensions.DependencyInjection.IServiceCollection
+        name: IServiceCollection
+        nameWithType: IServiceCollection
+        qualifiedName: Microsoft.Extensions.DependencyInjection.IServiceCollection
+        isExternal: true
+      VB:
+      - id: Microsoft.Extensions.DependencyInjection.IServiceCollection
+        name: IServiceCollection
+        nameWithType: IServiceCollection
+        qualifiedName: Microsoft.Extensions.DependencyInjection.IServiceCollection
+        isExternal: true
+    isDefinition: true
+    parent: Microsoft.Extensions.DependencyInjection
+    commentId: T:Microsoft.Extensions.DependencyInjection.IServiceCollection
+  BLL.ExtensionInjectionD.AddBLL*:
+    name:
+      CSharp:
+      - id: BLL.ExtensionInjectionD.AddBLL*
+        name: AddBLL
+        nameWithType: ExtensionInjectionD.AddBLL
+        qualifiedName: BLL.ExtensionInjectionD.AddBLL
+      VB:
+      - id: BLL.ExtensionInjectionD.AddBLL*
+        name: AddBLL
+        nameWithType: ExtensionInjectionD.AddBLL
+        qualifiedName: BLL.ExtensionInjectionD.AddBLL
+    isDefinition: true
+    commentId: Overload:BLL.ExtensionInjectionD.AddBLL
+  BLL.ExtensionInjectionD:
+    name:
+      CSharp:
+      - id: BLL.ExtensionInjectionD
+        name: ExtensionInjectionD
+        nameWithType: ExtensionInjectionD
+        qualifiedName: BLL.ExtensionInjectionD
+      VB:
+      - id: BLL.ExtensionInjectionD
+        name: ExtensionInjectionD
+        nameWithType: ExtensionInjectionD
+        qualifiedName: BLL.ExtensionInjectionD
+    isDefinition: true
+    commentId: T:BLL.ExtensionInjectionD
+  BLL:
+    name:
+      CSharp:
+      - name: BLL
+        nameWithType: BLL
+        qualifiedName: BLL
+      VB:
+      - name: BLL
+        nameWithType: BLL
+        qualifiedName: BLL
+    isDefinition: true
+    commentId: N:BLL
+  System.Threading.Tasks.Task`1:
+    name:
+      CSharp:
+      - id: System.Threading.Tasks.Task`1
+        name: Task
+        nameWithType: Task
+        qualifiedName: System.Threading.Tasks.Task
+        isExternal: true
+      - name: <
+        nameWithType: <
+        qualifiedName: <
+      - name: TResult
+        nameWithType: TResult
+        qualifiedName: TResult
+      - name: '>'
+        nameWithType: '>'
+        qualifiedName: '>'
+      VB:
+      - id: System.Threading.Tasks.Task`1
+        name: Task
+        nameWithType: Task
+        qualifiedName: System.Threading.Tasks.Task
+        isExternal: true
+      - name: '(Of '
+        nameWithType: '(Of '
+        qualifiedName: '(Of '
+      - name: TResult
+        nameWithType: TResult
+        qualifiedName: TResult
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    commentId: T:System.Threading.Tasks.Task`1
+  System.Threading.Tasks:
+    name:
+      CSharp:
+      - name: System.Threading.Tasks
+        nameWithType: System.Threading.Tasks
+        qualifiedName: System.Threading.Tasks
+        isExternal: true
+      VB:
+      - name: System.Threading.Tasks
+        nameWithType: System.Threading.Tasks
+        qualifiedName: System.Threading.Tasks
+    isDefinition: true
+    commentId: N:System.Threading.Tasks
+  System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{BO.Entities.Offre}}:
+    name:
+      CSharp:
+      - id: System.Threading.Tasks.Task`1
+        name: Task
+        nameWithType: Task
+        qualifiedName: System.Threading.Tasks.Task
+        isExternal: true
+      - name: <
+        nameWithType: <
+        qualifiedName: <
+      - id: System.Collections.Generic.IEnumerable`1
+        name: IEnumerable
+        nameWithType: IEnumerable
+        qualifiedName: System.Collections.Generic.IEnumerable
+        isExternal: true
+      - name: <
+        nameWithType: <
+        qualifiedName: <
+      - id: BO.Entities.Offre
+        name: Offre
+        nameWithType: Offre
+        qualifiedName: BO.Entities.Offre
+      - name: '>'
+        nameWithType: '>'
+        qualifiedName: '>'
+      - name: '>'
+        nameWithType: '>'
+        qualifiedName: '>'
+      VB:
+      - id: System.Threading.Tasks.Task`1
+        name: Task
+        nameWithType: Task
+        qualifiedName: System.Threading.Tasks.Task
+        isExternal: true
+      - name: '(Of '
+        nameWithType: '(Of '
+        qualifiedName: '(Of '
+      - id: System.Collections.Generic.IEnumerable`1
+        name: IEnumerable
+        nameWithType: IEnumerable
+        qualifiedName: System.Collections.Generic.IEnumerable
+        isExternal: true
+      - name: '(Of '
+        nameWithType: '(Of '
+        qualifiedName: '(Of '
+      - id: BO.Entities.Offre
+        name: Offre
+        nameWithType: Offre
+        qualifiedName: BO.Entities.Offre
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: false
+    definition: System.Threading.Tasks.Task`1
+    parent: System.Threading.Tasks
+    commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{BO.Entities.Offre}}
+  BLL.Interfaces.IOffreService.GetAllOffresInCatalogAsync*:
+    name:
+      CSharp:
+      - id: BLL.Interfaces.IOffreService.GetAllOffresInCatalogAsync*
+        name: GetAllOffresInCatalogAsync
+        nameWithType: IOffreService.GetAllOffresInCatalogAsync
+        qualifiedName: BLL.Interfaces.IOffreService.GetAllOffresInCatalogAsync
+      VB:
+      - id: BLL.Interfaces.IOffreService.GetAllOffresInCatalogAsync*
+        name: GetAllOffresInCatalogAsync
+        nameWithType: IOffreService.GetAllOffresInCatalogAsync
+        qualifiedName: BLL.Interfaces.IOffreService.GetAllOffresInCatalogAsync
+    isDefinition: true
+    commentId: Overload:BLL.Interfaces.IOffreService.GetAllOffresInCatalogAsync
+  System.Threading.Tasks.Task{BO.Entities.Offre}:
+    name:
+      CSharp:
+      - id: System.Threading.Tasks.Task`1
+        name: Task
+        nameWithType: Task
+        qualifiedName: System.Threading.Tasks.Task
+        isExternal: true
+      - name: <
+        nameWithType: <
+        qualifiedName: <
+      - id: BO.Entities.Offre
+        name: Offre
+        nameWithType: Offre
+        qualifiedName: BO.Entities.Offre
+      - name: '>'
+        nameWithType: '>'
+        qualifiedName: '>'
+      VB:
+      - id: System.Threading.Tasks.Task`1
+        name: Task
+        nameWithType: Task
+        qualifiedName: System.Threading.Tasks.Task
+        isExternal: true
+      - name: '(Of '
+        nameWithType: '(Of '
+        qualifiedName: '(Of '
+      - id: BO.Entities.Offre
+        name: Offre
+        nameWithType: Offre
+        qualifiedName: BO.Entities.Offre
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: false
+    definition: System.Threading.Tasks.Task`1
+    parent: System.Threading.Tasks
+    commentId: T:System.Threading.Tasks.Task{BO.Entities.Offre}
+  System.Int32:
+    name:
+      CSharp:
+      - id: System.Int32
+        name: Int32
+        nameWithType: Int32
+        qualifiedName: System.Int32
+        isExternal: true
+      VB:
+      - id: System.Int32
+        name: Int32
+        nameWithType: Int32
+        qualifiedName: System.Int32
+        isExternal: true
+    isDefinition: true
+    parent: System
+    commentId: T:System.Int32
+  BLL.Interfaces.IOffreService.GetOffreByIDAsync*:
+    name:
+      CSharp:
+      - id: BLL.Interfaces.IOffreService.GetOffreByIDAsync*
+        name: GetOffreByIDAsync
+        nameWithType: IOffreService.GetOffreByIDAsync
+        qualifiedName: BLL.Interfaces.IOffreService.GetOffreByIDAsync
+      VB:
+      - id: BLL.Interfaces.IOffreService.GetOffreByIDAsync*
+        name: GetOffreByIDAsync
+        nameWithType: IOffreService.GetOffreByIDAsync
+        qualifiedName: BLL.Interfaces.IOffreService.GetOffreByIDAsync
+    isDefinition: true
+    commentId: Overload:BLL.Interfaces.IOffreService.GetOffreByIDAsync
+  BO.Entities:
+    name:
+      CSharp:
+      - name: BO.Entities
+        nameWithType: BO.Entities
+        qualifiedName: BO.Entities
+      VB:
+      - name: BO.Entities
+        nameWithType: BO.Entities
+        qualifiedName: BO.Entities
+    isDefinition: true
+    commentId: N:BO.Entities
+  BO.Entities.Offre:
+    name:
+      CSharp:
+      - id: BO.Entities.Offre
+        name: Offre
+        nameWithType: Offre
+        qualifiedName: BO.Entities.Offre
+      VB:
+      - id: BO.Entities.Offre
+        name: Offre
+        nameWithType: Offre
+        qualifiedName: BO.Entities.Offre
+    isDefinition: true
+    parent: BO.Entities
+    commentId: T:BO.Entities.Offre
+  BLL.Interfaces.IOffreService.CreateOffreAsync*:
+    name:
+      CSharp:
+      - id: BLL.Interfaces.IOffreService.CreateOffreAsync*
+        name: CreateOffreAsync
+        nameWithType: IOffreService.CreateOffreAsync
+        qualifiedName: BLL.Interfaces.IOffreService.CreateOffreAsync
+      VB:
+      - id: BLL.Interfaces.IOffreService.CreateOffreAsync*
+        name: CreateOffreAsync
+        nameWithType: IOffreService.CreateOffreAsync
+        qualifiedName: BLL.Interfaces.IOffreService.CreateOffreAsync
+    isDefinition: true
+    commentId: Overload:BLL.Interfaces.IOffreService.CreateOffreAsync
+  BLL.Interfaces.IOffreService.UpdateOffreAsync*:
+    name:
+      CSharp:
+      - id: BLL.Interfaces.IOffreService.UpdateOffreAsync*
+        name: UpdateOffreAsync
+        nameWithType: IOffreService.UpdateOffreAsync
+        qualifiedName: BLL.Interfaces.IOffreService.UpdateOffreAsync
+      VB:
+      - id: BLL.Interfaces.IOffreService.UpdateOffreAsync*
+        name: UpdateOffreAsync
+        nameWithType: IOffreService.UpdateOffreAsync
+        qualifiedName: BLL.Interfaces.IOffreService.UpdateOffreAsync
+    isDefinition: true
+    commentId: Overload:BLL.Interfaces.IOffreService.UpdateOffreAsync
+  System.Threading.Tasks.Task:
+    name:
+      CSharp:
+      - id: System.Threading.Tasks.Task
+        name: Task
+        nameWithType: Task
+        qualifiedName: System.Threading.Tasks.Task
+        isExternal: true
+      VB:
+      - id: System.Threading.Tasks.Task
+        name: Task
+        nameWithType: Task
+        qualifiedName: System.Threading.Tasks.Task
+        isExternal: true
+    isDefinition: true
+    parent: System.Threading.Tasks
+    commentId: T:System.Threading.Tasks.Task
+  BLL.Interfaces.IOffreService.DeleteOffreAsync*:
+    name:
+      CSharp:
+      - id: BLL.Interfaces.IOffreService.DeleteOffreAsync*
+        name: DeleteOffreAsync
+        nameWithType: IOffreService.DeleteOffreAsync
+        qualifiedName: BLL.Interfaces.IOffreService.DeleteOffreAsync
+      VB:
+      - id: BLL.Interfaces.IOffreService.DeleteOffreAsync*
+        name: DeleteOffreAsync
+        nameWithType: IOffreService.DeleteOffreAsync
+        qualifiedName: BLL.Interfaces.IOffreService.DeleteOffreAsync
+    isDefinition: true
+    commentId: Overload:BLL.Interfaces.IOffreService.DeleteOffreAsync
+  BLL.Interfaces.IOffreService:
+    name:
+      CSharp:
+      - id: BLL.Interfaces.IOffreService
+        name: IOffreService
+        nameWithType: IOffreService
+        qualifiedName: BLL.Interfaces.IOffreService
+      VB:
+      - id: BLL.Interfaces.IOffreService
+        name: IOffreService
+        nameWithType: IOffreService
+        qualifiedName: BLL.Interfaces.IOffreService
+    isDefinition: true
+    parent: BLL.Interfaces
+    commentId: T:BLL.Interfaces.IOffreService
+  System.String:
+    name:
+      CSharp:
+      - id: System.String
+        name: String
+        nameWithType: String
+        qualifiedName: System.String
+        isExternal: true
+      VB:
+      - id: System.String
+        name: String
+        nameWithType: String
+        qualifiedName: System.String
+        isExternal: true
+    isDefinition: true
+    parent: System
+    commentId: T:System.String
+  BLL.Interfaces.ITraceService.TraceOnServer*:
+    name:
+      CSharp:
+      - id: BLL.Interfaces.ITraceService.TraceOnServer*
+        name: TraceOnServer
+        nameWithType: ITraceService.TraceOnServer
+        qualifiedName: BLL.Interfaces.ITraceService.TraceOnServer
+      VB:
+      - id: BLL.Interfaces.ITraceService.TraceOnServer*
+        name: TraceOnServer
+        nameWithType: ITraceService.TraceOnServer
+        qualifiedName: BLL.Interfaces.ITraceService.TraceOnServer
+    isDefinition: true
+    commentId: Overload:BLL.Interfaces.ITraceService.TraceOnServer
+  BLL.Interfaces.ITraceService.TraceOnFileTXT*:
+    name:
+      CSharp:
+      - id: BLL.Interfaces.ITraceService.TraceOnFileTXT*
+        name: TraceOnFileTXT
+        nameWithType: ITraceService.TraceOnFileTXT
+        qualifiedName: BLL.Interfaces.ITraceService.TraceOnFileTXT
+      VB:
+      - id: BLL.Interfaces.ITraceService.TraceOnFileTXT*
+        name: TraceOnFileTXT
+        nameWithType: ITraceService.TraceOnFileTXT
+        qualifiedName: BLL.Interfaces.ITraceService.TraceOnFileTXT
+    isDefinition: true
+    commentId: Overload:BLL.Interfaces.ITraceService.TraceOnFileTXT
+  BLL.Interfaces.ITraceService:
+    name:
+      CSharp:
+      - id: BLL.Interfaces.ITraceService
+        name: ITraceService
+        nameWithType: ITraceService
+        qualifiedName: BLL.Interfaces.ITraceService
+      VB:
+      - id: BLL.Interfaces.ITraceService
+        name: ITraceService
+        nameWithType: ITraceService
+        qualifiedName: BLL.Interfaces.ITraceService
+    isDefinition: true
+    parent: BLL.Interfaces
+    commentId: T:BLL.Interfaces.ITraceService
+  BLL.Interfaces:
+    name:
+      CSharp:
+      - name: BLL.Interfaces
+        nameWithType: BLL.Interfaces
+        qualifiedName: BLL.Interfaces
+      VB:
+      - name: BLL.Interfaces
+        nameWithType: BLL.Interfaces
+        qualifiedName: BLL.Interfaces
+    isDefinition: true
+    commentId: N:BLL.Interfaces
+  BLL.Services.OffreService.#ctor*:
+    name:
+      CSharp:
+      - id: BLL.Services.OffreService.#ctor*
+        name: OffreService
+        nameWithType: OffreService.OffreService
+        qualifiedName: BLL.Services.OffreService.OffreService
+      VB:
+      - id: BLL.Services.OffreService.#ctor*
+        name: OffreService
+        nameWithType: OffreService.OffreService
+        qualifiedName: BLL.Services.OffreService.OffreService
+    isDefinition: true
+    commentId: Overload:BLL.Services.OffreService.#ctor
+  BLL.Services.OffreService.GetAllOffresInCatalogAsync*:
+    name:
+      CSharp:
+      - id: BLL.Services.OffreService.GetAllOffresInCatalogAsync*
+        name: GetAllOffresInCatalogAsync
+        nameWithType: OffreService.GetAllOffresInCatalogAsync
+        qualifiedName: BLL.Services.OffreService.GetAllOffresInCatalogAsync
+      VB:
+      - id: BLL.Services.OffreService.GetAllOffresInCatalogAsync*
+        name: GetAllOffresInCatalogAsync
+        nameWithType: OffreService.GetAllOffresInCatalogAsync
+        qualifiedName: BLL.Services.OffreService.GetAllOffresInCatalogAsync
+    isDefinition: true
+    commentId: Overload:BLL.Services.OffreService.GetAllOffresInCatalogAsync
+  BLL.Interfaces.IOffreService.GetAllOffresInCatalogAsync:
+    name:
+      CSharp:
+      - id: BLL.Interfaces.IOffreService.GetAllOffresInCatalogAsync
+        name: GetAllOffresInCatalogAsync
+        nameWithType: IOffreService.GetAllOffresInCatalogAsync
+        qualifiedName: BLL.Interfaces.IOffreService.GetAllOffresInCatalogAsync
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: BLL.Interfaces.IOffreService.GetAllOffresInCatalogAsync
+        name: GetAllOffresInCatalogAsync
+        nameWithType: IOffreService.GetAllOffresInCatalogAsync
+        qualifiedName: BLL.Interfaces.IOffreService.GetAllOffresInCatalogAsync
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: BLL.Interfaces.IOffreService
+    commentId: M:BLL.Interfaces.IOffreService.GetAllOffresInCatalogAsync
+  BLL.Services.OffreService.CreateOffreAsync*:
+    name:
+      CSharp:
+      - id: BLL.Services.OffreService.CreateOffreAsync*
+        name: CreateOffreAsync
+        nameWithType: OffreService.CreateOffreAsync
+        qualifiedName: BLL.Services.OffreService.CreateOffreAsync
+      VB:
+      - id: BLL.Services.OffreService.CreateOffreAsync*
+        name: CreateOffreAsync
+        nameWithType: OffreService.CreateOffreAsync
+        qualifiedName: BLL.Services.OffreService.CreateOffreAsync
+    isDefinition: true
+    commentId: Overload:BLL.Services.OffreService.CreateOffreAsync
+  BLL.Interfaces.IOffreService.CreateOffreAsync(BO.Entities.Offre):
+    name:
+      CSharp:
+      - id: BLL.Interfaces.IOffreService.CreateOffreAsync(BO.Entities.Offre)
+        name: CreateOffreAsync
+        nameWithType: IOffreService.CreateOffreAsync
+        qualifiedName: BLL.Interfaces.IOffreService.CreateOffreAsync
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: BO.Entities.Offre
+        name: Offre
+        nameWithType: Offre
+        qualifiedName: BO.Entities.Offre
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: BLL.Interfaces.IOffreService.CreateOffreAsync(BO.Entities.Offre)
+        name: CreateOffreAsync
+        nameWithType: IOffreService.CreateOffreAsync
+        qualifiedName: BLL.Interfaces.IOffreService.CreateOffreAsync
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: BO.Entities.Offre
+        name: Offre
+        nameWithType: Offre
+        qualifiedName: BO.Entities.Offre
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: BLL.Interfaces.IOffreService
+    commentId: M:BLL.Interfaces.IOffreService.CreateOffreAsync(BO.Entities.Offre)
+  BLL.Services.OffreService.DeleteOffreAsync*:
+    name:
+      CSharp:
+      - id: BLL.Services.OffreService.DeleteOffreAsync*
+        name: DeleteOffreAsync
+        nameWithType: OffreService.DeleteOffreAsync
+        qualifiedName: BLL.Services.OffreService.DeleteOffreAsync
+      VB:
+      - id: BLL.Services.OffreService.DeleteOffreAsync*
+        name: DeleteOffreAsync
+        nameWithType: OffreService.DeleteOffreAsync
+        qualifiedName: BLL.Services.OffreService.DeleteOffreAsync
+    isDefinition: true
+    commentId: Overload:BLL.Services.OffreService.DeleteOffreAsync
+  BLL.Interfaces.IOffreService.DeleteOffreAsync(System.Int32):
+    name:
+      CSharp:
+      - id: BLL.Interfaces.IOffreService.DeleteOffreAsync(System.Int32)
+        name: DeleteOffreAsync
+        nameWithType: IOffreService.DeleteOffreAsync
+        qualifiedName: BLL.Interfaces.IOffreService.DeleteOffreAsync
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Int32
+        name: Int32
+        nameWithType: Int32
+        qualifiedName: System.Int32
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: BLL.Interfaces.IOffreService.DeleteOffreAsync(System.Int32)
+        name: DeleteOffreAsync
+        nameWithType: IOffreService.DeleteOffreAsync
+        qualifiedName: BLL.Interfaces.IOffreService.DeleteOffreAsync
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Int32
+        name: Int32
+        nameWithType: Int32
+        qualifiedName: System.Int32
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: BLL.Interfaces.IOffreService
+    commentId: M:BLL.Interfaces.IOffreService.DeleteOffreAsync(System.Int32)
+  BLL.Services.OffreService.GetOffreByIDAsync*:
+    name:
+      CSharp:
+      - id: BLL.Services.OffreService.GetOffreByIDAsync*
+        name: GetOffreByIDAsync
+        nameWithType: OffreService.GetOffreByIDAsync
+        qualifiedName: BLL.Services.OffreService.GetOffreByIDAsync
+      VB:
+      - id: BLL.Services.OffreService.GetOffreByIDAsync*
+        name: GetOffreByIDAsync
+        nameWithType: OffreService.GetOffreByIDAsync
+        qualifiedName: BLL.Services.OffreService.GetOffreByIDAsync
+    isDefinition: true
+    commentId: Overload:BLL.Services.OffreService.GetOffreByIDAsync
+  BLL.Interfaces.IOffreService.GetOffreByIDAsync(System.Int32):
+    name:
+      CSharp:
+      - id: BLL.Interfaces.IOffreService.GetOffreByIDAsync(System.Int32)
+        name: GetOffreByIDAsync
+        nameWithType: IOffreService.GetOffreByIDAsync
+        qualifiedName: BLL.Interfaces.IOffreService.GetOffreByIDAsync
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Int32
+        name: Int32
+        nameWithType: Int32
+        qualifiedName: System.Int32
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: BLL.Interfaces.IOffreService.GetOffreByIDAsync(System.Int32)
+        name: GetOffreByIDAsync
+        nameWithType: IOffreService.GetOffreByIDAsync
+        qualifiedName: BLL.Interfaces.IOffreService.GetOffreByIDAsync
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Int32
+        name: Int32
+        nameWithType: Int32
+        qualifiedName: System.Int32
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: BLL.Interfaces.IOffreService
+    commentId: M:BLL.Interfaces.IOffreService.GetOffreByIDAsync(System.Int32)
+  BLL.Services.OffreService.UpdateOffreAsync*:
+    name:
+      CSharp:
+      - id: BLL.Services.OffreService.UpdateOffreAsync*
+        name: UpdateOffreAsync
+        nameWithType: OffreService.UpdateOffreAsync
+        qualifiedName: BLL.Services.OffreService.UpdateOffreAsync
+      VB:
+      - id: BLL.Services.OffreService.UpdateOffreAsync*
+        name: UpdateOffreAsync
+        nameWithType: OffreService.UpdateOffreAsync
+        qualifiedName: BLL.Services.OffreService.UpdateOffreAsync
+    isDefinition: true
+    commentId: Overload:BLL.Services.OffreService.UpdateOffreAsync
+  BLL.Interfaces.IOffreService.UpdateOffreAsync(BO.Entities.Offre):
+    name:
+      CSharp:
+      - id: BLL.Interfaces.IOffreService.UpdateOffreAsync(BO.Entities.Offre)
+        name: UpdateOffreAsync
+        nameWithType: IOffreService.UpdateOffreAsync
+        qualifiedName: BLL.Interfaces.IOffreService.UpdateOffreAsync
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: BO.Entities.Offre
+        name: Offre
+        nameWithType: Offre
+        qualifiedName: BO.Entities.Offre
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: BLL.Interfaces.IOffreService.UpdateOffreAsync(BO.Entities.Offre)
+        name: UpdateOffreAsync
+        nameWithType: IOffreService.UpdateOffreAsync
+        qualifiedName: BLL.Interfaces.IOffreService.UpdateOffreAsync
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: BO.Entities.Offre
+        name: Offre
+        nameWithType: Offre
+        qualifiedName: BO.Entities.Offre
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: BLL.Interfaces.IOffreService
+    commentId: M:BLL.Interfaces.IOffreService.UpdateOffreAsync(BO.Entities.Offre)
+  System.Collections.Generic.List`1:
+    name:
+      CSharp:
+      - id: System.Collections.Generic.List`1
+        name: List
+        nameWithType: List
+        qualifiedName: System.Collections.Generic.List
+        isExternal: true
+      - name: <
+        nameWithType: <
+        qualifiedName: <
+      - name: T
+        nameWithType: T
+        qualifiedName: T
+      - name: '>'
+        nameWithType: '>'
+        qualifiedName: '>'
+      VB:
+      - id: System.Collections.Generic.List`1
+        name: List
+        nameWithType: List
+        qualifiedName: System.Collections.Generic.List
+        isExternal: true
+      - name: '(Of '
+        nameWithType: '(Of '
+        qualifiedName: '(Of '
+      - name: T
+        nameWithType: T
+        qualifiedName: T
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    commentId: T:System.Collections.Generic.List`1
+  System.Collections.Generic:
+    name:
+      CSharp:
+      - name: System.Collections.Generic
+        nameWithType: System.Collections.Generic
+        qualifiedName: System.Collections.Generic
+        isExternal: true
+      VB:
+      - name: System.Collections.Generic
+        nameWithType: System.Collections.Generic
+        qualifiedName: System.Collections.Generic
+    isDefinition: true
+    commentId: N:System.Collections.Generic
+  System.Collections.Generic.List{BO.Entities.TypeContrat}:
+    name:
+      CSharp:
+      - id: System.Collections.Generic.List`1
+        name: List
+        nameWithType: List
+        qualifiedName: System.Collections.Generic.List
+        isExternal: true
+      - name: <
+        nameWithType: <
+        qualifiedName: <
+      - id: BO.Entities.TypeContrat
+        name: TypeContrat
+        nameWithType: TypeContrat
+        qualifiedName: BO.Entities.TypeContrat
+      - name: '>'
+        nameWithType: '>'
+        qualifiedName: '>'
+      VB:
+      - id: System.Collections.Generic.List`1
+        name: List
+        nameWithType: List
+        qualifiedName: System.Collections.Generic.List
+        isExternal: true
+      - name: '(Of '
+        nameWithType: '(Of '
+        qualifiedName: '(Of '
+      - id: BO.Entities.TypeContrat
+        name: TypeContrat
+        nameWithType: TypeContrat
+        qualifiedName: BO.Entities.TypeContrat
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: false
+    definition: System.Collections.Generic.List`1
+    parent: System.Collections.Generic
+    commentId: T:System.Collections.Generic.List{BO.Entities.TypeContrat}
+  BLL.Services.OffreService.TypeContratsDB*:
+    name:
+      CSharp:
+      - id: BLL.Services.OffreService.TypeContratsDB*
+        name: TypeContratsDB
+        nameWithType: OffreService.TypeContratsDB
+        qualifiedName: BLL.Services.OffreService.TypeContratsDB
+      VB:
+      - id: BLL.Services.OffreService.TypeContratsDB*
+        name: TypeContratsDB
+        nameWithType: OffreService.TypeContratsDB
+        qualifiedName: BLL.Services.OffreService.TypeContratsDB
+    isDefinition: true
+    commentId: Overload:BLL.Services.OffreService.TypeContratsDB
+  System.Collections.Generic.List{BO.Entities.TypePoste}:
+    name:
+      CSharp:
+      - id: System.Collections.Generic.List`1
+        name: List
+        nameWithType: List
+        qualifiedName: System.Collections.Generic.List
+        isExternal: true
+      - name: <
+        nameWithType: <
+        qualifiedName: <
+      - id: BO.Entities.TypePoste
+        name: TypePoste
+        nameWithType: TypePoste
+        qualifiedName: BO.Entities.TypePoste
+      - name: '>'
+        nameWithType: '>'
+        qualifiedName: '>'
+      VB:
+      - id: System.Collections.Generic.List`1
+        name: List
+        nameWithType: List
+        qualifiedName: System.Collections.Generic.List
+        isExternal: true
+      - name: '(Of '
+        nameWithType: '(Of '
+        qualifiedName: '(Of '
+      - id: BO.Entities.TypePoste
+        name: TypePoste
+        nameWithType: TypePoste
+        qualifiedName: BO.Entities.TypePoste
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: false
+    definition: System.Collections.Generic.List`1
+    parent: System.Collections.Generic
+    commentId: T:System.Collections.Generic.List{BO.Entities.TypePoste}
+  BLL.Services.OffreService.TypePostesDB*:
+    name:
+      CSharp:
+      - id: BLL.Services.OffreService.TypePostesDB*
+        name: TypePostesDB
+        nameWithType: OffreService.TypePostesDB
+        qualifiedName: BLL.Services.OffreService.TypePostesDB
+      VB:
+      - id: BLL.Services.OffreService.TypePostesDB*
+        name: TypePostesDB
+        nameWithType: OffreService.TypePostesDB
+        qualifiedName: BLL.Services.OffreService.TypePostesDB
+    isDefinition: true
+    commentId: Overload:BLL.Services.OffreService.TypePostesDB
+  System.Collections.Generic.List{BO.Entities.Region}:
+    name:
+      CSharp:
+      - id: System.Collections.Generic.List`1
+        name: List
+        nameWithType: List
+        qualifiedName: System.Collections.Generic.List
+        isExternal: true
+      - name: <
+        nameWithType: <
+        qualifiedName: <
+      - id: BO.Entities.Region
+        name: Region
+        nameWithType: Region
+        qualifiedName: BO.Entities.Region
+      - name: '>'
+        nameWithType: '>'
+        qualifiedName: '>'
+      VB:
+      - id: System.Collections.Generic.List`1
+        name: List
+        nameWithType: List
+        qualifiedName: System.Collections.Generic.List
+        isExternal: true
+      - name: '(Of '
+        nameWithType: '(Of '
+        qualifiedName: '(Of '
+      - id: BO.Entities.Region
+        name: Region
+        nameWithType: Region
+        qualifiedName: BO.Entities.Region
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: false
+    definition: System.Collections.Generic.List`1
+    parent: System.Collections.Generic
+    commentId: T:System.Collections.Generic.List{BO.Entities.Region}
+  BLL.Services.OffreService.RegionsDB*:
+    name:
+      CSharp:
+      - id: BLL.Services.OffreService.RegionsDB*
+        name: RegionsDB
+        nameWithType: OffreService.RegionsDB
+        qualifiedName: BLL.Services.OffreService.RegionsDB
+      VB:
+      - id: BLL.Services.OffreService.RegionsDB*
+        name: RegionsDB
+        nameWithType: OffreService.RegionsDB
+        qualifiedName: BLL.Services.OffreService.RegionsDB
+    isDefinition: true
+    commentId: Overload:BLL.Services.OffreService.RegionsDB
+  System.Collections.Generic.List{BO.Entities.Offre}:
+    name:
+      CSharp:
+      - id: System.Collections.Generic.List`1
+        name: List
+        nameWithType: List
+        qualifiedName: System.Collections.Generic.List
+        isExternal: true
+      - name: <
+        nameWithType: <
+        qualifiedName: <
+      - id: BO.Entities.Offre
+        name: Offre
+        nameWithType: Offre
+        qualifiedName: BO.Entities.Offre
+      - name: '>'
+        nameWithType: '>'
+        qualifiedName: '>'
+      VB:
+      - id: System.Collections.Generic.List`1
+        name: List
+        nameWithType: List
+        qualifiedName: System.Collections.Generic.List
+        isExternal: true
+      - name: '(Of '
+        nameWithType: '(Of '
+        qualifiedName: '(Of '
+      - id: BO.Entities.Offre
+        name: Offre
+        nameWithType: Offre
+        qualifiedName: BO.Entities.Offre
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: false
+    definition: System.Collections.Generic.List`1
+    parent: System.Collections.Generic
+    commentId: T:System.Collections.Generic.List{BO.Entities.Offre}
+  BLL.Services.OffreService.offresDB*:
+    name:
+      CSharp:
+      - id: BLL.Services.OffreService.offresDB*
+        name: offresDB
+        nameWithType: OffreService.offresDB
+        qualifiedName: BLL.Services.OffreService.offresDB
+      VB:
+      - id: BLL.Services.OffreService.offresDB*
+        name: offresDB
+        nameWithType: OffreService.offresDB
+        qualifiedName: BLL.Services.OffreService.offresDB
+    isDefinition: true
+    commentId: Overload:BLL.Services.OffreService.offresDB
+  BLL.Services.OffreService:
+    name:
+      CSharp:
+      - id: BLL.Services.OffreService
+        name: OffreService
+        nameWithType: OffreService
+        qualifiedName: BLL.Services.OffreService
+      VB:
+      - id: BLL.Services.OffreService
+        name: OffreService
+        nameWithType: OffreService
+        qualifiedName: BLL.Services.OffreService
+    isDefinition: true
+    commentId: T:BLL.Services.OffreService
+  BLL.Services.TraceService.BLL#Interfaces#ITraceService#TraceOnFileTXT*:
+    name:
+      CSharp:
+      - id: BLL.Services.TraceService.BLL#Interfaces#ITraceService#TraceOnFileTXT*
+        name: ITraceService.TraceOnFileTXT
+        nameWithType: TraceService.ITraceService.TraceOnFileTXT
+        qualifiedName: BLL.Services.TraceService.BLL.Interfaces.ITraceService.TraceOnFileTXT
+      VB:
+      - id: BLL.Services.TraceService.BLL#Interfaces#ITraceService#TraceOnFileTXT*
+        name: BLL.Interfaces.ITraceService.TraceOnFileTXT
+        nameWithType: TraceService.BLL.Interfaces.ITraceService.TraceOnFileTXT
+        qualifiedName: BLL.Services.TraceService.BLL.Interfaces.ITraceService.TraceOnFileTXT
+    isDefinition: true
+    commentId: Overload:BLL.Services.TraceService.BLL#Interfaces#ITraceService#TraceOnFileTXT
+  BLL.Interfaces.ITraceService.TraceOnFileTXT(System.String):
+    name:
+      CSharp:
+      - id: BLL.Interfaces.ITraceService.TraceOnFileTXT(System.String)
+        name: TraceOnFileTXT
+        nameWithType: ITraceService.TraceOnFileTXT
+        qualifiedName: BLL.Interfaces.ITraceService.TraceOnFileTXT
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.String
+        name: String
+        nameWithType: String
+        qualifiedName: System.String
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: BLL.Interfaces.ITraceService.TraceOnFileTXT(System.String)
+        name: TraceOnFileTXT
+        nameWithType: ITraceService.TraceOnFileTXT
+        qualifiedName: BLL.Interfaces.ITraceService.TraceOnFileTXT
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.String
+        name: String
+        nameWithType: String
+        qualifiedName: System.String
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: BLL.Interfaces.ITraceService
+    commentId: M:BLL.Interfaces.ITraceService.TraceOnFileTXT(System.String)
+  BLL.Services.TraceService.BLL#Interfaces#ITraceService#TraceOnServer*:
+    name:
+      CSharp:
+      - id: BLL.Services.TraceService.BLL#Interfaces#ITraceService#TraceOnServer*
+        name: ITraceService.TraceOnServer
+        nameWithType: TraceService.ITraceService.TraceOnServer
+        qualifiedName: BLL.Services.TraceService.BLL.Interfaces.ITraceService.TraceOnServer
+      VB:
+      - id: BLL.Services.TraceService.BLL#Interfaces#ITraceService#TraceOnServer*
+        name: BLL.Interfaces.ITraceService.TraceOnServer
+        nameWithType: TraceService.BLL.Interfaces.ITraceService.TraceOnServer
+        qualifiedName: BLL.Services.TraceService.BLL.Interfaces.ITraceService.TraceOnServer
+    isDefinition: true
+    commentId: Overload:BLL.Services.TraceService.BLL#Interfaces#ITraceService#TraceOnServer
+  BLL.Interfaces.ITraceService.TraceOnServer(System.String):
+    name:
+      CSharp:
+      - id: BLL.Interfaces.ITraceService.TraceOnServer(System.String)
+        name: TraceOnServer
+        nameWithType: ITraceService.TraceOnServer
+        qualifiedName: BLL.Interfaces.ITraceService.TraceOnServer
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.String
+        name: String
+        nameWithType: String
+        qualifiedName: System.String
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: BLL.Interfaces.ITraceService.TraceOnServer(System.String)
+        name: TraceOnServer
+        nameWithType: ITraceService.TraceOnServer
+        qualifiedName: BLL.Interfaces.ITraceService.TraceOnServer
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.String
+        name: String
+        nameWithType: String
+        qualifiedName: System.String
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: BLL.Interfaces.ITraceService
+    commentId: M:BLL.Interfaces.ITraceService.TraceOnServer(System.String)
+  BLL.Services.TraceService:
+    name:
+      CSharp:
+      - id: BLL.Services.TraceService
+        name: TraceService
+        nameWithType: TraceService
+        qualifiedName: BLL.Services.TraceService
+      VB:
+      - id: BLL.Services.TraceService
+        name: TraceService
+        nameWithType: TraceService
+        qualifiedName: BLL.Services.TraceService
+    isDefinition: true
+    commentId: T:BLL.Services.TraceService
+  BLL.Services:
+    name:
+      CSharp:
+      - name: BLL.Services
+        nameWithType: BLL.Services
+        qualifiedName: BLL.Services
+      VB:
+      - name: BLL.Services
+        nameWithType: BLL.Services
+        qualifiedName: BLL.Services
+    isDefinition: true
+    commentId: N:BLL.Services

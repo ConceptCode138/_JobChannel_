@@ -1,0 +1,12 @@
+C:\DESKTOP\JobChannel\BO\bin\Debug\net5.0\BO.deps.json
+C:\DESKTOP\JobChannel\BO\bin\Debug\net5.0\BO.dll
+C:\DESKTOP\JobChannel\BO\bin\Debug\net5.0\ref\BO.dll
+C:\DESKTOP\JobChannel\BO\bin\Debug\net5.0\BO.pdb
+C:\DESKTOP\JobChannel\BO\obj\Debug\net5.0\BO.GeneratedMSBuildEditorConfig.editorconfig
+C:\DESKTOP\JobChannel\BO\obj\Debug\net5.0\BO.AssemblyInfoInputs.cache
+C:\DESKTOP\JobChannel\BO\obj\Debug\net5.0\BO.AssemblyInfo.cs
+C:\DESKTOP\JobChannel\BO\obj\Debug\net5.0\BO.csproj.CoreCompileInputs.cache
+C:\DESKTOP\JobChannel\BO\obj\Debug\net5.0\BO.dll
+C:\DESKTOP\JobChannel\BO\obj\Debug\net5.0\ref\BO.dll
+C:\DESKTOP\JobChannel\BO\obj\Debug\net5.0\BO.pdb
+C:\DESKTOP\JobChannel\BO\obj\Debug\net5.0\BO.csproj.AssemblyReference.cache

@@ -1,0 +1,2514 @@
+id: BO
+language: CSharp
+name:
+  Default: BO
+qualifiedName:
+  Default: BO
+type: Assembly
+modifiers: {}
+items:
+- id: BO.Entities
+  commentId: N:BO.Entities
+  language: CSharp
+  name:
+    CSharp: BO.Entities
+    VB: BO.Entities
+  nameWithType:
+    CSharp: BO.Entities
+    VB: BO.Entities
+  qualifiedName:
+    CSharp: BO.Entities
+    VB: BO.Entities
+  type: Namespace
+  assemblies:
+  - BO
+  modifiers: {}
+  items:
+  - id: BO.Entities.Entity
+    commentId: T:BO.Entities.Entity
+    language: CSharp
+    name:
+      CSharp: Entity
+      VB: Entity
+    nameWithType:
+      CSharp: Entity
+      VB: Entity
+    qualifiedName:
+      CSharp: BO.Entities.Entity
+      VB: BO.Entities.Entity
+    type: Class
+    assemblies:
+    - BO
+    namespace: BO.Entities
+    source:
+      remote:
+        path: C:/DESKTOP/JobChannel/BO/Entities/Entity.cs
+      id: Entity
+      path: ../BO/Entities/Entity.cs
+      startLine: 8
+    syntax:
+      content:
+        CSharp: public class Entity
+        VB: Public Class Entity
+    inheritance:
+    - System.Object
+    inheritedMembers:
+    - System.Object.Equals(System.Object)
+    - System.Object.Equals(System.Object,System.Object)
+    - System.Object.GetHashCode
+    - System.Object.GetType
+    - System.Object.MemberwiseClone
+    - System.Object.ReferenceEquals(System.Object,System.Object)
+    - System.Object.ToString
+    modifiers:
+      CSharp:
+      - public
+      - class
+      VB:
+      - Public
+      - Class
+    items: []
+  - id: BO.Entities.Offre
+    commentId: T:BO.Entities.Offre
+    language: CSharp
+    name:
+      CSharp: Offre
+      VB: Offre
+    nameWithType:
+      CSharp: Offre
+      VB: Offre
+    qualifiedName:
+      CSharp: BO.Entities.Offre
+      VB: BO.Entities.Offre
+    type: Class
+    assemblies:
+    - BO
+    namespace: BO.Entities
+    source:
+      remote:
+        path: C:/DESKTOP/JobChannel/BO/Entities/Offre.cs
+      id: Offre
+      path: ../BO/Entities/Offre.cs
+      startLine: 8
+    syntax:
+      content:
+        CSharp: 'public class Offre : Entity'
+        VB: >-
+          Public Class Offre
+
+              Inherits Entity
+    inheritance:
+    - System.Object
+    - BO.Entities.Entity
+    inheritedMembers:
+    - System.Object.Equals(System.Object)
+    - System.Object.Equals(System.Object,System.Object)
+    - System.Object.GetHashCode
+    - System.Object.GetType
+    - System.Object.MemberwiseClone
+    - System.Object.ReferenceEquals(System.Object,System.Object)
+    - System.Object.ToString
+    modifiers:
+      CSharp:
+      - public
+      - class
+      VB:
+      - Public
+      - Class
+    items:
+    - id: BO.Entities.Offre.IdOffre
+      commentId: P:BO.Entities.Offre.IdOffre
+      language: CSharp
+      name:
+        CSharp: IdOffre
+        VB: IdOffre
+      nameWithType:
+        CSharp: Offre.IdOffre
+        VB: Offre.IdOffre
+      qualifiedName:
+        CSharp: BO.Entities.Offre.IdOffre
+        VB: BO.Entities.Offre.IdOffre
+      type: Property
+      assemblies:
+      - BO
+      namespace: BO.Entities
+      source:
+        remote:
+          path: C:/DESKTOP/JobChannel/BO/Entities/Offre.cs
+        id: IdOffre
+        path: ../BO/Entities/Offre.cs
+        startLine: 14
+      summary: "\nidentifiant de l&apos;offre\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public int IdOffre { get; set; }
+          VB: Public Property IdOffre As Integer
+        parameters: []
+        return:
+          type: System.Int32
+      overload: BO.Entities.Offre.IdOffre*
+      modifiers:
+        CSharp:
+        - public
+        - get
+        - set
+        VB:
+        - Public
+    - id: BO.Entities.Offre.Titre
+      commentId: P:BO.Entities.Offre.Titre
+      language: CSharp
+      name:
+        CSharp: Titre
+        VB: Titre
+      nameWithType:
+        CSharp: Offre.Titre
+        VB: Offre.Titre
+      qualifiedName:
+        CSharp: BO.Entities.Offre.Titre
+        VB: BO.Entities.Offre.Titre
+      type: Property
+      assemblies:
+      - BO
+      namespace: BO.Entities
+      source:
+        remote:
+          path: C:/DESKTOP/JobChannel/BO/Entities/Offre.cs
+        id: Titre
+        path: ../BO/Entities/Offre.cs
+        startLine: 18
+      summary: "\nTitre de l&apos;offre\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public string Titre { get; set; }
+          VB: Public Property Titre As String
+        parameters: []
+        return:
+          type: System.String
+      overload: BO.Entities.Offre.Titre*
+      modifiers:
+        CSharp:
+        - public
+        - get
+        - set
+        VB:
+        - Public
+    - id: BO.Entities.Offre.Lien
+      commentId: P:BO.Entities.Offre.Lien
+      language: CSharp
+      name:
+        CSharp: Lien
+        VB: Lien
+      nameWithType:
+        CSharp: Offre.Lien
+        VB: Offre.Lien
+      qualifiedName:
+        CSharp: BO.Entities.Offre.Lien
+        VB: BO.Entities.Offre.Lien
+      type: Property
+      assemblies:
+      - BO
+      namespace: BO.Entities
+      source:
+        remote:
+          path: C:/DESKTOP/JobChannel/BO/Entities/Offre.cs
+        id: Lien
+        path: ../BO/Entities/Offre.cs
+        startLine: 22
+      summary: "\nLien url de l&apos;offre\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public string Lien { get; set; }
+          VB: Public Property Lien As String
+        parameters: []
+        return:
+          type: System.String
+      overload: BO.Entities.Offre.Lien*
+      modifiers:
+        CSharp:
+        - public
+        - get
+        - set
+        VB:
+        - Public
+    - id: BO.Entities.Offre.Description
+      commentId: P:BO.Entities.Offre.Description
+      language: CSharp
+      name:
+        CSharp: Description
+        VB: Description
+      nameWithType:
+        CSharp: Offre.Description
+        VB: Offre.Description
+      qualifiedName:
+        CSharp: BO.Entities.Offre.Description
+        VB: BO.Entities.Offre.Description
+      type: Property
+      assemblies:
+      - BO
+      namespace: BO.Entities
+      source:
+        remote:
+          path: C:/DESKTOP/JobChannel/BO/Entities/Offre.cs
+        id: Description
+        path: ../BO/Entities/Offre.cs
+        startLine: 26
+      summary: "\nDescription de l&apos;offre\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public string Description { get; set; }
+          VB: Public Property Description As String
+        parameters: []
+        return:
+          type: System.String
+      overload: BO.Entities.Offre.Description*
+      modifiers:
+        CSharp:
+        - public
+        - get
+        - set
+        VB:
+        - Public
+    - id: BO.Entities.Offre.Poste
+      commentId: P:BO.Entities.Offre.Poste
+      language: CSharp
+      name:
+        CSharp: Poste
+        VB: Poste
+      nameWithType:
+        CSharp: Offre.Poste
+        VB: Offre.Poste
+      qualifiedName:
+        CSharp: BO.Entities.Offre.Poste
+        VB: BO.Entities.Offre.Poste
+      type: Property
+      assemblies:
+      - BO
+      namespace: BO.Entities
+      source:
+        remote:
+          path: C:/DESKTOP/JobChannel/BO/Entities/Offre.cs
+        id: Poste
+        path: ../BO/Entities/Offre.cs
+        startLine: 30
+      summary: "\nType de poste de l&apos;offre (Développeur)\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public TypePoste Poste { get; set; }
+          VB: Public Property Poste As TypePoste
+        parameters: []
+        return:
+          type: BO.Entities.TypePoste
+      overload: BO.Entities.Offre.Poste*
+      modifiers:
+        CSharp:
+        - public
+        - get
+        - set
+        VB:
+        - Public
+    - id: BO.Entities.Offre.Localisation
+      commentId: P:BO.Entities.Offre.Localisation
+      language: CSharp
+      name:
+        CSharp: Localisation
+        VB: Localisation
+      nameWithType:
+        CSharp: Offre.Localisation
+        VB: Offre.Localisation
+      qualifiedName:
+        CSharp: BO.Entities.Offre.Localisation
+        VB: BO.Entities.Offre.Localisation
+      type: Property
+      assemblies:
+      - BO
+      namespace: BO.Entities
+      source:
+        remote:
+          path: C:/DESKTOP/JobChannel/BO/Entities/Offre.cs
+        id: Localisation
+        path: ../BO/Entities/Offre.cs
+        startLine: 34
+      summary: "\nLocalisation de l&apos;offre correspondant à la region\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public Region Localisation { get; set; }
+          VB: Public Property Localisation As Region
+        parameters: []
+        return:
+          type: BO.Entities.Region
+      overload: BO.Entities.Offre.Localisation*
+      modifiers:
+        CSharp:
+        - public
+        - get
+        - set
+        VB:
+        - Public
+    - id: BO.Entities.Offre.Contrat
+      commentId: P:BO.Entities.Offre.Contrat
+      language: CSharp
+      name:
+        CSharp: Contrat
+        VB: Contrat
+      nameWithType:
+        CSharp: Offre.Contrat
+        VB: Offre.Contrat
+      qualifiedName:
+        CSharp: BO.Entities.Offre.Contrat
+        VB: BO.Entities.Offre.Contrat
+      type: Property
+      assemblies:
+      - BO
+      namespace: BO.Entities
+      source:
+        remote:
+          path: C:/DESKTOP/JobChannel/BO/Entities/Offre.cs
+        id: Contrat
+        path: ../BO/Entities/Offre.cs
+        startLine: 38
+      summary: "\nType de contrat de l&apos;offre (CDD,CDI, Contrat de professionnalisation)\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public TypeContrat Contrat { get; set; }
+          VB: Public Property Contrat As TypeContrat
+        parameters: []
+        return:
+          type: BO.Entities.TypeContrat
+      overload: BO.Entities.Offre.Contrat*
+      modifiers:
+        CSharp:
+        - public
+        - get
+        - set
+        VB:
+        - Public
+    - id: BO.Entities.Offre.#ctor
+      commentId: M:BO.Entities.Offre.#ctor
+      language: CSharp
+      name:
+        CSharp: Offre()
+        VB: Offre()
+      nameWithType:
+        CSharp: Offre.Offre()
+        VB: Offre.Offre()
+      qualifiedName:
+        CSharp: BO.Entities.Offre.Offre()
+        VB: BO.Entities.Offre.Offre()
+      type: Constructor
+      assemblies:
+      - BO
+      namespace: BO.Entities
+      source:
+        remote:
+          path: C:/DESKTOP/JobChannel/BO/Entities/Offre.cs
+        id: .ctor
+        path: ../BO/Entities/Offre.cs
+        startLine: 46
+      summary: "\nConstructeur par défaut afin d&apos;éviter de levé une exception\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public Offre()
+          VB: Public Sub New
+      overload: BO.Entities.Offre.#ctor*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: BO.Entities.Offre.#ctor(System.Int32,System.String,System.String,System.String,BO.Entities.TypePoste,BO.Entities.TypeContrat,BO.Entities.Region)
+      commentId: M:BO.Entities.Offre.#ctor(System.Int32,System.String,System.String,System.String,BO.Entities.TypePoste,BO.Entities.TypeContrat,BO.Entities.Region)
+      language: CSharp
+      name:
+        CSharp: Offre(Int32, String, String, String, TypePoste, TypeContrat, Region)
+        VB: Offre(Int32, String, String, String, TypePoste, TypeContrat, Region)
+      nameWithType:
+        CSharp: Offre.Offre(Int32, String, String, String, TypePoste, TypeContrat, Region)
+        VB: Offre.Offre(Int32, String, String, String, TypePoste, TypeContrat, Region)
+      qualifiedName:
+        CSharp: BO.Entities.Offre.Offre(System.Int32, System.String, System.String, System.String, BO.Entities.TypePoste, BO.Entities.TypeContrat, BO.Entities.Region)
+        VB: BO.Entities.Offre.Offre(System.Int32, System.String, System.String, System.String, BO.Entities.TypePoste, BO.Entities.TypeContrat, BO.Entities.Region)
+      type: Constructor
+      assemblies:
+      - BO
+      namespace: BO.Entities
+      source:
+        remote:
+          path: C:/DESKTOP/JobChannel/BO/Entities/Offre.cs
+        id: .ctor
+        path: ../BO/Entities/Offre.cs
+        startLine: 57
+      summary: "\nConstructeur de l&apos;offre\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public Offre(int idOffre, string titre, string lien, string description, TypePoste typePoste, TypeContrat typeContrat, Region region)
+          VB: Public Sub New(idOffre As Integer, titre As String, lien As String, description As String, typePoste As TypePoste, typeContrat As TypeContrat, region As Region)
+        parameters:
+        - id: idOffre
+          type: System.Int32
+        - id: titre
+          type: System.String
+          description: titre offre
+        - id: lien
+          type: System.String
+          description: lien url offre
+        - id: description
+          type: System.String
+          description: description de l&apos;offre
+        - id: typePoste
+          type: BO.Entities.TypePoste
+          description: type de poste de l&apos;offe
+        - id: typeContrat
+          type: BO.Entities.TypeContrat
+          description: type de contrat de l&apos;offre
+        - id: region
+          type: BO.Entities.Region
+          description: région de l&apos;offre
+      overload: BO.Entities.Offre.#ctor*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+  - id: BO.Entities.Region
+    commentId: T:BO.Entities.Region
+    language: CSharp
+    name:
+      CSharp: Region
+      VB: Region
+    nameWithType:
+      CSharp: Region
+      VB: Region
+    qualifiedName:
+      CSharp: BO.Entities.Region
+      VB: BO.Entities.Region
+    type: Class
+    assemblies:
+    - BO
+    namespace: BO.Entities
+    source:
+      remote:
+        path: C:/DESKTOP/JobChannel/BO/Entities/Region.cs
+      id: Region
+      path: ../BO/Entities/Region.cs
+      startLine: 8
+    syntax:
+      content:
+        CSharp: 'public class Region : Entity'
+        VB: >-
+          Public Class Region
+
+              Inherits Entity
+    inheritance:
+    - System.Object
+    - BO.Entities.Entity
+    inheritedMembers:
+    - System.Object.Equals(System.Object)
+    - System.Object.Equals(System.Object,System.Object)
+    - System.Object.GetHashCode
+    - System.Object.GetType
+    - System.Object.MemberwiseClone
+    - System.Object.ReferenceEquals(System.Object,System.Object)
+    - System.Object.ToString
+    modifiers:
+      CSharp:
+      - public
+      - class
+      VB:
+      - Public
+      - Class
+    items:
+    - id: BO.Entities.Region.IdRegion
+      commentId: P:BO.Entities.Region.IdRegion
+      language: CSharp
+      name:
+        CSharp: IdRegion
+        VB: IdRegion
+      nameWithType:
+        CSharp: Region.IdRegion
+        VB: Region.IdRegion
+      qualifiedName:
+        CSharp: BO.Entities.Region.IdRegion
+        VB: BO.Entities.Region.IdRegion
+      type: Property
+      assemblies:
+      - BO
+      namespace: BO.Entities
+      source:
+        remote:
+          path: C:/DESKTOP/JobChannel/BO/Entities/Region.cs
+        id: IdRegion
+        path: ../BO/Entities/Region.cs
+        startLine: 14
+      summary: "\nIdentifiant de la région\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public int IdRegion { get; set; }
+          VB: Public Property IdRegion As Integer
+        parameters: []
+        return:
+          type: System.Int32
+      overload: BO.Entities.Region.IdRegion*
+      modifiers:
+        CSharp:
+        - public
+        - get
+        - set
+        VB:
+        - Public
+    - id: BO.Entities.Region.IntituleRegion
+      commentId: P:BO.Entities.Region.IntituleRegion
+      language: CSharp
+      name:
+        CSharp: IntituleRegion
+        VB: IntituleRegion
+      nameWithType:
+        CSharp: Region.IntituleRegion
+        VB: Region.IntituleRegion
+      qualifiedName:
+        CSharp: BO.Entities.Region.IntituleRegion
+        VB: BO.Entities.Region.IntituleRegion
+      type: Property
+      assemblies:
+      - BO
+      namespace: BO.Entities
+      source:
+        remote:
+          path: C:/DESKTOP/JobChannel/BO/Entities/Region.cs
+        id: IntituleRegion
+        path: ../BO/Entities/Region.cs
+        startLine: 18
+      summary: "\nIntitulé région correspond à la région.\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public string IntituleRegion { get; set; }
+          VB: Public Property IntituleRegion As String
+        parameters: []
+        return:
+          type: System.String
+      overload: BO.Entities.Region.IntituleRegion*
+      modifiers:
+        CSharp:
+        - public
+        - get
+        - set
+        VB:
+        - Public
+    - id: BO.Entities.Region.#ctor
+      commentId: M:BO.Entities.Region.#ctor
+      language: CSharp
+      name:
+        CSharp: Region()
+        VB: Region()
+      nameWithType:
+        CSharp: Region.Region()
+        VB: Region.Region()
+      qualifiedName:
+        CSharp: BO.Entities.Region.Region()
+        VB: BO.Entities.Region.Region()
+      type: Constructor
+      assemblies:
+      - BO
+      namespace: BO.Entities
+      source:
+        remote:
+          path: C:/DESKTOP/JobChannel/BO/Entities/Region.cs
+        id: .ctor
+        path: ../BO/Entities/Region.cs
+        startLine: 25
+      summary: "\nConstructeur par défaut\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public Region()
+          VB: Public Sub New
+      overload: BO.Entities.Region.#ctor*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: BO.Entities.Region.#ctor(System.Int32,System.String)
+      commentId: M:BO.Entities.Region.#ctor(System.Int32,System.String)
+      language: CSharp
+      name:
+        CSharp: Region(Int32, String)
+        VB: Region(Int32, String)
+      nameWithType:
+        CSharp: Region.Region(Int32, String)
+        VB: Region.Region(Int32, String)
+      qualifiedName:
+        CSharp: BO.Entities.Region.Region(System.Int32, System.String)
+        VB: BO.Entities.Region.Region(System.Int32, System.String)
+      type: Constructor
+      assemblies:
+      - BO
+      namespace: BO.Entities
+      source:
+        remote:
+          path: C:/DESKTOP/JobChannel/BO/Entities/Region.cs
+        id: .ctor
+        path: ../BO/Entities/Region.cs
+        startLine: 31
+      summary: "\n\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public Region(int idRegion, string region)
+          VB: Public Sub New(idRegion As Integer, region As String)
+        parameters:
+        - id: idRegion
+          type: System.Int32
+        - id: region
+          type: System.String
+          description: ''
+      overload: BO.Entities.Region.#ctor*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+  - id: BO.Entities.TypeContrat
+    commentId: T:BO.Entities.TypeContrat
+    language: CSharp
+    name:
+      CSharp: TypeContrat
+      VB: TypeContrat
+    nameWithType:
+      CSharp: TypeContrat
+      VB: TypeContrat
+    qualifiedName:
+      CSharp: BO.Entities.TypeContrat
+      VB: BO.Entities.TypeContrat
+    type: Class
+    assemblies:
+    - BO
+    namespace: BO.Entities
+    source:
+      remote:
+        path: C:/DESKTOP/JobChannel/BO/Entities/TypeContrat.cs
+      id: TypeContrat
+      path: ../BO/Entities/TypeContrat.cs
+      startLine: 8
+    syntax:
+      content:
+        CSharp: 'public class TypeContrat : Entity'
+        VB: >-
+          Public Class TypeContrat
+
+              Inherits Entity
+    inheritance:
+    - System.Object
+    - BO.Entities.Entity
+    inheritedMembers:
+    - System.Object.Equals(System.Object)
+    - System.Object.Equals(System.Object,System.Object)
+    - System.Object.GetHashCode
+    - System.Object.GetType
+    - System.Object.MemberwiseClone
+    - System.Object.ReferenceEquals(System.Object,System.Object)
+    - System.Object.ToString
+    modifiers:
+      CSharp:
+      - public
+      - class
+      VB:
+      - Public
+      - Class
+    items:
+    - id: BO.Entities.TypeContrat.IdContrat
+      commentId: P:BO.Entities.TypeContrat.IdContrat
+      language: CSharp
+      name:
+        CSharp: IdContrat
+        VB: IdContrat
+      nameWithType:
+        CSharp: TypeContrat.IdContrat
+        VB: TypeContrat.IdContrat
+      qualifiedName:
+        CSharp: BO.Entities.TypeContrat.IdContrat
+        VB: BO.Entities.TypeContrat.IdContrat
+      type: Property
+      assemblies:
+      - BO
+      namespace: BO.Entities
+      source:
+        remote:
+          path: C:/DESKTOP/JobChannel/BO/Entities/TypeContrat.cs
+        id: IdContrat
+        path: ../BO/Entities/TypeContrat.cs
+        startLine: 14
+      summary: "\nIdentifiant du type de contrat\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public int IdContrat { get; set; }
+          VB: Public Property IdContrat As Integer
+        parameters: []
+        return:
+          type: System.Int32
+      overload: BO.Entities.TypeContrat.IdContrat*
+      modifiers:
+        CSharp:
+        - public
+        - get
+        - set
+        VB:
+        - Public
+    - id: BO.Entities.TypeContrat.IntituleContrat
+      commentId: P:BO.Entities.TypeContrat.IntituleContrat
+      language: CSharp
+      name:
+        CSharp: IntituleContrat
+        VB: IntituleContrat
+      nameWithType:
+        CSharp: TypeContrat.IntituleContrat
+        VB: TypeContrat.IntituleContrat
+      qualifiedName:
+        CSharp: BO.Entities.TypeContrat.IntituleContrat
+        VB: BO.Entities.TypeContrat.IntituleContrat
+      type: Property
+      assemblies:
+      - BO
+      namespace: BO.Entities
+      source:
+        remote:
+          path: C:/DESKTOP/JobChannel/BO/Entities/TypeContrat.cs
+        id: IntituleContrat
+        path: ../BO/Entities/TypeContrat.cs
+        startLine: 18
+      summary: "\ntype de contrat\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public string IntituleContrat { get; set; }
+          VB: Public Property IntituleContrat As String
+        parameters: []
+        return:
+          type: System.String
+      overload: BO.Entities.TypeContrat.IntituleContrat*
+      modifiers:
+        CSharp:
+        - public
+        - get
+        - set
+        VB:
+        - Public
+    - id: BO.Entities.TypeContrat.#ctor
+      commentId: M:BO.Entities.TypeContrat.#ctor
+      language: CSharp
+      name:
+        CSharp: TypeContrat()
+        VB: TypeContrat()
+      nameWithType:
+        CSharp: TypeContrat.TypeContrat()
+        VB: TypeContrat.TypeContrat()
+      qualifiedName:
+        CSharp: BO.Entities.TypeContrat.TypeContrat()
+        VB: BO.Entities.TypeContrat.TypeContrat()
+      type: Constructor
+      assemblies:
+      - BO
+      namespace: BO.Entities
+      source:
+        remote:
+          path: C:/DESKTOP/JobChannel/BO/Entities/TypeContrat.cs
+        id: .ctor
+        path: ../BO/Entities/TypeContrat.cs
+        startLine: 25
+      summary: "\nConstructeur par défaut\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public TypeContrat()
+          VB: Public Sub New
+      overload: BO.Entities.TypeContrat.#ctor*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: BO.Entities.TypeContrat.#ctor(System.Int32,System.String)
+      commentId: M:BO.Entities.TypeContrat.#ctor(System.Int32,System.String)
+      language: CSharp
+      name:
+        CSharp: TypeContrat(Int32, String)
+        VB: TypeContrat(Int32, String)
+      nameWithType:
+        CSharp: TypeContrat.TypeContrat(Int32, String)
+        VB: TypeContrat.TypeContrat(Int32, String)
+      qualifiedName:
+        CSharp: BO.Entities.TypeContrat.TypeContrat(System.Int32, System.String)
+        VB: BO.Entities.TypeContrat.TypeContrat(System.Int32, System.String)
+      type: Constructor
+      assemblies:
+      - BO
+      namespace: BO.Entities
+      source:
+        remote:
+          path: C:/DESKTOP/JobChannel/BO/Entities/TypeContrat.cs
+        id: .ctor
+        path: ../BO/Entities/TypeContrat.cs
+        startLine: 32
+      summary: "\n\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public TypeContrat(int idContrat, string typeContrat)
+          VB: Public Sub New(idContrat As Integer, typeContrat As String)
+        parameters:
+        - id: idContrat
+          type: System.Int32
+          description: ''
+        - id: typeContrat
+          type: System.String
+          description: ''
+      overload: BO.Entities.TypeContrat.#ctor*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+  - id: BO.Entities.TypePoste
+    commentId: T:BO.Entities.TypePoste
+    language: CSharp
+    name:
+      CSharp: TypePoste
+      VB: TypePoste
+    nameWithType:
+      CSharp: TypePoste
+      VB: TypePoste
+    qualifiedName:
+      CSharp: BO.Entities.TypePoste
+      VB: BO.Entities.TypePoste
+    type: Class
+    assemblies:
+    - BO
+    namespace: BO.Entities
+    source:
+      remote:
+        path: C:/DESKTOP/JobChannel/BO/Entities/TypePoste.cs
+      id: TypePoste
+      path: ../BO/Entities/TypePoste.cs
+      startLine: 8
+    syntax:
+      content:
+        CSharp: 'public class TypePoste : Entity'
+        VB: >-
+          Public Class TypePoste
+
+              Inherits Entity
+    inheritance:
+    - System.Object
+    - BO.Entities.Entity
+    inheritedMembers:
+    - System.Object.Equals(System.Object)
+    - System.Object.Equals(System.Object,System.Object)
+    - System.Object.GetHashCode
+    - System.Object.GetType
+    - System.Object.MemberwiseClone
+    - System.Object.ReferenceEquals(System.Object,System.Object)
+    - System.Object.ToString
+    modifiers:
+      CSharp:
+      - public
+      - class
+      VB:
+      - Public
+      - Class
+    items:
+    - id: BO.Entities.TypePoste.IdPoste
+      commentId: P:BO.Entities.TypePoste.IdPoste
+      language: CSharp
+      name:
+        CSharp: IdPoste
+        VB: IdPoste
+      nameWithType:
+        CSharp: TypePoste.IdPoste
+        VB: TypePoste.IdPoste
+      qualifiedName:
+        CSharp: BO.Entities.TypePoste.IdPoste
+        VB: BO.Entities.TypePoste.IdPoste
+      type: Property
+      assemblies:
+      - BO
+      namespace: BO.Entities
+      source:
+        remote:
+          path: C:/DESKTOP/JobChannel/BO/Entities/TypePoste.cs
+        id: IdPoste
+        path: ../BO/Entities/TypePoste.cs
+        startLine: 14
+      summary: "\nIdentifiant du type de poste\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public int IdPoste { get; set; }
+          VB: Public Property IdPoste As Integer
+        parameters: []
+        return:
+          type: System.Int32
+      overload: BO.Entities.TypePoste.IdPoste*
+      modifiers:
+        CSharp:
+        - public
+        - get
+        - set
+        VB:
+        - Public
+    - id: BO.Entities.TypePoste.IntitulePoste
+      commentId: P:BO.Entities.TypePoste.IntitulePoste
+      language: CSharp
+      name:
+        CSharp: IntitulePoste
+        VB: IntitulePoste
+      nameWithType:
+        CSharp: TypePoste.IntitulePoste
+        VB: TypePoste.IntitulePoste
+      qualifiedName:
+        CSharp: BO.Entities.TypePoste.IntitulePoste
+        VB: BO.Entities.TypePoste.IntitulePoste
+      type: Property
+      assemblies:
+      - BO
+      namespace: BO.Entities
+      source:
+        remote:
+          path: C:/DESKTOP/JobChannel/BO/Entities/TypePoste.cs
+        id: IntitulePoste
+        path: ../BO/Entities/TypePoste.cs
+        startLine: 18
+      summary: "\ntype de poste\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public string IntitulePoste { get; set; }
+          VB: Public Property IntitulePoste As String
+        parameters: []
+        return:
+          type: System.String
+      overload: BO.Entities.TypePoste.IntitulePoste*
+      modifiers:
+        CSharp:
+        - public
+        - get
+        - set
+        VB:
+        - Public
+    - id: BO.Entities.TypePoste.#ctor
+      commentId: M:BO.Entities.TypePoste.#ctor
+      language: CSharp
+      name:
+        CSharp: TypePoste()
+        VB: TypePoste()
+      nameWithType:
+        CSharp: TypePoste.TypePoste()
+        VB: TypePoste.TypePoste()
+      qualifiedName:
+        CSharp: BO.Entities.TypePoste.TypePoste()
+        VB: BO.Entities.TypePoste.TypePoste()
+      type: Constructor
+      assemblies:
+      - BO
+      namespace: BO.Entities
+      source:
+        remote:
+          path: C:/DESKTOP/JobChannel/BO/Entities/TypePoste.cs
+        id: .ctor
+        path: ../BO/Entities/TypePoste.cs
+        startLine: 25
+      summary: "\nConstructeur par défaut\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public TypePoste()
+          VB: Public Sub New
+      overload: BO.Entities.TypePoste.#ctor*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: BO.Entities.TypePoste.#ctor(System.Int32,System.String)
+      commentId: M:BO.Entities.TypePoste.#ctor(System.Int32,System.String)
+      language: CSharp
+      name:
+        CSharp: TypePoste(Int32, String)
+        VB: TypePoste(Int32, String)
+      nameWithType:
+        CSharp: TypePoste.TypePoste(Int32, String)
+        VB: TypePoste.TypePoste(Int32, String)
+      qualifiedName:
+        CSharp: BO.Entities.TypePoste.TypePoste(System.Int32, System.String)
+        VB: BO.Entities.TypePoste.TypePoste(System.Int32, System.String)
+      type: Constructor
+      assemblies:
+      - BO
+      namespace: BO.Entities
+      source:
+        remote:
+          path: C:/DESKTOP/JobChannel/BO/Entities/TypePoste.cs
+        id: .ctor
+        path: ../BO/Entities/TypePoste.cs
+        startLine: 31
+      summary: "\n\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public TypePoste(int idPoste, string typePoste)
+          VB: Public Sub New(idPoste As Integer, typePoste As String)
+        parameters:
+        - id: idPoste
+          type: System.Int32
+        - id: typePoste
+          type: System.String
+          description: ''
+      overload: BO.Entities.TypePoste.#ctor*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+- id: BO.Exceptions
+  commentId: N:BO.Exceptions
+  language: CSharp
+  name:
+    CSharp: BO.Exceptions
+    VB: BO.Exceptions
+  nameWithType:
+    CSharp: BO.Exceptions
+    VB: BO.Exceptions
+  qualifiedName:
+    CSharp: BO.Exceptions
+    VB: BO.Exceptions
+  type: Namespace
+  assemblies:
+  - BO
+  modifiers: {}
+  items:
+  - id: BO.Exceptions.ForbiddenAccessException
+    commentId: T:BO.Exceptions.ForbiddenAccessException
+    language: CSharp
+    name:
+      CSharp: ForbiddenAccessException
+      VB: ForbiddenAccessException
+    nameWithType:
+      CSharp: ForbiddenAccessException
+      VB: ForbiddenAccessException
+    qualifiedName:
+      CSharp: BO.Exceptions.ForbiddenAccessException
+      VB: BO.Exceptions.ForbiddenAccessException
+    type: Class
+    assemblies:
+    - BO
+    namespace: BO.Exceptions
+    source:
+      remote:
+        path: C:/DESKTOP/JobChannel/BO/Exceptions/ForbiddenAccessException.cs
+      id: ForbiddenAccessException
+      path: ../BO/Exceptions/ForbiddenAccessException.cs
+      startLine: 13
+    summary: "\nDans le cas où l&apos;utilisateur n&apos;a pas l&apos;accès\n\nlogique serveur interdit l&apos;acces à cette action pour cet utilisaateur\n"
+    example: []
+    syntax:
+      content:
+        CSharp: 'public class ForbiddenAccessException : Exception, ISerializable, INotLoggedException'
+        VB: >-
+          Public Class ForbiddenAccessException
+
+              Inherits Exception
+
+              Implements ISerializable, INotLoggedException
+    inheritance:
+    - System.Object
+    - System.Exception
+    implements:
+    - System.Runtime.Serialization.ISerializable
+    - BO.Exceptions.INotLoggedException
+    inheritedMembers:
+    - System.Exception.GetBaseException
+    - System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+    - System.Exception.GetType
+    - System.Exception.ToString
+    - System.Exception.Data
+    - System.Exception.HelpLink
+    - System.Exception.HResult
+    - System.Exception.InnerException
+    - System.Exception.Message
+    - System.Exception.Source
+    - System.Exception.StackTrace
+    - System.Exception.TargetSite
+    - System.Exception.SerializeObjectState
+    - System.Object.Equals(System.Object)
+    - System.Object.Equals(System.Object,System.Object)
+    - System.Object.GetHashCode
+    - System.Object.MemberwiseClone
+    - System.Object.ReferenceEquals(System.Object,System.Object)
+    modifiers:
+      CSharp:
+      - public
+      - class
+      VB:
+      - Public
+      - Class
+    items:
+    - id: BO.Exceptions.ForbiddenAccessException.#ctor
+      commentId: M:BO.Exceptions.ForbiddenAccessException.#ctor
+      language: CSharp
+      name:
+        CSharp: ForbiddenAccessException()
+        VB: ForbiddenAccessException()
+      nameWithType:
+        CSharp: ForbiddenAccessException.ForbiddenAccessException()
+        VB: ForbiddenAccessException.ForbiddenAccessException()
+      qualifiedName:
+        CSharp: BO.Exceptions.ForbiddenAccessException.ForbiddenAccessException()
+        VB: BO.Exceptions.ForbiddenAccessException.ForbiddenAccessException()
+      type: Constructor
+      assemblies:
+      - BO
+      namespace: BO.Exceptions
+      source:
+        remote:
+          path: C:/DESKTOP/JobChannel/BO/Exceptions/ForbiddenAccessException.cs
+        id: .ctor
+        path: ../BO/Exceptions/ForbiddenAccessException.cs
+        startLine: 15
+      syntax:
+        content:
+          CSharp: public ForbiddenAccessException()
+          VB: Public Sub New
+      overload: BO.Exceptions.ForbiddenAccessException.#ctor*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+  - id: BO.Exceptions.INotLoggedException
+    commentId: T:BO.Exceptions.INotLoggedException
+    language: CSharp
+    name:
+      CSharp: INotLoggedException
+      VB: INotLoggedException
+    nameWithType:
+      CSharp: INotLoggedException
+      VB: INotLoggedException
+    qualifiedName:
+      CSharp: BO.Exceptions.INotLoggedException
+      VB: BO.Exceptions.INotLoggedException
+    type: Interface
+    assemblies:
+    - BO
+    namespace: BO.Exceptions
+    source:
+      remote:
+        path: C:/DESKTOP/JobChannel/BO/Exceptions/INotLoggedException.cs
+      id: INotLoggedException
+      path: ../BO/Exceptions/INotLoggedException.cs
+      startLine: 8
+    syntax:
+      content:
+        CSharp: public interface INotLoggedException
+        VB: Public Interface INotLoggedException
+    modifiers:
+      CSharp:
+      - public
+      - interface
+      VB:
+      - Public
+      - Interface
+    items: []
+  - id: BO.Exceptions.NotFoundException
+    commentId: T:BO.Exceptions.NotFoundException
+    language: CSharp
+    name:
+      CSharp: NotFoundException
+      VB: NotFoundException
+    nameWithType:
+      CSharp: NotFoundException
+      VB: NotFoundException
+    qualifiedName:
+      CSharp: BO.Exceptions.NotFoundException
+      VB: BO.Exceptions.NotFoundException
+    type: Class
+    assemblies:
+    - BO
+    namespace: BO.Exceptions
+    source:
+      remote:
+        path: C:/DESKTOP/JobChannel/BO/Exceptions/NotFoundException.cs
+      id: NotFoundException
+      path: ../BO/Exceptions/NotFoundException.cs
+      startLine: 8
+    syntax:
+      content:
+        CSharp: 'public class NotFoundException : Exception, ISerializable, INotLoggedException'
+        VB: >-
+          Public Class NotFoundException
+
+              Inherits Exception
+
+              Implements ISerializable, INotLoggedException
+    inheritance:
+    - System.Object
+    - System.Exception
+    implements:
+    - System.Runtime.Serialization.ISerializable
+    - BO.Exceptions.INotLoggedException
+    inheritedMembers:
+    - System.Exception.GetBaseException
+    - System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+    - System.Exception.GetType
+    - System.Exception.ToString
+    - System.Exception.Data
+    - System.Exception.HelpLink
+    - System.Exception.HResult
+    - System.Exception.InnerException
+    - System.Exception.Message
+    - System.Exception.Source
+    - System.Exception.StackTrace
+    - System.Exception.TargetSite
+    - System.Exception.SerializeObjectState
+    - System.Object.Equals(System.Object)
+    - System.Object.Equals(System.Object,System.Object)
+    - System.Object.GetHashCode
+    - System.Object.MemberwiseClone
+    - System.Object.ReferenceEquals(System.Object,System.Object)
+    modifiers:
+      CSharp:
+      - public
+      - class
+      VB:
+      - Public
+      - Class
+    items:
+    - id: BO.Exceptions.NotFoundException.#ctor
+      commentId: M:BO.Exceptions.NotFoundException.#ctor
+      language: CSharp
+      name:
+        CSharp: NotFoundException()
+        VB: NotFoundException()
+      nameWithType:
+        CSharp: NotFoundException.NotFoundException()
+        VB: NotFoundException.NotFoundException()
+      qualifiedName:
+        CSharp: BO.Exceptions.NotFoundException.NotFoundException()
+        VB: BO.Exceptions.NotFoundException.NotFoundException()
+      type: Constructor
+      assemblies:
+      - BO
+      namespace: BO.Exceptions
+      source:
+        remote:
+          path: C:/DESKTOP/JobChannel/BO/Exceptions/NotFoundException.cs
+        id: .ctor
+        path: ../BO/Exceptions/NotFoundException.cs
+        startLine: 10
+      syntax:
+        content:
+          CSharp: public NotFoundException()
+          VB: Public Sub New
+      overload: BO.Exceptions.NotFoundException.#ctor*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: BO.Exceptions.NotFoundException.#ctor(System.String)
+      commentId: M:BO.Exceptions.NotFoundException.#ctor(System.String)
+      language: CSharp
+      name:
+        CSharp: NotFoundException(String)
+        VB: NotFoundException(String)
+      nameWithType:
+        CSharp: NotFoundException.NotFoundException(String)
+        VB: NotFoundException.NotFoundException(String)
+      qualifiedName:
+        CSharp: BO.Exceptions.NotFoundException.NotFoundException(System.String)
+        VB: BO.Exceptions.NotFoundException.NotFoundException(System.String)
+      type: Constructor
+      assemblies:
+      - BO
+      namespace: BO.Exceptions
+      source:
+        remote:
+          path: C:/DESKTOP/JobChannel/BO/Exceptions/NotFoundException.cs
+        id: .ctor
+        path: ../BO/Exceptions/NotFoundException.cs
+        startLine: 12
+      syntax:
+        content:
+          CSharp: public NotFoundException(string message)
+          VB: Public Sub New(message As String)
+        parameters:
+        - id: message
+          type: System.String
+      overload: BO.Exceptions.NotFoundException.#ctor*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: BO.Exceptions.NotFoundException.#ctor(System.String,System.Exception)
+      commentId: M:BO.Exceptions.NotFoundException.#ctor(System.String,System.Exception)
+      language: CSharp
+      name:
+        CSharp: NotFoundException(String, Exception)
+        VB: NotFoundException(String, Exception)
+      nameWithType:
+        CSharp: NotFoundException.NotFoundException(String, Exception)
+        VB: NotFoundException.NotFoundException(String, Exception)
+      qualifiedName:
+        CSharp: BO.Exceptions.NotFoundException.NotFoundException(System.String, System.Exception)
+        VB: BO.Exceptions.NotFoundException.NotFoundException(System.String, System.Exception)
+      type: Constructor
+      assemblies:
+      - BO
+      namespace: BO.Exceptions
+      source:
+        remote:
+          path: C:/DESKTOP/JobChannel/BO/Exceptions/NotFoundException.cs
+        id: .ctor
+        path: ../BO/Exceptions/NotFoundException.cs
+        startLine: 14
+      syntax:
+        content:
+          CSharp: public NotFoundException(string message, Exception innerException)
+          VB: Public Sub New(message As String, innerException As Exception)
+        parameters:
+        - id: message
+          type: System.String
+        - id: innerException
+          type: System.Exception
+      overload: BO.Exceptions.NotFoundException.#ctor*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: BO.Exceptions.NotFoundException.#ctor(System.String,System.Object)
+      commentId: M:BO.Exceptions.NotFoundException.#ctor(System.String,System.Object)
+      language: CSharp
+      name:
+        CSharp: NotFoundException(String, Object)
+        VB: NotFoundException(String, Object)
+      nameWithType:
+        CSharp: NotFoundException.NotFoundException(String, Object)
+        VB: NotFoundException.NotFoundException(String, Object)
+      qualifiedName:
+        CSharp: BO.Exceptions.NotFoundException.NotFoundException(System.String, System.Object)
+        VB: BO.Exceptions.NotFoundException.NotFoundException(System.String, System.Object)
+      type: Constructor
+      assemblies:
+      - BO
+      namespace: BO.Exceptions
+      source:
+        remote:
+          path: C:/DESKTOP/JobChannel/BO/Exceptions/NotFoundException.cs
+        id: .ctor
+        path: ../BO/Exceptions/NotFoundException.cs
+        startLine: 16
+      syntax:
+        content:
+          CSharp: public NotFoundException(string name, object key)
+          VB: Public Sub New(name As String, key As Object)
+        parameters:
+        - id: name
+          type: System.String
+        - id: key
+          type: System.Object
+      overload: BO.Exceptions.NotFoundException.#ctor*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+references:
+  System:
+    name:
+      CSharp:
+      - name: System
+        nameWithType: System
+        qualifiedName: System
+        isExternal: true
+      VB:
+      - name: System
+        nameWithType: System
+        qualifiedName: System
+    isDefinition: true
+    commentId: N:System
+  System.Object:
+    name:
+      CSharp:
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      VB:
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+    isDefinition: true
+    parent: System
+    commentId: T:System.Object
+  System.Object.Equals(System.Object):
+    name:
+      CSharp:
+      - id: System.Object.Equals(System.Object)
+        name: Equals
+        nameWithType: Object.Equals
+        qualifiedName: System.Object.Equals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.Equals(System.Object)
+        name: Equals
+        nameWithType: Object.Equals
+        qualifiedName: System.Object.Equals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.Equals(System.Object)
+  System.Object.Equals(System.Object,System.Object):
+    name:
+      CSharp:
+      - id: System.Object.Equals(System.Object,System.Object)
+        name: Equals
+        nameWithType: Object.Equals
+        qualifiedName: System.Object.Equals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.Equals(System.Object,System.Object)
+        name: Equals
+        nameWithType: Object.Equals
+        qualifiedName: System.Object.Equals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.Equals(System.Object,System.Object)
+  System.Object.GetHashCode:
+    name:
+      CSharp:
+      - id: System.Object.GetHashCode
+        name: GetHashCode
+        nameWithType: Object.GetHashCode
+        qualifiedName: System.Object.GetHashCode
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.GetHashCode
+        name: GetHashCode
+        nameWithType: Object.GetHashCode
+        qualifiedName: System.Object.GetHashCode
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.GetHashCode
+  System.Object.GetType:
+    name:
+      CSharp:
+      - id: System.Object.GetType
+        name: GetType
+        nameWithType: Object.GetType
+        qualifiedName: System.Object.GetType
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.GetType
+        name: GetType
+        nameWithType: Object.GetType
+        qualifiedName: System.Object.GetType
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.GetType
+  System.Object.MemberwiseClone:
+    name:
+      CSharp:
+      - id: System.Object.MemberwiseClone
+        name: MemberwiseClone
+        nameWithType: Object.MemberwiseClone
+        qualifiedName: System.Object.MemberwiseClone
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.MemberwiseClone
+        name: MemberwiseClone
+        nameWithType: Object.MemberwiseClone
+        qualifiedName: System.Object.MemberwiseClone
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.MemberwiseClone
+  System.Object.ReferenceEquals(System.Object,System.Object):
+    name:
+      CSharp:
+      - id: System.Object.ReferenceEquals(System.Object,System.Object)
+        name: ReferenceEquals
+        nameWithType: Object.ReferenceEquals
+        qualifiedName: System.Object.ReferenceEquals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.ReferenceEquals(System.Object,System.Object)
+        name: ReferenceEquals
+        nameWithType: Object.ReferenceEquals
+        qualifiedName: System.Object.ReferenceEquals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  System.Object.ToString:
+    name:
+      CSharp:
+      - id: System.Object.ToString
+        name: ToString
+        nameWithType: Object.ToString
+        qualifiedName: System.Object.ToString
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.ToString
+        name: ToString
+        nameWithType: Object.ToString
+        qualifiedName: System.Object.ToString
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.ToString
+  BO.Entities.Entity:
+    name:
+      CSharp:
+      - id: BO.Entities.Entity
+        name: Entity
+        nameWithType: Entity
+        qualifiedName: BO.Entities.Entity
+      VB:
+      - id: BO.Entities.Entity
+        name: Entity
+        nameWithType: Entity
+        qualifiedName: BO.Entities.Entity
+    isDefinition: true
+    parent: BO.Entities
+    commentId: T:BO.Entities.Entity
+  BO.Entities:
+    name:
+      CSharp:
+      - name: BO.Entities
+        nameWithType: BO.Entities
+        qualifiedName: BO.Entities
+      VB:
+      - name: BO.Entities
+        nameWithType: BO.Entities
+        qualifiedName: BO.Entities
+    isDefinition: true
+    commentId: N:BO.Entities
+  System.Int32:
+    name:
+      CSharp:
+      - id: System.Int32
+        name: Int32
+        nameWithType: Int32
+        qualifiedName: System.Int32
+        isExternal: true
+      VB:
+      - id: System.Int32
+        name: Int32
+        nameWithType: Int32
+        qualifiedName: System.Int32
+        isExternal: true
+    isDefinition: true
+    parent: System
+    commentId: T:System.Int32
+  BO.Entities.Offre.IdOffre*:
+    name:
+      CSharp:
+      - id: BO.Entities.Offre.IdOffre*
+        name: IdOffre
+        nameWithType: Offre.IdOffre
+        qualifiedName: BO.Entities.Offre.IdOffre
+      VB:
+      - id: BO.Entities.Offre.IdOffre*
+        name: IdOffre
+        nameWithType: Offre.IdOffre
+        qualifiedName: BO.Entities.Offre.IdOffre
+    isDefinition: true
+    commentId: Overload:BO.Entities.Offre.IdOffre
+  System.String:
+    name:
+      CSharp:
+      - id: System.String
+        name: String
+        nameWithType: String
+        qualifiedName: System.String
+        isExternal: true
+      VB:
+      - id: System.String
+        name: String
+        nameWithType: String
+        qualifiedName: System.String
+        isExternal: true
+    isDefinition: true
+    parent: System
+    commentId: T:System.String
+  BO.Entities.Offre.Titre*:
+    name:
+      CSharp:
+      - id: BO.Entities.Offre.Titre*
+        name: Titre
+        nameWithType: Offre.Titre
+        qualifiedName: BO.Entities.Offre.Titre
+      VB:
+      - id: BO.Entities.Offre.Titre*
+        name: Titre
+        nameWithType: Offre.Titre
+        qualifiedName: BO.Entities.Offre.Titre
+    isDefinition: true
+    commentId: Overload:BO.Entities.Offre.Titre
+  BO.Entities.Offre.Lien*:
+    name:
+      CSharp:
+      - id: BO.Entities.Offre.Lien*
+        name: Lien
+        nameWithType: Offre.Lien
+        qualifiedName: BO.Entities.Offre.Lien
+      VB:
+      - id: BO.Entities.Offre.Lien*
+        name: Lien
+        nameWithType: Offre.Lien
+        qualifiedName: BO.Entities.Offre.Lien
+    isDefinition: true
+    commentId: Overload:BO.Entities.Offre.Lien
+  BO.Entities.Offre.Description*:
+    name:
+      CSharp:
+      - id: BO.Entities.Offre.Description*
+        name: Description
+        nameWithType: Offre.Description
+        qualifiedName: BO.Entities.Offre.Description
+      VB:
+      - id: BO.Entities.Offre.Description*
+        name: Description
+        nameWithType: Offre.Description
+        qualifiedName: BO.Entities.Offre.Description
+    isDefinition: true
+    commentId: Overload:BO.Entities.Offre.Description
+  BO.Entities.TypePoste:
+    name:
+      CSharp:
+      - id: BO.Entities.TypePoste
+        name: TypePoste
+        nameWithType: TypePoste
+        qualifiedName: BO.Entities.TypePoste
+      VB:
+      - id: BO.Entities.TypePoste
+        name: TypePoste
+        nameWithType: TypePoste
+        qualifiedName: BO.Entities.TypePoste
+    isDefinition: true
+    parent: BO.Entities
+    commentId: T:BO.Entities.TypePoste
+  BO.Entities.Offre.Poste*:
+    name:
+      CSharp:
+      - id: BO.Entities.Offre.Poste*
+        name: Poste
+        nameWithType: Offre.Poste
+        qualifiedName: BO.Entities.Offre.Poste
+      VB:
+      - id: BO.Entities.Offre.Poste*
+        name: Poste
+        nameWithType: Offre.Poste
+        qualifiedName: BO.Entities.Offre.Poste
+    isDefinition: true
+    commentId: Overload:BO.Entities.Offre.Poste
+  BO.Entities.Region:
+    name:
+      CSharp:
+      - id: BO.Entities.Region
+        name: Region
+        nameWithType: Region
+        qualifiedName: BO.Entities.Region
+      VB:
+      - id: BO.Entities.Region
+        name: Region
+        nameWithType: Region
+        qualifiedName: BO.Entities.Region
+    isDefinition: true
+    parent: BO.Entities
+    commentId: T:BO.Entities.Region
+  BO.Entities.Offre.Localisation*:
+    name:
+      CSharp:
+      - id: BO.Entities.Offre.Localisation*
+        name: Localisation
+        nameWithType: Offre.Localisation
+        qualifiedName: BO.Entities.Offre.Localisation
+      VB:
+      - id: BO.Entities.Offre.Localisation*
+        name: Localisation
+        nameWithType: Offre.Localisation
+        qualifiedName: BO.Entities.Offre.Localisation
+    isDefinition: true
+    commentId: Overload:BO.Entities.Offre.Localisation
+  BO.Entities.TypeContrat:
+    name:
+      CSharp:
+      - id: BO.Entities.TypeContrat
+        name: TypeContrat
+        nameWithType: TypeContrat
+        qualifiedName: BO.Entities.TypeContrat
+      VB:
+      - id: BO.Entities.TypeContrat
+        name: TypeContrat
+        nameWithType: TypeContrat
+        qualifiedName: BO.Entities.TypeContrat
+    isDefinition: true
+    parent: BO.Entities
+    commentId: T:BO.Entities.TypeContrat
+  BO.Entities.Offre.Contrat*:
+    name:
+      CSharp:
+      - id: BO.Entities.Offre.Contrat*
+        name: Contrat
+        nameWithType: Offre.Contrat
+        qualifiedName: BO.Entities.Offre.Contrat
+      VB:
+      - id: BO.Entities.Offre.Contrat*
+        name: Contrat
+        nameWithType: Offre.Contrat
+        qualifiedName: BO.Entities.Offre.Contrat
+    isDefinition: true
+    commentId: Overload:BO.Entities.Offre.Contrat
+  BO.Entities.Offre.#ctor*:
+    name:
+      CSharp:
+      - id: BO.Entities.Offre.#ctor*
+        name: Offre
+        nameWithType: Offre.Offre
+        qualifiedName: BO.Entities.Offre.Offre
+      VB:
+      - id: BO.Entities.Offre.#ctor*
+        name: Offre
+        nameWithType: Offre.Offre
+        qualifiedName: BO.Entities.Offre.Offre
+    isDefinition: true
+    commentId: Overload:BO.Entities.Offre.#ctor
+  BO.Entities.Offre:
+    name:
+      CSharp:
+      - id: BO.Entities.Offre
+        name: Offre
+        nameWithType: Offre
+        qualifiedName: BO.Entities.Offre
+      VB:
+      - id: BO.Entities.Offre
+        name: Offre
+        nameWithType: Offre
+        qualifiedName: BO.Entities.Offre
+    isDefinition: true
+    commentId: T:BO.Entities.Offre
+  BO.Entities.Region.IdRegion*:
+    name:
+      CSharp:
+      - id: BO.Entities.Region.IdRegion*
+        name: IdRegion
+        nameWithType: Region.IdRegion
+        qualifiedName: BO.Entities.Region.IdRegion
+      VB:
+      - id: BO.Entities.Region.IdRegion*
+        name: IdRegion
+        nameWithType: Region.IdRegion
+        qualifiedName: BO.Entities.Region.IdRegion
+    isDefinition: true
+    commentId: Overload:BO.Entities.Region.IdRegion
+  BO.Entities.Region.IntituleRegion*:
+    name:
+      CSharp:
+      - id: BO.Entities.Region.IntituleRegion*
+        name: IntituleRegion
+        nameWithType: Region.IntituleRegion
+        qualifiedName: BO.Entities.Region.IntituleRegion
+      VB:
+      - id: BO.Entities.Region.IntituleRegion*
+        name: IntituleRegion
+        nameWithType: Region.IntituleRegion
+        qualifiedName: BO.Entities.Region.IntituleRegion
+    isDefinition: true
+    commentId: Overload:BO.Entities.Region.IntituleRegion
+  BO.Entities.Region.#ctor*:
+    name:
+      CSharp:
+      - id: BO.Entities.Region.#ctor*
+        name: Region
+        nameWithType: Region.Region
+        qualifiedName: BO.Entities.Region.Region
+      VB:
+      - id: BO.Entities.Region.#ctor*
+        name: Region
+        nameWithType: Region.Region
+        qualifiedName: BO.Entities.Region.Region
+    isDefinition: true
+    commentId: Overload:BO.Entities.Region.#ctor
+  BO.Entities.TypeContrat.IdContrat*:
+    name:
+      CSharp:
+      - id: BO.Entities.TypeContrat.IdContrat*
+        name: IdContrat
+        nameWithType: TypeContrat.IdContrat
+        qualifiedName: BO.Entities.TypeContrat.IdContrat
+      VB:
+      - id: BO.Entities.TypeContrat.IdContrat*
+        name: IdContrat
+        nameWithType: TypeContrat.IdContrat
+        qualifiedName: BO.Entities.TypeContrat.IdContrat
+    isDefinition: true
+    commentId: Overload:BO.Entities.TypeContrat.IdContrat
+  BO.Entities.TypeContrat.IntituleContrat*:
+    name:
+      CSharp:
+      - id: BO.Entities.TypeContrat.IntituleContrat*
+        name: IntituleContrat
+        nameWithType: TypeContrat.IntituleContrat
+        qualifiedName: BO.Entities.TypeContrat.IntituleContrat
+      VB:
+      - id: BO.Entities.TypeContrat.IntituleContrat*
+        name: IntituleContrat
+        nameWithType: TypeContrat.IntituleContrat
+        qualifiedName: BO.Entities.TypeContrat.IntituleContrat
+    isDefinition: true
+    commentId: Overload:BO.Entities.TypeContrat.IntituleContrat
+  BO.Entities.TypeContrat.#ctor*:
+    name:
+      CSharp:
+      - id: BO.Entities.TypeContrat.#ctor*
+        name: TypeContrat
+        nameWithType: TypeContrat.TypeContrat
+        qualifiedName: BO.Entities.TypeContrat.TypeContrat
+      VB:
+      - id: BO.Entities.TypeContrat.#ctor*
+        name: TypeContrat
+        nameWithType: TypeContrat.TypeContrat
+        qualifiedName: BO.Entities.TypeContrat.TypeContrat
+    isDefinition: true
+    commentId: Overload:BO.Entities.TypeContrat.#ctor
+  BO.Entities.TypePoste.IdPoste*:
+    name:
+      CSharp:
+      - id: BO.Entities.TypePoste.IdPoste*
+        name: IdPoste
+        nameWithType: TypePoste.IdPoste
+        qualifiedName: BO.Entities.TypePoste.IdPoste
+      VB:
+      - id: BO.Entities.TypePoste.IdPoste*
+        name: IdPoste
+        nameWithType: TypePoste.IdPoste
+        qualifiedName: BO.Entities.TypePoste.IdPoste
+    isDefinition: true
+    commentId: Overload:BO.Entities.TypePoste.IdPoste
+  BO.Entities.TypePoste.IntitulePoste*:
+    name:
+      CSharp:
+      - id: BO.Entities.TypePoste.IntitulePoste*
+        name: IntitulePoste
+        nameWithType: TypePoste.IntitulePoste
+        qualifiedName: BO.Entities.TypePoste.IntitulePoste
+      VB:
+      - id: BO.Entities.TypePoste.IntitulePoste*
+        name: IntitulePoste
+        nameWithType: TypePoste.IntitulePoste
+        qualifiedName: BO.Entities.TypePoste.IntitulePoste
+    isDefinition: true
+    commentId: Overload:BO.Entities.TypePoste.IntitulePoste
+  BO.Entities.TypePoste.#ctor*:
+    name:
+      CSharp:
+      - id: BO.Entities.TypePoste.#ctor*
+        name: TypePoste
+        nameWithType: TypePoste.TypePoste
+        qualifiedName: BO.Entities.TypePoste.TypePoste
+      VB:
+      - id: BO.Entities.TypePoste.#ctor*
+        name: TypePoste
+        nameWithType: TypePoste.TypePoste
+        qualifiedName: BO.Entities.TypePoste.TypePoste
+    isDefinition: true
+    commentId: Overload:BO.Entities.TypePoste.#ctor
+  System.Exception:
+    name:
+      CSharp:
+      - id: System.Exception
+        name: Exception
+        nameWithType: Exception
+        qualifiedName: System.Exception
+        isExternal: true
+      VB:
+      - id: System.Exception
+        name: Exception
+        nameWithType: Exception
+        qualifiedName: System.Exception
+        isExternal: true
+    isDefinition: true
+    parent: System
+    commentId: T:System.Exception
+  System.Exception.GetBaseException:
+    name:
+      CSharp:
+      - id: System.Exception.GetBaseException
+        name: GetBaseException
+        nameWithType: Exception.GetBaseException
+        qualifiedName: System.Exception.GetBaseException
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Exception.GetBaseException
+        name: GetBaseException
+        nameWithType: Exception.GetBaseException
+        qualifiedName: System.Exception.GetBaseException
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Exception
+    commentId: M:System.Exception.GetBaseException
+  System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):
+    name:
+      CSharp:
+      - id: System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+        name: GetObjectData
+        nameWithType: Exception.GetObjectData
+        qualifiedName: System.Exception.GetObjectData
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Runtime.Serialization.SerializationInfo
+        name: SerializationInfo
+        nameWithType: SerializationInfo
+        qualifiedName: System.Runtime.Serialization.SerializationInfo
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Runtime.Serialization.StreamingContext
+        name: StreamingContext
+        nameWithType: StreamingContext
+        qualifiedName: System.Runtime.Serialization.StreamingContext
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+        name: GetObjectData
+        nameWithType: Exception.GetObjectData
+        qualifiedName: System.Exception.GetObjectData
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Runtime.Serialization.SerializationInfo
+        name: SerializationInfo
+        nameWithType: SerializationInfo
+        qualifiedName: System.Runtime.Serialization.SerializationInfo
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Runtime.Serialization.StreamingContext
+        name: StreamingContext
+        nameWithType: StreamingContext
+        qualifiedName: System.Runtime.Serialization.StreamingContext
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Exception
+    commentId: M:System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  System.Exception.GetType:
+    name:
+      CSharp:
+      - id: System.Exception.GetType
+        name: GetType
+        nameWithType: Exception.GetType
+        qualifiedName: System.Exception.GetType
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Exception.GetType
+        name: GetType
+        nameWithType: Exception.GetType
+        qualifiedName: System.Exception.GetType
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Exception
+    commentId: M:System.Exception.GetType
+  System.Exception.ToString:
+    name:
+      CSharp:
+      - id: System.Exception.ToString
+        name: ToString
+        nameWithType: Exception.ToString
+        qualifiedName: System.Exception.ToString
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Exception.ToString
+        name: ToString
+        nameWithType: Exception.ToString
+        qualifiedName: System.Exception.ToString
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Exception
+    commentId: M:System.Exception.ToString
+  System.Exception.Data:
+    name:
+      CSharp:
+      - id: System.Exception.Data
+        name: Data
+        nameWithType: Exception.Data
+        qualifiedName: System.Exception.Data
+        isExternal: true
+      VB:
+      - id: System.Exception.Data
+        name: Data
+        nameWithType: Exception.Data
+        qualifiedName: System.Exception.Data
+        isExternal: true
+    isDefinition: true
+    parent: System.Exception
+    commentId: P:System.Exception.Data
+  System.Exception.HelpLink:
+    name:
+      CSharp:
+      - id: System.Exception.HelpLink
+        name: HelpLink
+        nameWithType: Exception.HelpLink
+        qualifiedName: System.Exception.HelpLink
+        isExternal: true
+      VB:
+      - id: System.Exception.HelpLink
+        name: HelpLink
+        nameWithType: Exception.HelpLink
+        qualifiedName: System.Exception.HelpLink
+        isExternal: true
+    isDefinition: true
+    parent: System.Exception
+    commentId: P:System.Exception.HelpLink
+  System.Exception.HResult:
+    name:
+      CSharp:
+      - id: System.Exception.HResult
+        name: HResult
+        nameWithType: Exception.HResult
+        qualifiedName: System.Exception.HResult
+        isExternal: true
+      VB:
+      - id: System.Exception.HResult
+        name: HResult
+        nameWithType: Exception.HResult
+        qualifiedName: System.Exception.HResult
+        isExternal: true
+    isDefinition: true
+    parent: System.Exception
+    commentId: P:System.Exception.HResult
+  System.Exception.InnerException:
+    name:
+      CSharp:
+      - id: System.Exception.InnerException
+        name: InnerException
+        nameWithType: Exception.InnerException
+        qualifiedName: System.Exception.InnerException
+        isExternal: true
+      VB:
+      - id: System.Exception.InnerException
+        name: InnerException
+        nameWithType: Exception.InnerException
+        qualifiedName: System.Exception.InnerException
+        isExternal: true
+    isDefinition: true
+    parent: System.Exception
+    commentId: P:System.Exception.InnerException
+  System.Exception.Message:
+    name:
+      CSharp:
+      - id: System.Exception.Message
+        name: Message
+        nameWithType: Exception.Message
+        qualifiedName: System.Exception.Message
+        isExternal: true
+      VB:
+      - id: System.Exception.Message
+        name: Message
+        nameWithType: Exception.Message
+        qualifiedName: System.Exception.Message
+        isExternal: true
+    isDefinition: true
+    parent: System.Exception
+    commentId: P:System.Exception.Message
+  System.Exception.Source:
+    name:
+      CSharp:
+      - id: System.Exception.Source
+        name: Source
+        nameWithType: Exception.Source
+        qualifiedName: System.Exception.Source
+        isExternal: true
+      VB:
+      - id: System.Exception.Source
+        name: Source
+        nameWithType: Exception.Source
+        qualifiedName: System.Exception.Source
+        isExternal: true
+    isDefinition: true
+    parent: System.Exception
+    commentId: P:System.Exception.Source
+  System.Exception.StackTrace:
+    name:
+      CSharp:
+      - id: System.Exception.StackTrace
+        name: StackTrace
+        nameWithType: Exception.StackTrace
+        qualifiedName: System.Exception.StackTrace
+        isExternal: true
+      VB:
+      - id: System.Exception.StackTrace
+        name: StackTrace
+        nameWithType: Exception.StackTrace
+        qualifiedName: System.Exception.StackTrace
+        isExternal: true
+    isDefinition: true
+    parent: System.Exception
+    commentId: P:System.Exception.StackTrace
+  System.Exception.TargetSite:
+    name:
+      CSharp:
+      - id: System.Exception.TargetSite
+        name: TargetSite
+        nameWithType: Exception.TargetSite
+        qualifiedName: System.Exception.TargetSite
+        isExternal: true
+      VB:
+      - id: System.Exception.TargetSite
+        name: TargetSite
+        nameWithType: Exception.TargetSite
+        qualifiedName: System.Exception.TargetSite
+        isExternal: true
+    isDefinition: true
+    parent: System.Exception
+    commentId: P:System.Exception.TargetSite
+  System.Exception.SerializeObjectState:
+    name:
+      CSharp:
+      - id: System.Exception.SerializeObjectState
+        name: SerializeObjectState
+        nameWithType: Exception.SerializeObjectState
+        qualifiedName: System.Exception.SerializeObjectState
+        isExternal: true
+      VB:
+      - id: System.Exception.SerializeObjectState
+        name: SerializeObjectState
+        nameWithType: Exception.SerializeObjectState
+        qualifiedName: System.Exception.SerializeObjectState
+        isExternal: true
+    isDefinition: true
+    parent: System.Exception
+    commentId: E:System.Exception.SerializeObjectState
+  System.Runtime.Serialization:
+    name:
+      CSharp:
+      - name: System.Runtime.Serialization
+        nameWithType: System.Runtime.Serialization
+        qualifiedName: System.Runtime.Serialization
+        isExternal: true
+      VB:
+      - name: System.Runtime.Serialization
+        nameWithType: System.Runtime.Serialization
+        qualifiedName: System.Runtime.Serialization
+    isDefinition: true
+    commentId: N:System.Runtime.Serialization
+  System.Runtime.Serialization.ISerializable:
+    name:
+      CSharp:
+      - id: System.Runtime.Serialization.ISerializable
+        name: ISerializable
+        nameWithType: ISerializable
+        qualifiedName: System.Runtime.Serialization.ISerializable
+        isExternal: true
+      VB:
+      - id: System.Runtime.Serialization.ISerializable
+        name: ISerializable
+        nameWithType: ISerializable
+        qualifiedName: System.Runtime.Serialization.ISerializable
+        isExternal: true
+    isDefinition: true
+    parent: System.Runtime.Serialization
+    commentId: T:System.Runtime.Serialization.ISerializable
+  BO.Exceptions:
+    name:
+      CSharp:
+      - name: BO.Exceptions
+        nameWithType: BO.Exceptions
+        qualifiedName: BO.Exceptions
+      VB:
+      - name: BO.Exceptions
+        nameWithType: BO.Exceptions
+        qualifiedName: BO.Exceptions
+    isDefinition: true
+    commentId: N:BO.Exceptions
+  BO.Exceptions.INotLoggedException:
+    name:
+      CSharp:
+      - id: BO.Exceptions.INotLoggedException
+        name: INotLoggedException
+        nameWithType: INotLoggedException
+        qualifiedName: BO.Exceptions.INotLoggedException
+      VB:
+      - id: BO.Exceptions.INotLoggedException
+        name: INotLoggedException
+        nameWithType: INotLoggedException
+        qualifiedName: BO.Exceptions.INotLoggedException
+    isDefinition: true
+    parent: BO.Exceptions
+    commentId: T:BO.Exceptions.INotLoggedException
+  BO.Exceptions.ForbiddenAccessException.#ctor*:
+    name:
+      CSharp:
+      - id: BO.Exceptions.ForbiddenAccessException.#ctor*
+        name: ForbiddenAccessException
+        nameWithType: ForbiddenAccessException.ForbiddenAccessException
+        qualifiedName: BO.Exceptions.ForbiddenAccessException.ForbiddenAccessException
+      VB:
+      - id: BO.Exceptions.ForbiddenAccessException.#ctor*
+        name: ForbiddenAccessException
+        nameWithType: ForbiddenAccessException.ForbiddenAccessException
+        qualifiedName: BO.Exceptions.ForbiddenAccessException.ForbiddenAccessException
+    isDefinition: true
+    commentId: Overload:BO.Exceptions.ForbiddenAccessException.#ctor
+  BO.Exceptions.ForbiddenAccessException:
+    name:
+      CSharp:
+      - id: BO.Exceptions.ForbiddenAccessException
+        name: ForbiddenAccessException
+        nameWithType: ForbiddenAccessException
+        qualifiedName: BO.Exceptions.ForbiddenAccessException
+      VB:
+      - id: BO.Exceptions.ForbiddenAccessException
+        name: ForbiddenAccessException
+        nameWithType: ForbiddenAccessException
+        qualifiedName: BO.Exceptions.ForbiddenAccessException
+    isDefinition: true
+    commentId: T:BO.Exceptions.ForbiddenAccessException
+  BO.Exceptions.NotFoundException.#ctor*:
+    name:
+      CSharp:
+      - id: BO.Exceptions.NotFoundException.#ctor*
+        name: NotFoundException
+        nameWithType: NotFoundException.NotFoundException
+        qualifiedName: BO.Exceptions.NotFoundException.NotFoundException
+      VB:
+      - id: BO.Exceptions.NotFoundException.#ctor*
+        name: NotFoundException
+        nameWithType: NotFoundException.NotFoundException
+        qualifiedName: BO.Exceptions.NotFoundException.NotFoundException
+    isDefinition: true
+    commentId: Overload:BO.Exceptions.NotFoundException.#ctor
+  BO.Exceptions.NotFoundException:
+    name:
+      CSharp:
+      - id: BO.Exceptions.NotFoundException
+        name: NotFoundException
+        nameWithType: NotFoundException
+        qualifiedName: BO.Exceptions.NotFoundException
+      VB:
+      - id: BO.Exceptions.NotFoundException
+        name: NotFoundException
+        nameWithType: NotFoundException
+        qualifiedName: BO.Exceptions.NotFoundException
+    isDefinition: true
+    commentId: T:BO.Exceptions.NotFoundException

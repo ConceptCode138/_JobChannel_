@@ -1,0 +1,15 @@
+C:\DESKTOP\JobChannel\DAL\bin\Debug\net5.0\DAL.deps.json
+C:\DESKTOP\JobChannel\DAL\bin\Debug\net5.0\DAL.dll
+C:\DESKTOP\JobChannel\DAL\bin\Debug\net5.0\ref\DAL.dll
+C:\DESKTOP\JobChannel\DAL\bin\Debug\net5.0\DAL.pdb
+C:\DESKTOP\JobChannel\DAL\bin\Debug\net5.0\BO.dll
+C:\DESKTOP\JobChannel\DAL\bin\Debug\net5.0\BO.pdb
+C:\DESKTOP\JobChannel\DAL\obj\Debug\net5.0\DAL.csproj.AssemblyReference.cache
+C:\DESKTOP\JobChannel\DAL\obj\Debug\net5.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\DESKTOP\JobChannel\DAL\obj\Debug\net5.0\DAL.AssemblyInfoInputs.cache
+C:\DESKTOP\JobChannel\DAL\obj\Debug\net5.0\DAL.AssemblyInfo.cs
+C:\DESKTOP\JobChannel\DAL\obj\Debug\net5.0\DAL.csproj.CoreCompileInputs.cache
+C:\DESKTOP\JobChannel\DAL\obj\Debug\net5.0\DAL.csproj.CopyComplete
+C:\DESKTOP\JobChannel\DAL\obj\Debug\net5.0\DAL.dll
+C:\DESKTOP\JobChannel\DAL\obj\Debug\net5.0\ref\DAL.dll
+C:\DESKTOP\JobChannel\DAL\obj\Debug\net5.0\DAL.pdb
